@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import {
   siAnthropic,
   siDeepseek,
@@ -30,6 +31,33 @@ const BRAND: Partial<Record<Company, string>> = {
   OpenAI: "#10a37f",
   AWS: "#ff9900",
   Google: "#4285f4", // simple-icons google hex is muted; use the real blue
+};
+
+const fav = (domain: string) => `https://www.google.com/s2/favicons?domain=${domain}&sz=64`;
+
+// real avatars (github) for people, site favicons for orgs without a vector logo
+const AVATAR: Partial<Record<Company, { url: string; round?: boolean }>> = {
+  "Andrej Karpathy": { url: "https://github.com/karpathy.png", round: true },
+  "Lilian Weng": { url: "https://github.com/lilianweng.png", round: true },
+  "Hamel Husain": { url: "https://github.com/hamelsmu.png", round: true },
+  "Eugene Yan": { url: "https://github.com/eugeneyan.png", round: true },
+  "Chip Huyen": { url: "https://github.com/chiphuyen.png", round: true },
+  "Simon Willison": { url: "https://github.com/simonw.png", round: true },
+  "Jay Alammar": { url: "https://github.com/jalammar.png", round: true },
+  "Sebastian Raschka": { url: "https://github.com/rasbt.png", round: true },
+  "3Blue1Brown": { url: "https://github.com/3b1b.png", round: true },
+  "Benedict Evans": { url: fav("ben-evans.com") },
+  "Moonshot AI": { url: fav("moonshot.ai") },
+  "Zhipu AI": { url: fav("z.ai") },
+  MiniMax: { url: fav("minimax.io") },
+  Tencent: { url: fav("tencent.com") },
+  "01.AI": { url: fav("01.ai") },
+  ByteDance: { url: fav("bytedance.com") },
+  Cohere: { url: fav("cohere.com") },
+  Chroma: { url: fav("trychroma.com") },
+  NBER: { url: fav("nber.org") },
+  Stanford: { url: fav("stanford.edu") },
+  MIT: { url: fav("mit.edu") },
 };
 
 // simple-icons ships Anthropic / Google / NVIDIA. OpenAI, Microsoft and AWS
@@ -88,14 +116,35 @@ export function LabLogo({ company, className = "h-3.5 w-3.5" }: { company: Compa
         </svg>
       );
     default:
-      // no open logo (e.g. Cohere): clean lettermark badge
-      return (
-        <span
-          className={`inline-flex shrink-0 items-center justify-center rounded-[3px] border border-current text-[8px] font-semibold leading-none ${className}`}
-          aria-label={company}
-        >
-          {company.charAt(0)}
-        </span>
-      );
+      return <SourceMark company={company} className={className} />;
   }
+}
+
+function SourceMark({ company, className }: { company: Company; className: string }) {
+  const avatar = AVATAR[company];
+  const [failed, setFailed] = useState(false);
+
+  if (avatar && !failed) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={avatar.url}
+        alt={company}
+        loading="lazy"
+        onError={() => setFailed(true)}
+        className={`${className} shrink-0 bg-white/5 object-cover ${
+          avatar.round ? "rounded-full" : "rounded-[3px]"
+        }`}
+      />
+    );
+  }
+
+  return (
+    <span
+      className={`inline-flex shrink-0 items-center justify-center rounded-[3px] border border-current text-[8px] font-semibold leading-none text-muted ${className}`}
+      aria-label={company}
+    >
+      {company.charAt(0)}
+    </span>
+  );
 }
