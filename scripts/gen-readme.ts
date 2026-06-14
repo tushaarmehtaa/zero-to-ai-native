@@ -41,7 +41,7 @@ const SOURCE_URL: Partial<Record<Company, string>> = {
   NBER: "https://www.nber.org",
 };
 
-// x/twitter handles (only the ones I'm confident about — for the credits/tag section)
+// x/twitter handles (only the ones I'm confident about, for the credits/tag section)
 const X: Partial<Record<Company, string>> = {
   Anthropic: "AnthropicAI",
   OpenAI: "OpenAI",
@@ -99,7 +99,7 @@ for (const t of TOPICS) {
   if (!items.length) continue;
   list += `\n### ${TOPIC_EMOJI[t] ?? ""} ${t}\n\n`;
   for (const g of items) {
-    list += `- **[${g.title}](${g.url})** — ${src(g.company)} · ${FMT[g.format]} · ${g.year}\n`;
+    list += `- **[${g.title}](${g.url})** · ${src(g.company)} · ${FMT[g.format]} · ${g.year}\n`;
   }
 }
 
@@ -127,7 +127,7 @@ const readme = `<div align="center">
 
 # zero to ai-native
 
-**the best papers, guides, blogs and lectures on ai — straight from the people building it.**
+**the best papers, guides, blogs and lectures on ai, straight from the people building it.**
 
 ![GitHub stars](https://img.shields.io/github/stars/${REPO}?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/${REPO}?style=social)
@@ -138,7 +138,7 @@ const readme = `<div align="center">
 
 ---
 
-the best explanations of ai aren't in courses or viral threads. they're written by the people **building** it — and then scattered across a hundred cdns, arxiv links and personal blogs you'd never stumble on.
+the best explanations of ai aren't in courses or viral threads. they're written by the people **building** it, then scattered across a hundred cdns, arxiv links and personal blogs you'd never stumble on.
 
 this is every one worth reading, in one place. **${reads} hand-picked reads** from **${sources} sources**. no listicles, no reuploads, no seo slop. just the primary sources, ordered the way you'd actually learn them.
 
@@ -148,11 +148,11 @@ read your way down this page and you go from zero to ai-native.
 
 brand new? these five take you from "what is a neural net" to "i get how this works", in order:
 
-1. **[Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)** — 3Blue1Brown · the visual intuition, zero math required
-2. **[Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLPXYLzZ3XzIbi4lL43O6fIU_ojuZwBO6vi)** — Karpathy · build one from scratch in plain python
-3. **[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)** — Jay Alammar · how attention actually works
-4. **[Prompt Engineering](https://www.kaggle.com/whitepaper-prompt-engineering)** — Google · the 69-page whitepaper that still holds up
-5. **[Building Effective AI Agents](https://www.anthropic.com/engineering/building-effective-agents)** — Anthropic · once you're ready to build
+1. **[Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)** · 3Blue1Brown · the visual intuition, zero math required
+2. **[Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLPXYLzZ3XzIbi4lL43O6fIU_ojuZwBO6vi)** · Karpathy · build one from scratch in plain python
+3. **[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)** · Jay Alammar · how attention actually works
+4. **[Prompt Engineering](https://www.kaggle.com/whitepaper-prompt-engineering)** · Google · the 69-page whitepaper that still holds up
+5. **[Building Effective AI Agents](https://www.anthropic.com/engineering/building-effective-agents)** · Anthropic · once you're ready to build
 
 then pick a topic below and go deep.
 
@@ -160,13 +160,13 @@ then pick a topic below and go deep.
 ${list}
 ## 🙏 sources &amp; credits
 
-every link goes to a primary source. these are the people and labs who did the work — go follow them, they earned it.
+every link goes to a primary source. these are the people and labs who did the work. go follow them, they earned it.
 
-**the labs** — ${creditList(LABS)}
+**the labs** · ${creditList(LABS)}
 
-**the people** — ${creditList(PEOPLE)}
+**the people** · ${creditList(PEOPLE)}
 
-**the schools** — ${creditList(SCHOOLS)}
+**the schools** · ${creditList(SCHOOLS)}
 
 ## ✍️ contributing
 
@@ -177,7 +177,7 @@ found a banger that's missing? the whole catalog is one typed file: [\`lib/guide
   title: "The Title",
   company: "Anthropic",        // a source in lib/taxonomy.ts
   topic: "Agents",
-  url: "https://...",          // primary source only — no reuploads
+  url: "https://...",          // primary source only, no reuploads
   format: "PDF",               // PDF | Web | Blog | Course | Video
   year: 2025,
   level: "build",              // intro | build | deep
@@ -202,7 +202,7 @@ next.js · geist · tailwind · motion. static, no backend.
 
 <div align="center">
 
-built by [**@tushaarmehtaa**](https://x.com/tushaarmehtaa) — i build with ai and write about it.
+built by [**@tushaarmehtaa**](https://x.com/tushaarmehtaa). i build with ai and write about it.
 
 **if this saved you a few hours of googling, [star it](https://github.com/${REPO}) ⭐ so the next person finds it.**
 
@@ -210,4 +210,4 @@ built by [**@tushaarmehtaa**](https://x.com/tushaarmehtaa) — i build with ai a
 `;
 
 writeFileSync("README.md", readme);
-console.log(`wrote README.md — ${reads} reads, ${sources} sources`);
+console.log(`wrote README.md: ${reads} reads, ${sources} sources`);

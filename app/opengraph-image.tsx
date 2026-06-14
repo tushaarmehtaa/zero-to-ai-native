@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { GUIDES } from "@/lib/guides";
 
-export const alt = "zero to ai-native — the best papers, guides, blogs and lectures on ai";
+export const alt = "zero to ai-native, the best papers, guides, blogs and lectures on ai";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
