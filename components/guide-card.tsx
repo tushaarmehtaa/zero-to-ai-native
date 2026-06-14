@@ -1,51 +1,37 @@
 "use client";
 
 import { motion } from "motion/react";
+import { ArrowUpRight } from "lucide-react";
 import type { Guide } from "@/lib/guides";
-import { COMPANY_ACCENT } from "@/lib/taxonomy";
-import { CompanyMark } from "./company-mark";
+import { LabLogo } from "./lab-logo";
+import { FormatIcon } from "./format-icon";
 
-export function GuideCard({ guide }: { guide: Guide }) {
-  const accent = COMPANY_ACCENT[guide.company];
+export function GuideCard({ guide, compact = false }: { guide: Guide; compact?: boolean }) {
   return (
     <motion.a
-      layout
-      initial={{ opacity: 0, y: 12 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -8 }}
-      transition={{ duration: 0.25, ease: "easeOut" }}
-      whileHover={{ y: -3 }}
+      variants={{ hidden: { opacity: 0, y: 10 }, show: { opacity: 1, y: 0 } }}
+      whileHover={{ y: -2 }}
       href={guide.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex flex-col gap-3 rounded-xl border border-border bg-card p-5 transition-colors hover:border-white/20"
-      style={{ ["--accent" as string]: accent }}
+      className="group flex flex-col gap-2 rounded-lg border border-border p-4 transition-colors hover:border-white/20 hover:bg-white/[0.02]"
     >
-      <div className="flex items-center justify-between">
-        <CompanyMark company={guide.company} />
-        <span className="font-mono text-[10px] uppercase tracking-wider text-muted/70">
-          {guide.format}
-          {guide.pages ? ` · ${guide.pages}pp` : ""}
+      <div className="flex items-center justify-between gap-2 text-faint">
+        <span
+          className="flex items-center gap-2"
+          title={`${guide.company} · ${guide.format.toLowerCase()}${guide.pages ? ` · ${guide.pages}pp` : ""}`}
+        >
+          <LabLogo company={guide.company} className="h-3.5 w-3.5" />
+          <FormatIcon format={guide.format} className="h-3.5 w-3.5" />
         </span>
+        <ArrowUpRight className="h-3.5 w-3.5 shrink-0 opacity-0 transition-opacity group-hover:opacity-100 group-hover:text-orange" />
       </div>
-
-      <h3 className="text-base font-medium leading-snug text-foreground">
+      <h3 className="text-[14px] font-medium leading-snug underline decoration-transparent decoration-1 underline-offset-[3px] transition-colors group-hover:decoration-orange">
         {guide.title}
       </h3>
-
-      <p className="text-sm leading-relaxed text-muted">{guide.description}</p>
-
-      <div className="mt-auto flex items-center justify-between pt-2">
-        <span
-          className="rounded-full px-2.5 py-1 text-[11px] font-medium"
-          style={{ background: `${accent}1a`, color: accent }}
-        >
-          {guide.topic}
-        </span>
-        <span className="text-xs text-muted transition-colors group-hover:text-foreground">
-          open {guide.format === "PDF" ? "PDF" : ""} →
-        </span>
-      </div>
+      {!compact && (
+        <p className="line-clamp-3 text-[13px] leading-relaxed text-muted">{guide.description}</p>
+      )}
     </motion.a>
   );
 }

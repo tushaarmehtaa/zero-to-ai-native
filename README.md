@@ -1,36 +1,66 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# zero to ai-native
 
-## Getting Started
+the best papers, guides, blogs and lectures on ai. straight from the people building it, grouped by level so you always know what to read next.
 
-First, run the development server:
+**[live →](https://zero-to-ai-native.vercel.app)** · built by [@tushaarmehtaa](https://x.com/tushaarmehtaa)
+
+> the best explanations of ai come from the people building it. they're scattered across a hundred cdns and personal blogs. this is every one worth reading, in one place, ordered the way you'd actually learn it.
+
+---
+
+## what's in here
+
+94 hand-picked reads across 33 sources. every link goes straight to the source, never a reupload.
+
+- **the labs** — anthropic, openai, google, meta, mistral, deepseek, qwen, moonshot, zhipu, minimax, tencent, 01.ai, bytedance, cohere, nvidia, aws
+- **the papers** — attention is all you need, gpt-3, instructgpt, chinchilla, llama, lora, rag, constitutional ai, deepseek-r1, and more
+- **the people** — lilian weng, karpathy, simon willison, chip huyen, hamel husain, eugene yan, jay alammar, benedict evans
+- **the courses** — stanford cs229 / cs224n / cs336 / cs25 / cs153, mit 6.s191, mse435, 3blue1brown
+
+## how it's organized
+
+one dataset, four views, four ways to group it:
+
+- **views** — list, table, board (kanban), cards
+- **group by** — topic, level, source, format
+
+default is **board by level**, so you can read your way from `intro → build → deep`.
+
+## run it locally
 
 ```bash
+git clone https://github.com/tushaarmehtaa/zero-to-ai-native
+cd zero-to-ai-native
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+open [localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## add a read
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+the whole catalog is a single typed file: [`lib/guides.ts`](lib/guides.ts). add an entry, open a PR.
 
-## Learn More
+```ts
+{
+  title: "The Title",
+  company: "Anthropic",        // a source in lib/taxonomy.ts
+  topic: "Agents",
+  url: "https://...",          // first-party only
+  format: "PDF",               // PDF | Web | Blog | Course | Video
+  year: 2025,
+  level: "build",              // intro | build | deep
+  audience: "builder",
+  description: "one plain line on why it's worth reading.",
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+rules: primary sources only, no reuploads, no affiliate links. found a banger that's missing? [open an issue](https://github.com/tushaarmehtaa/zero-to-ai-native/issues) or ping [@tushaarmehtaa](https://x.com/tushaarmehtaa).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+next.js · geist · tailwind · motion. static, no backend.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+if this saved you a few hours of googling, **star it** so the next person finds it.

@@ -1,19 +1,22 @@
 @import "tailwindcss";
 
+/* dark-first, single orange accent. matches the house system. */
 :root {
-  --background: #09090b;
-  --foreground: #ededed;
-  --muted: #a1a1aa;
-  --border: #ffffff14;
-  --card: #131316;
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --muted: #a3a3a3;
+  --faint: #6b6b6b;
+  --border: #262626;
+  --orange: #ff5e33;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
+  --color-faint: var(--faint);
   --color-border: var(--border);
-  --color-card: var(--card);
+  --color-orange: var(--orange);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -26,14 +29,51 @@ body {
 }
 
 ::selection {
-  background: #ffffff20;
+  background: color-mix(in srgb, var(--orange) 30%, transparent);
 }
 
-/* faint grid texture behind the hero */
-.hero-grid {
-  background-image:
-    linear-gradient(to right, #ffffff08 1px, transparent 1px),
-    linear-gradient(to bottom, #ffffff08 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 30%, transparent 75%);
+/* glitch title: chromatic split + jitter while settling */
+.glitch {
+  position: relative;
+  display: inline-block;
+  white-space: pre;
+}
+.glitch.is-glitching {
+  animation: glitch-jitter 0.16s steps(2) infinite;
+  text-shadow: 0.04em 0 var(--orange), -0.04em 0 #33d6ff;
+}
+@keyframes glitch-jitter {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-1px, 1px); }
+  50% { transform: translate(1px, -1px); }
+  75% { transform: translate(-1px, 0); }
+  100% { transform: translate(0, 0); }
+}
+.glitch-caret {
+  display: inline-block;
+  width: 0.5ch;
+  margin-left: 0.05em;
+  background: var(--orange);
+  animation: caret-blink 0.9s steps(1) infinite;
+}
+@keyframes caret-blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .glitch.is-glitching { animation: none; text-shadow: none; }
+  .glitch-caret { animation: none; opacity: 0; }
+}
+
+/* links: underline in orange, text goes orange on hover */
+.link {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--orange) 45%, transparent);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.18s ease, color 0.18s ease;
+}
+.link:hover {
+  color: var(--foreground);
+  text-decoration-color: var(--orange);
 }
