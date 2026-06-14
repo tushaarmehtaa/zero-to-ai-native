@@ -13,9 +13,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://zero-to-ai-native.vercel.app"),
   title: "zero to ai-native",
   description:
-    "the guides, papers, blogs and courses that take you from zero to ai-native, in one place.",
+    "the best papers, guides, blogs and lectures on ai. straight from the people building it, grouped by level so you always know what to read next.",
+  openGraph: {
+    title: "zero to ai-native",
+    description:
+      "the best papers, guides, blogs and lectures on ai. straight from the people building it.",
+    url: "https://zero-to-ai-native.vercel.app",
+    siteName: "zero to ai-native",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "zero to ai-native",
+    description:
+      "the best papers, guides, blogs and lectures on ai. straight from the people building it.",
+    creator: "@tushaarmehtaa",
+  },
 };
 
 export default function RootLayout({
