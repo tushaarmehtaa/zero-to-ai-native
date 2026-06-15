@@ -198,6 +198,12 @@ npm install && npm run dev
 
 next.js · geist · tailwind · motion. static, no backend.
 
+## ⭐ star history
+
+<a href="https://star-history.com/#${REPO}&Date">
+  <img src="https://api.star-history.com/svg?repos=${REPO}&type=Date" alt="Star History Chart" width="600">
+</a>
+
 ---
 
 <div align="center">

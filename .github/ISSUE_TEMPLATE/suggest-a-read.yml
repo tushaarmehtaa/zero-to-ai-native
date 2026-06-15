@@ -1,0 +1,53 @@
+name: 📚 Suggest a read
+description: Add a great AI guide, paper, blog or course that's missing.
+title: "[suggest]: "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        thanks for adding to the list. one rule: **primary sources only**. a link to the lab / author / arxiv, never a reupload, summary, or affiliate link.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      placeholder: The Complete Guide to Building Skills for Claude
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Link (primary source)
+      placeholder: https://resources.anthropic.com/...
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: the lab or person who published it
+      placeholder: Anthropic
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options: [PDF, Web, Blog, Course, Video]
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      description: where it sits on the path
+      options: [intro, build, deep]
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it's worth reading
+      description: one plain sentence. no hype.
+    validations:
+      required: true

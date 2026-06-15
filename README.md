@@ -196,6 +196,12 @@ npm install && npm run dev
 
 next.js · geist · tailwind · motion. static, no backend.
 
+## ⭐ star history
+
+<a href="https://star-history.com/#tushaarmehtaa/zero-to-ai-native&Date">
+  <img src="https://api.star-history.com/svg?repos=tushaarmehtaa/zero-to-ai-native&type=Date" alt="Star History Chart" width="600">
+</a>
+
 ---
 
 <div align="center">
