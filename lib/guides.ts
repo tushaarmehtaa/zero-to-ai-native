@@ -1315,7 +1315,7 @@ export const GUIDES: Guide[] = [
 
   // ── Chip Huyen (new posts) ─────────────────────────────────
   {
-    title: "Agents",
+    title: "Agents (Chip Huyen)",
     company: "Chip Huyen",
     topic: "Agents",
     url: "https://huyenchip.com/2025/01/07/agents.html",
