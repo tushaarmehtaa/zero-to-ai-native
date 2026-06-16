@@ -352,7 +352,7 @@ export const GUIDES: Guide[] = [
     title: "Solving Domain-Specific Problems & MLOps for Gen AI",
     company: "Google",
     topic: "MLOps & Production",
-    url: "https://www.kaggle.com/learn-guide/5-day-genai",
+    url: "https://www.kaggle.com/learn-guide/5-day-genai#day4",
     format: "Course",
     year: 2025,
     level: "deep",

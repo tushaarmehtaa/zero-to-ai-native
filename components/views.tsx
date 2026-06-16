@@ -41,7 +41,7 @@ export function ListView({ groups, groupKey }: { groups: Group[]; groupKey?: Gro
           <SectionLabel bucket={group.key} groupKey={groupKey} />
           <div className="divide-y divide-border">
             {group.items.map((g) => (
-              <GuideRow key={g.url} guide={g} />
+              <GuideRow key={g.url + g.title} guide={g} />
             ))}
           </div>
         </section>
@@ -59,7 +59,7 @@ export function CardsView({ groups, groupKey }: { groups: Group[]; groupKey?: Gr
           <SectionLabel bucket={group.key} groupKey={groupKey} />
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {group.items.map((g) => (
-              <GuideCard key={g.url} guide={g} />
+              <GuideCard key={g.url + g.title} guide={g} />
             ))}
           </div>
         </section>
@@ -98,7 +98,7 @@ export function BoardView({ groups, groupKey }: { groups: Group[]; groupKey?: Gr
                 className="flex flex-col gap-3"
               >
                 {group.items.map((g) => (
-                  <GuideCard key={g.url} guide={g} compact />
+                  <GuideCard key={g.url + g.title} guide={g} compact />
                 ))}
               </motion.div>
             </div>
@@ -135,7 +135,7 @@ export function TableView({ guides }: { guides: Guide[] }) {
     if (sort === k) setDir((d) => (d === 1 ? -1 : 1));
     else {
       setSort(k);
-      setDir(1);
+      setDir(k === "year" ? -1 : 1);
     }
   };
 
@@ -166,7 +166,7 @@ export function TableView({ guides }: { guides: Guide[] }) {
         </thead>
         <tbody>
           {sorted.map((g) => (
-            <tr key={g.url} className="group border-b border-border/60">
+            <tr key={g.url + g.title} className="group border-b border-border/60">
               <td className="py-2.5 pr-4">
                 <a
                   href={g.url}
