@@ -90,6 +90,78 @@ export const GUIDES: Guide[] = [
       "the original essay that named the patterns. workflows vs agents, and when you actually need either.",
   },
   {
+    title: "Project Vend: Phase Two",
+    company: "Anthropic",
+    topic: "Agents",
+    url: "https://www.anthropic.com/research/project-vend-2",
+    format: "Web",
+    year: 2025,
+    level: "build",
+    audience: "builder",
+    description:
+      "claude runs a physical vending machine for three weeks unsupervised. orders a ps5, live fish, gives everything away for free. the most readable agent failure study published.",
+  },
+  {
+    title: "Project Deal",
+    company: "Anthropic",
+    topic: "Agents",
+    url: "https://www.anthropic.com/features/project-deal",
+    format: "Web",
+    year: 2026,
+    level: "build",
+    audience: "builder",
+    description:
+      "69 anthropic employees, claude agents buying and selling on their behalf. 186 deals closed, $4k transacted. stronger model won every negotiation without exception.",
+  },
+  {
+    title: "How AI Is Transforming Work at Anthropic",
+    company: "Anthropic",
+    topic: "Research & Economics",
+    url: "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
+    format: "Web",
+    year: 2025,
+    level: "intro",
+    audience: "founder",
+    description:
+      "132 engineers surveyed, 53 in-depth interviews. how claude is actually changing day-to-day work inside anthropic. internal data, not speculation.",
+  },
+  {
+    title: "When AI Builds Itself",
+    company: "Anthropic",
+    topic: "Research & Economics",
+    url: "https://www.anthropic.com/institute/recursive-self-improvement",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "80% of anthropic's merged code is now written by claude. the paper tracking progress toward recursive self-improvement and what it means.",
+  },
+  {
+    title: "Exploring Model Welfare",
+    company: "Anthropic",
+    topic: "Research & Economics",
+    url: "https://www.anthropic.com/research/exploring-model-welfare",
+    format: "Web",
+    year: 2025,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "anthropic's research program on ai consciousness and moral status. nobody else is publishing on this with this level of seriousness.",
+  },
+  {
+    title: "Writing Effective Tools for Agents",
+    company: "Anthropic",
+    topic: "Skills & Tooling",
+    url: "https://www.anthropic.com/engineering/writing-tools-for-agents",
+    format: "Web",
+    year: 2025,
+    level: "build",
+    audience: "builder",
+    description:
+      "how to write tools that agents actually use well. naming, documentation, granularity, evals. the companion to context engineering.",
+  },
+  {
     title: "Anthropic Economic Index: Economic Primitives",
     company: "Anthropic",
     topic: "Research & Economics",
@@ -180,6 +252,42 @@ export const GUIDES: Guide[] = [
     level: "build",
     audience: "builder",
     description: "reasoning effort, agentic eagerness, scope control. how to prompt the gpt-5 family without fighting it.",
+  },
+  {
+    title: "Ten Years",
+    company: "OpenAI",
+    topic: "Research & Economics",
+    url: "https://openai.com/index/ten-years/",
+    format: "Web",
+    year: 2025,
+    level: "intro",
+    audience: "founder",
+    description:
+      "openai's decade retrospective. from early research breakthroughs to gpt-4 and beyond. what they got right, what surprised them.",
+  },
+  {
+    title: "Introducing Deep Research",
+    company: "OpenAI",
+    topic: "Agents",
+    url: "https://openai.com/index/introducing-deep-research/",
+    format: "Web",
+    year: 2025,
+    level: "intro",
+    audience: "builder",
+    description:
+      "the launch of deep research in chatgpt. multi-step web research agent that synthesizes hundreds of sources into a full report.",
+  },
+  {
+    title: "Model Disproves the Erdős Unit Distance Conjecture",
+    company: "OpenAI",
+    topic: "Papers",
+    url: "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "an openai reasoning model independently disproved an 80-year-old conjecture in discrete geometry. fully automated, proof verified by external mathematicians.",
   },
 
   // ── Google ─────────────────────────────────────────────────
@@ -427,6 +535,30 @@ export const GUIDES: Guide[] = [
     level: "deep",
     audience: "researcher",
     description: "deepmind's frontier safety evaluation for gemini 3 pro. how a frontier lab tests its own model.",
+  },
+  {
+    title: "Gemini Achieves IMO Gold Medal",
+    company: "Google",
+    topic: "Papers",
+    url: "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/",
+    format: "Web",
+    year: 2025,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "gemini deep think scores 35/42 at imo 2025, the first ai to officially reach gold-medal standard at the world's most prestigious math competition.",
+  },
+  {
+    title: "AlphaGeometry2",
+    company: "Google",
+    topic: "Papers",
+    url: "https://arxiv.org/abs/2502.03544",
+    format: "PDF",
+    year: 2025,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "the system behind the imo breakthrough. neuro-symbolic geometry solver built on gemini, surpassing the average human gold medalist.",
   },
 
   // ── Meta ───────────────────────────────────────────────────
@@ -1098,5 +1230,100 @@ export const GUIDES: Guide[] = [
     level: "build",
     audience: "builder",
     description: "near-daily notes from the person tracking this most closely. the running feed of what's actually new.",
+  },
+
+  // ── Dario Amodei ───────────────────────────────────────────
+  {
+    title: "Machines of Loving Grace",
+    company: "Dario Amodei",
+    topic: "Research & Economics",
+    url: "https://darioamodei.com/essay/machines-of-loving-grace",
+    format: "Blog",
+    year: 2024,
+    level: "intro",
+    audience: "founder",
+    description:
+      "14,000 words on what the world looks like if we get ai right. biology, mental health, economic development, governance. the optimistic case, written seriously.",
+  },
+  {
+    title: "The Adolescence of Technology",
+    company: "Dario Amodei",
+    topic: "Research & Economics",
+    url: "https://darioamodei.com/essay/the-adolescence-of-technology",
+    format: "Blog",
+    year: 2026,
+    level: "intro",
+    audience: "founder",
+    description:
+      "the companion to machines of loving grace. 15,000 words on the risks: national security, concentrated power, economic disruption. 46 footnotes.",
+  },
+  {
+    title: "Policy on the AI Exponential",
+    company: "Dario Amodei",
+    topic: "Research & Economics",
+    url: "https://darioamodei.com/post/policy-on-the-ai-exponential",
+    format: "Blog",
+    year: 2025,
+    level: "intro",
+    audience: "founder",
+    description:
+      "his argument for moving from ai transparency legislation to binding regulation. the ceo of the leading safety lab making the case for being regulated.",
+  },
+
+  // ── Sam Altman ─────────────────────────────────────────────
+  {
+    title: "The Intelligence Age",
+    company: "Sam Altman",
+    topic: "Research & Economics",
+    url: "https://blog.samaltman.com/the-intelligence-age",
+    format: "Blog",
+    year: 2024,
+    level: "intro",
+    audience: "founder",
+    description:
+      "superintelligence in a few thousand days. altman's short, bold statement of where openai believes this ends up.",
+  },
+
+  // ── Leopold Aschenbrenner ───────────────────────────────────
+  {
+    title: "Situational Awareness: The Decade Ahead",
+    company: "Leopold Aschenbrenner",
+    topic: "Research & Economics",
+    url: "https://situational-awareness.ai",
+    format: "PDF",
+    year: 2024,
+    pages: 165,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "165 pages from a former openai researcher on agi timelines, the us-china race, and what happens to the world between now and 2030. the most-cited long-form ai essay of 2024.",
+  },
+
+  // ── Lilian Weng (new posts) ────────────────────────────────
+  {
+    title: "Why We Think",
+    company: "Lilian Weng",
+    topic: "Foundations",
+    url: "https://lilianweng.github.io/posts/2025-05-01-thinking/",
+    format: "Blog",
+    year: 2025,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "a deep survey of test-time compute: chain-of-thought, smart decoding, latent thoughts. why giving models more time to think works and how.",
+  },
+
+  // ── Chip Huyen (new posts) ─────────────────────────────────
+  {
+    title: "Agents",
+    company: "Chip Huyen",
+    topic: "Agents",
+    url: "https://huyenchip.com/2025/01/07/agents.html",
+    format: "Blog",
+    year: 2025,
+    level: "build",
+    audience: "builder",
+    description:
+      "8,000 words on agent architecture: tools, planning, memory, and how agent capability is determined by what you give it. adapted from ai engineering.",
   },
 ];

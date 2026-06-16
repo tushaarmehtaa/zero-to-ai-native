@@ -20,6 +20,9 @@ export const COMPANIES = [
   "NVIDIA",
   "AWS",
   // people & schools
+  "Dario Amodei",
+  "Sam Altman",
+  "Leopold Aschenbrenner",
   "Lilian Weng",
   "Andrej Karpathy",
   "Chip Huyen",
