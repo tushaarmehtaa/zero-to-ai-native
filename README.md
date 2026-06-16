@@ -17,7 +17,7 @@
 
 the best explanations of ai aren't in courses or viral threads. they're written by the people **building** it, then scattered across a hundred cdns, arxiv links and personal blogs you'd never stumble on.
 
-this is every one worth reading, in one place. **112 hand-picked reads** from **36 sources**. no listicles, no reuploads, no seo slop. just the primary sources, ordered the way you'd actually learn them.
+this is every one worth reading, in one place. **106 hand-picked reads** from **30 sources**. no listicles, no reuploads, no seo slop. just the primary sources, ordered the way you'd actually learn them.
 
 read your way down this page and you go from zero to ai-native.
 
@@ -42,14 +42,13 @@ then pick a topic below and go deep.
 - **[Project Vend: Phase Two](https://www.anthropic.com/research/project-vend-2)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Project Deal](https://www.anthropic.com/features/project-deal)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
 - **[A Practical Guide to Building Agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
-- **[Introducing Deep Research](https://openai.com/index/introducing-deep-research/)** · [OpenAI](https://openai.com) · 🌐 web · 2025
 - **[Agents](https://www.kaggle.com/whitepaper-agents)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[Agents Companion](https://www.kaggle.com/whitepaper-agent-companion)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners)** · [Microsoft](https://www.microsoft.com/ai) · 🎓 course · 2025
 - **[Agentic AI on the Rise](https://pages.awscloud.com/rs/112-TZM-766/images/AWS_Marketplace_ebook_Agentic_AI.pdf)** · [AWS](https://aws.amazon.com) · 📄 pdf · 2025
 - **[AI Agents Course](https://huggingface.co/learn/agents-course)** · [Hugging Face](https://huggingface.co) · 🎓 course · 2025
 - **[LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)** · [Lilian Weng](https://lilianweng.github.io) · ✍️ blog · 2023
-- **[Agents](https://huyenchip.com/2025/01/07/agents.html)** · [Chip Huyen](https://huyenchip.com) · ✍️ blog · 2025
+- **[Agents (Chip Huyen)](https://huyenchip.com/2025/01/07/agents.html)** · [Chip Huyen](https://huyenchip.com) · ✍️ blog · 2025
 
 ### 💬 Prompt Engineering
 
@@ -83,25 +82,28 @@ then pick a topic below and go deep.
 - **[Things We Learned About LLMs in 2024](https://simonwillison.net/2024/Dec/31/llms-in-2024/)** · [Simon Willison](https://simonwillison.net) · ✍️ blog · 2024
 - **[Neural Networks: Zero to Hero](https://www.youtube.com/playlist?list=PLPXYLzZ3XzIbi4lL43O6fIU_ojuZwBO6vi)** · [Andrej Karpathy](https://karpathy.ai) · 🎥 video · 2023
 - **[Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI)** · [Andrej Karpathy](https://karpathy.ai) · 🎥 video · 2025
+- **[Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35)** · [Andrej Karpathy](https://karpathy.ai) · ✍️ blog · 2017
 - **[CS229: Machine Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU)** · [Stanford](https://online.stanford.edu) · 🎥 video · 2022
 - **[CS224N: NLP with Deep Learning](https://www.youtube.com/playlist?list=PLoROMvodv4rOaMFbaqxPDoLWjDaRAdP9D)** · [Stanford](https://online.stanford.edu) · 🎥 video · 2024
 - **[CS336: Language Modeling from Scratch](https://www.youtube.com/playlist?list=PLoROMvodv4rOY23Y0BoGoBGgQ1zmU_MT_)** · [Stanford](https://online.stanford.edu) · 🎥 video · 2025
 - **[CS25: Transformers United](https://www.youtube.com/playlist?list=PLoROMvodv4rNiJRchCzutFw5ItR_Z27CM)** · [Stanford](https://online.stanford.edu) · 🎥 video · 2025
 - **[6.S191: Introduction to Deep Learning](https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI)** · [MIT](https://www.mit.edu) · 🎥 video · 2025
+- **[CS153: Frontier Systems](https://www.youtube.com/playlist?list=PLoROMvodv4rN447WKQ5oz_YdYbS74M5IA)** · [Stanford](https://online.stanford.edu) · 🎥 video · 2026
 - **[The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)** · [Jay Alammar](https://jalammar.github.io) · ✍️ blog · 2018
 - **[Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)** · [3Blue1Brown](https://www.3blue1brown.com) · 🎥 video · 2024
-- **[Ahead of AI](https://magazine.sebastianraschka.com/)** · [Sebastian Raschka](https://sebastianraschka.com) · ✍️ blog · 2025
-- **[Simon Willison on LLMs (weblog)](https://simonwillison.net/tags/llms/)** · [Simon Willison](https://simonwillison.net) · ✍️ blog · 2025
+- **[State of LLMs 2025](https://magazine.sebastianraschka.com/p/state-of-llms-2025)** · [Sebastian Raschka](https://sebastianraschka.com) · ✍️ blog · 2025
+- **[The Year in LLMs 2025](https://simonwillison.net/2025/Dec/31/the-year-in-llms/)** · [Simon Willison](https://simonwillison.net) · ✍️ blog · 2025
 - **[Why We Think](https://lilianweng.github.io/posts/2025-05-01-thinking/)** · [Lilian Weng](https://lilianweng.github.io) · ✍️ blog · 2025
 
 ### 📜 Papers
 
 - **[Model Disproves the Erdős Unit Distance Conjecture](https://openai.com/index/model-disproves-discrete-geometry-conjecture/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
+- **[Claude's Constitution](https://www-cdn.anthropic.com/d0636f72a9493d279ed36b33987da3430bcb5911/claudes-constitution_webPDF_26-02.02a.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2026
+- **[Alignment Faking in Large Language Models](https://arxiv.org/pdf/2412.14093)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2024
 - **[Gemini Achieves IMO Gold Medal](https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/)** · [Google](https://deepmind.google) · 🌐 web · 2025
 - **[AlphaGeometry2](https://arxiv.org/abs/2502.03544)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[Attention Is All You Need](https://arxiv.org/pdf/1706.03762)** · [Google](https://deepmind.google) · 📄 pdf · 2017
 - **[Language Models are Few-Shot Learners (GPT-3)](https://arxiv.org/pdf/2005.14165)** · [OpenAI](https://openai.com) · 📄 pdf · 2020
-- **[BERT: Pre-training of Deep Bidirectional Transformers](https://arxiv.org/pdf/1810.04805)** · [Google](https://deepmind.google) · 📄 pdf · 2018
 - **[Training Language Models to Follow Instructions (InstructGPT)](https://arxiv.org/pdf/2203.02155)** · [OpenAI](https://openai.com) · 📄 pdf · 2022
 - **[Chain-of-Thought Prompting Elicits Reasoning](https://arxiv.org/pdf/2201.11903)** · [Google](https://deepmind.google) · 📄 pdf · 2022
 - **[Training Compute-Optimal LLMs (Chinchilla)](https://arxiv.org/pdf/2203.15556)** · [Google](https://deepmind.google) · 📄 pdf · 2022
@@ -113,14 +115,8 @@ then pick a topic below and go deep.
 - **[Mistral 7B](https://arxiv.org/pdf/2310.06825)** · [Mistral](https://mistral.ai) · 📄 pdf · 2023
 - **[DeepSeek-R1: Incentivizing Reasoning via RL](https://arxiv.org/pdf/2501.12948)** · [DeepSeek](https://www.deepseek.com) · 📄 pdf · 2025
 - **[DeepSeek-V3 Technical Report](https://arxiv.org/pdf/2412.19437)** · [DeepSeek](https://www.deepseek.com) · 📄 pdf · 2024
-- **[YaRN: Efficient Context Window Extension](https://arxiv.org/pdf/2309.00071)** · Nous Research · 📄 pdf · 2023
+- **[YaRN: Efficient Context Window Extension](https://arxiv.org/pdf/2309.00071)** · [Nous Research](https://nousresearch.com) · 📄 pdf · 2023
 - **[Qwen2.5 Technical Report](https://arxiv.org/pdf/2412.15115)** · [Qwen](https://qwenlm.github.io) · 📄 pdf · 2024
-- **[Kimi K2: Open Agentic Intelligence](https://arxiv.org/pdf/2507.20534)** · [Moonshot AI](https://www.moonshot.ai) · 📄 pdf · 2025
-- **[GLM-4.5: Agentic, Reasoning and Coding Foundation Models](https://arxiv.org/pdf/2508.06471)** · [Zhipu AI](https://z.ai) · 📄 pdf · 2025
-- **[MiniMax-01: Scaling with Lightning Attention](https://arxiv.org/pdf/2501.08313)** · [MiniMax](https://www.minimax.io) · 📄 pdf · 2025
-- **[Hunyuan-Large](https://arxiv.org/pdf/2411.02265)** · [Tencent](https://hunyuan.tencent.com) · 📄 pdf · 2024
-- **[Yi: Open Foundation Models by 01.AI](https://arxiv.org/pdf/2403.04652)** · [01.AI](https://www.01.ai) · 📄 pdf · 2024
-- **[Seed1.5-Thinking: Reasoning Models via RL](https://arxiv.org/pdf/2504.13914)** · [ByteDance](https://seed.bytedance.com) · 📄 pdf · 2025
 
 ### 🏢 Enterprise & Adoption
 
@@ -130,7 +126,6 @@ then pick a topic below and go deep.
 - **[Generative AI in Practice](https://www.nvidia.com/en-us/data-center/generative-ai-in-practice/)** · [NVIDIA](https://www.nvidia.com) · 🌐 web · 2025
 - **[The Financial Services Guide to Building Autonomous AI Agents](https://resources.anthropic.com/financial-services-guide-aws-anthropic)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Llama Responsible Use Guide](https://github.com/meta-llama/llama/blob/main/Responsible-Use-Guide.pdf)** · [Meta](https://ai.meta.com) · 📄 pdf · 2024
-- **[CS153: Frontier Systems](https://www.youtube.com/playlist?list=PLoROMvodv4rN447WKQ5oz_YdYbS74M5IA)** · [Stanford](https://online.stanford.edu) · 🎥 video · 2026
 
 ### ⚙️ MLOps & Production
 
@@ -153,6 +148,7 @@ then pick a topic below and go deep.
 - **[The Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
 - **[Claude Code: Best Practices for Agentic Coding](https://www.anthropic.com/engineering/claude-code-best-practices)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Writing Effective Tools for Agents](https://www.anthropic.com/engineering/writing-tools-for-agents)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
+- **[MCP Introduction](https://modelcontextprotocol.io/introduction)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2024
 
 ### 📊 Research & Economics
 
@@ -162,25 +158,23 @@ then pick a topic below and go deep.
 - **[Anthropic Economic Index: Economic Primitives](https://www-cdn.anthropic.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
 - **[Anthropic Economic Index: Geographic & Enterprise Adoption](https://assets.anthropic.com/m/218c82b858610fac/original/Economic-Index.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
 - **[The State of Enterprise AI 2025](https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
-- **[Ten Years](https://openai.com/index/ten-years/)** · [OpenAI](https://openai.com) · 🌐 web · 2025
-- **[Work Trend Index 2023 Special Report](https://assets-c4akfrf5b4d3f4b7.z01.azurefd.net/assets/2023/11/Microsoft_Work_Trend_Index_Special_Report_2023_Full_Report.pdf)** · [Microsoft](https://www.microsoft.com/ai) · 📄 pdf · 2023
 - **[Gemini 3 Pro Frontier Safety Framework Report](https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_fsf_report.pdf)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[The Economics of Transformative AI](https://www.nber.org/books-and-chapters/economics-transformative-ai)** · [NBER](https://www.nber.org) · 🌐 web · 2025
 - **[MS&E435: Economics of the AI Supercycle](https://www.youtube.com/@MSE435EconomicsofAI)** · [Stanford](https://online.stanford.edu) · 🎥 video · 2026
-- **[AI Eats the World](https://www.ben-evans.com/presentations)** · [Benedict Evans](https://www.ben-evans.com) · 🌐 web · 2025
-- **[Machines of Loving Grace](https://darioamodei.com/essay/machines-of-loving-grace)** · Dario Amodei · ✍️ blog · 2024
-- **[The Adolescence of Technology](https://darioamodei.com/essay/the-adolescence-of-technology)** · Dario Amodei · ✍️ blog · 2026
-- **[Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential)** · Dario Amodei · ✍️ blog · 2025
-- **[The Intelligence Age](https://blog.samaltman.com/the-intelligence-age)** · Sam Altman · ✍️ blog · 2024
-- **[Situational Awareness: The Decade Ahead](https://situational-awareness.ai)** · Leopold Aschenbrenner · 📄 pdf · 2024
+- **[AI Eats the World](https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/68348f5da204754d5222cf67/1748275041033/AI+eats+the+world.pdf)** · [Benedict Evans](https://www.ben-evans.com) · 📄 pdf · 2025
+- **[Machines of Loving Grace](https://darioamodei.com/essay/machines-of-loving-grace)** · [Dario Amodei](https://darioamodei.com) · ✍️ blog · 2024
+- **[The Adolescence of Technology](https://darioamodei.com/essay/the-adolescence-of-technology)** · [Dario Amodei](https://darioamodei.com) · ✍️ blog · 2026
+- **[Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential)** · [Dario Amodei](https://darioamodei.com) · ✍️ blog · 2025
+- **[The Intelligence Age](https://blog.samaltman.com/the-intelligence-age)** · [Sam Altman](https://blog.samaltman.com) · ✍️ blog · 2024
+- **[Situational Awareness: The Decade Ahead](https://situational-awareness.ai)** · [Leopold Aschenbrenner](https://situational-awareness.ai) · 📄 pdf · 2024
 
 ## 🙏 sources &amp; credits
 
 every link goes to a primary source. these are the people and labs who did the work. go follow them, they earned it.
 
-**the labs** · [Anthropic](https://www.anthropic.com) ([@AnthropicAI](https://x.com/AnthropicAI)) · [OpenAI](https://openai.com) ([@OpenAI](https://x.com/OpenAI)) · [Google](https://deepmind.google) ([@GoogleDeepMind](https://x.com/GoogleDeepMind)) · [Meta](https://ai.meta.com) ([@AIatMeta](https://x.com/AIatMeta)) · [Microsoft](https://www.microsoft.com/ai) · [Mistral](https://mistral.ai) ([@MistralAI](https://x.com/MistralAI)) · [Cohere](https://cohere.com) ([@cohere](https://x.com/cohere)) · [Hugging Face](https://huggingface.co) ([@huggingface](https://x.com/huggingface)) · [Chroma](https://www.trychroma.com) ([@trychroma](https://x.com/trychroma)) · [DeepSeek](https://www.deepseek.com) ([@deepseek_ai](https://x.com/deepseek_ai)) · [Qwen](https://qwenlm.github.io) ([@Alibaba_Qwen](https://x.com/Alibaba_Qwen)) · [Moonshot AI](https://www.moonshot.ai) · [Zhipu AI](https://z.ai) · [MiniMax](https://www.minimax.io) · [Tencent](https://hunyuan.tencent.com) · [01.AI](https://www.01.ai) · [ByteDance](https://seed.bytedance.com) · [NVIDIA](https://www.nvidia.com) ([@nvidia](https://x.com/nvidia)) · [AWS](https://aws.amazon.com) ([@awscloud](https://x.com/awscloud))
+**the labs** · [Anthropic](https://www.anthropic.com) ([@AnthropicAI](https://x.com/AnthropicAI)) · [OpenAI](https://openai.com) ([@OpenAI](https://x.com/OpenAI)) · [Google](https://deepmind.google) ([@GoogleDeepMind](https://x.com/GoogleDeepMind)) · [Meta](https://ai.meta.com) ([@AIatMeta](https://x.com/AIatMeta)) · [Microsoft](https://www.microsoft.com/ai) · [Mistral](https://mistral.ai) ([@MistralAI](https://x.com/MistralAI)) · [Cohere](https://cohere.com) ([@cohere](https://x.com/cohere)) · [Hugging Face](https://huggingface.co) ([@huggingface](https://x.com/huggingface)) · [Chroma](https://www.trychroma.com) ([@trychroma](https://x.com/trychroma)) · [DeepSeek](https://www.deepseek.com) ([@deepseek_ai](https://x.com/deepseek_ai)) · [Qwen](https://qwenlm.github.io) ([@Alibaba_Qwen](https://x.com/Alibaba_Qwen)) · [Nous Research](https://nousresearch.com) · [NVIDIA](https://www.nvidia.com) ([@nvidia](https://x.com/nvidia)) · [AWS](https://aws.amazon.com) ([@awscloud](https://x.com/awscloud))
 
-**the people** · [Andrej Karpathy](https://karpathy.ai) ([@karpathy](https://x.com/karpathy)) · [Lilian Weng](https://lilianweng.github.io) ([@lilianweng](https://x.com/lilianweng)) · [Simon Willison](https://simonwillison.net) ([@simonw](https://x.com/simonw)) · [Chip Huyen](https://huyenchip.com) ([@chipro](https://x.com/chipro)) · [Hamel Husain](https://hamel.dev) ([@HamelHusain](https://x.com/HamelHusain)) · [Eugene Yan](https://eugeneyan.com) ([@eugeneyan](https://x.com/eugeneyan)) · [Jay Alammar](https://jalammar.github.io) ([@JayAlammar](https://x.com/JayAlammar)) · [Sebastian Raschka](https://sebastianraschka.com) ([@rasbt](https://x.com/rasbt)) · [Benedict Evans](https://www.ben-evans.com) ([@benedictevans](https://x.com/benedictevans)) · [3Blue1Brown](https://www.3blue1brown.com) ([@3blue1brown](https://x.com/3blue1brown))
+**the people** · [Dario Amodei](https://darioamodei.com) ([@DarioAmodei](https://x.com/DarioAmodei)) · [Sam Altman](https://blog.samaltman.com) ([@sama](https://x.com/sama)) · [Leopold Aschenbrenner](https://situational-awareness.ai) ([@leopoldasch](https://x.com/leopoldasch)) · [Andrej Karpathy](https://karpathy.ai) ([@karpathy](https://x.com/karpathy)) · [Lilian Weng](https://lilianweng.github.io) ([@lilianweng](https://x.com/lilianweng)) · [Simon Willison](https://simonwillison.net) ([@simonw](https://x.com/simonw)) · [Chip Huyen](https://huyenchip.com) ([@chipro](https://x.com/chipro)) · [Hamel Husain](https://hamel.dev) ([@HamelHusain](https://x.com/HamelHusain)) · [Eugene Yan](https://eugeneyan.com) ([@eugeneyan](https://x.com/eugeneyan)) · [Jay Alammar](https://jalammar.github.io) ([@JayAlammar](https://x.com/JayAlammar)) · [Sebastian Raschka](https://sebastianraschka.com) ([@rasbt](https://x.com/rasbt)) · [Benedict Evans](https://www.ben-evans.com) ([@benedictevans](https://x.com/benedictevans)) · [3Blue1Brown](https://www.3blue1brown.com) ([@3blue1brown](https://x.com/3blue1brown))
 
 **the schools** · [Stanford](https://online.stanford.edu) · [MIT](https://www.mit.edu) · [NBER](https://www.nber.org)
 

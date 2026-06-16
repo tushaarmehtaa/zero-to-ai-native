@@ -18,14 +18,12 @@ const SOURCE_URL: Partial<Record<Company, string>> = {
   Chroma: "https://www.trychroma.com",
   DeepSeek: "https://www.deepseek.com",
   Qwen: "https://qwenlm.github.io",
-  "Moonshot AI": "https://www.moonshot.ai",
-  "Zhipu AI": "https://z.ai",
-  MiniMax: "https://www.minimax.io",
-  Tencent: "https://hunyuan.tencent.com",
-  "01.AI": "https://www.01.ai",
-  ByteDance: "https://seed.bytedance.com",
+  "Nous Research": "https://nousresearch.com",
   NVIDIA: "https://www.nvidia.com",
   AWS: "https://aws.amazon.com",
+  "Dario Amodei": "https://darioamodei.com",
+  "Sam Altman": "https://blog.samaltman.com",
+  "Leopold Aschenbrenner": "https://situational-awareness.ai",
   "Lilian Weng": "https://lilianweng.github.io",
   "Andrej Karpathy": "https://karpathy.ai",
   "Chip Huyen": "https://huyenchip.com",
@@ -55,6 +53,9 @@ const X: Partial<Record<Company, string>> = {
   Qwen: "Alibaba_Qwen",
   NVIDIA: "nvidia",
   AWS: "awscloud",
+  "Dario Amodei": "DarioAmodei",
+  "Sam Altman": "sama",
+  "Leopold Aschenbrenner": "leopoldasch",
   "Lilian Weng": "lilianweng",
   "Andrej Karpathy": "karpathy",
   "Chip Huyen": "chipro",
@@ -106,10 +107,10 @@ for (const t of TOPICS) {
 // ── credits ─────────────────────────────────────────────────
 const LABS: Company[] = [
   "Anthropic", "OpenAI", "Google", "Meta", "Microsoft", "Mistral", "Cohere",
-  "Hugging Face", "Chroma", "DeepSeek", "Qwen", "Moonshot AI", "Zhipu AI",
-  "MiniMax", "Tencent", "01.AI", "ByteDance", "NVIDIA", "AWS",
+  "Hugging Face", "Chroma", "DeepSeek", "Qwen", "Nous Research", "NVIDIA", "AWS",
 ];
 const PEOPLE: Company[] = [
+  "Dario Amodei", "Sam Altman", "Leopold Aschenbrenner",
   "Andrej Karpathy", "Lilian Weng", "Simon Willison", "Chip Huyen", "Hamel Husain",
   "Eugene Yan", "Jay Alammar", "Sebastian Raschka", "Benedict Evans", "3Blue1Brown",
 ];
