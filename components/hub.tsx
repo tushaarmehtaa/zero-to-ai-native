@@ -19,7 +19,6 @@ import { GlitchTitle } from "./glitch-title";
 const GROUP_KEYS: GroupKey[] = ["topic", "level", "lab", "format"];
 const VIEW_KEYS: ViewKey[] = ["list", "table", "board", "cards"];
 
-const LAB_COUNT = new Set(GUIDES.map((g) => g.company)).size;
 
 const REPO_URL = "https://github.com/tushaarmehtaa/zero-to-ai-native";
 const X_URL = "https://x.com/tushaarmehtaa";
@@ -53,6 +52,9 @@ export function Hub() {
   );
 
   const groups = useMemo(() => groupGuides(matched, groupBy), [matched, groupBy]);
+
+  const matchedSourceCount = useMemo(() => new Set(matched.map((g) => g.company)).size, [matched]);
+  const isFiltered = matched.length < GUIDES.length;
 
   const showGroupControl = view !== "table";
 
@@ -93,7 +95,7 @@ export function Hub() {
             className="mt-2 text-[15px] leading-relaxed text-muted"
           >
             straight from the people building it. grouped by{" "}
-            <span className="text-foreground">level</span>, so you always know what to read
+            <span className="text-foreground">{GROUP_LABELS[groupBy]}</span>, so you always know what to read
             next.
           </motion.p>
           <motion.p
@@ -103,7 +105,7 @@ export function Hub() {
             variants={fadeUp}
             className="mt-5 font-mono text-[11px] lowercase tracking-wide text-faint"
           >
-            {GUIDES.length} reads · {LAB_COUNT} sources
+            {isFiltered ? `${matched.length} of ${GUIDES.length}` : GUIDES.length} reads · {matchedSourceCount} sources
           </motion.p>
         </motion.div>
       </header>

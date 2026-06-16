@@ -37,6 +37,9 @@ const fav = (domain: string) => `https://www.google.com/s2/favicons?domain=${dom
 
 // real avatars (github) for people, site favicons for orgs without a vector logo
 const AVATAR: Partial<Record<Company, { url: string; round?: boolean }>> = {
+  "Dario Amodei": { url: fav("darioamodei.com") },
+  "Sam Altman": { url: "https://github.com/sama.png", round: true },
+  "Leopold Aschenbrenner": { url: fav("situational-awareness.ai") },
   "Andrej Karpathy": { url: "https://github.com/karpathy.png", round: true },
   "Lilian Weng": { url: "https://github.com/lilianweng.png", round: true },
   "Hamel Husain": { url: "https://github.com/hamelsmu.png", round: true },
@@ -47,6 +50,7 @@ const AVATAR: Partial<Record<Company, { url: string; round?: boolean }>> = {
   "Sebastian Raschka": { url: "https://github.com/rasbt.png", round: true },
   "3Blue1Brown": { url: "https://github.com/3b1b.png", round: true },
   "Benedict Evans": { url: fav("ben-evans.com") },
+  "Nous Research": { url: fav("nousresearch.com") },
   "Moonshot AI": { url: fav("moonshot.ai") },
   "Zhipu AI": { url: fav("z.ai") },
   MiniMax: { url: fav("minimax.io") },
