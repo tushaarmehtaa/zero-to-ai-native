@@ -130,8 +130,10 @@ function SourceMark({ company, className }: { company: Company; className: strin
         alt={company}
         loading="lazy"
         onError={() => setFailed(true)}
-        className={`${className} shrink-0 bg-white/5 object-cover ${
-          avatar.round ? "rounded-full" : "rounded-[3px]"
+        className={`${className} shrink-0 object-contain ${
+          avatar.round
+            ? "rounded-full"
+            : "rounded-[3px] bg-white/90 p-0.5"
         }`}
       />
     );

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion } from "motion/react";
 import { Star } from "lucide-react";
 import { GithubIcon } from "./github-icon";
@@ -36,6 +36,10 @@ export function Hub() {
   const [view, setView] = useState<ViewKey>("board");
   const [groupBy, setGroupBy] = useState<GroupKey>("level");
   const [query, setQuery] = useState("");
+
+  useEffect(() => {
+    if (window.innerWidth < 640) setView("list");
+  }, []);
 
   const q = query.trim().toLowerCase();
 
