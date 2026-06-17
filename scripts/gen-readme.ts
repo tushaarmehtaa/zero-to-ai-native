@@ -19,6 +19,7 @@ const SOURCE_URL: Partial<Record<Company, string>> = {
   DeepSeek: "https://www.deepseek.com",
   Qwen: "https://qwenlm.github.io",
   "Nous Research": "https://nousresearch.com",
+  Ramp: "https://ramp.com",
   NVIDIA: "https://www.nvidia.com",
   AWS: "https://aws.amazon.com",
   "Dario Amodei": "https://darioamodei.com",
@@ -107,7 +108,7 @@ for (const t of TOPICS) {
 // ── credits ─────────────────────────────────────────────────
 const LABS: Company[] = [
   "Anthropic", "OpenAI", "Google", "Meta", "Microsoft", "Mistral", "Cohere",
-  "Hugging Face", "Chroma", "DeepSeek", "Qwen", "Nous Research", "NVIDIA", "AWS",
+  "Hugging Face", "Chroma", "DeepSeek", "Qwen", "Nous Research", "Ramp", "NVIDIA", "AWS",
 ];
 const PEOPLE: Company[] = [
   "Dario Amodei", "Sam Altman", "Leopold Aschenbrenner",

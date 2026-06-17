@@ -52,6 +52,7 @@ const AVATAR: Partial<Record<Company, { url: string; round?: boolean }>> = {
   "3Blue1Brown": { url: "https://github.com/3b1b.png", round: true },
   "Benedict Evans": { url: fav("ben-evans.com") },
   "Nous Research": { url: fav("nousresearch.com") },
+  Ramp: { url: fav("ramp.com") },
   Cohere: { url: fav("cohere.com") },
   Chroma: { url: fav("trychroma.com") },
   NBER: { url: fav("nber.org") },

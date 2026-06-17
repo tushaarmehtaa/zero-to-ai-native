@@ -968,6 +968,44 @@ export const GUIDES: Guide[] = [
     description: "how rl agents game their reward, and why it's the core alignment problem in one post.",
   },
 
+  // ── Ramp ──────────────────────────────────────────────────
+  {
+    title: "Why We Built Our Own Background Agent",
+    company: "Ramp",
+    topic: "Agents",
+    url: "https://builders.ramp.com/post/why-we-built-our-background-agent",
+    format: "Blog",
+    year: 2026,
+    level: "build",
+    audience: "builder",
+    description:
+      "how ramp built inspect, their internal coding agent. sandboxed vms, full dev environment integration. 30%+ of merged prs written by it within months, voluntarily adopted.",
+  },
+  {
+    title: "How To Build Agents Users Can Trust",
+    company: "Ramp",
+    topic: "Agents",
+    url: "https://builders.ramp.com/post/how-to-build-agents-users-can-trust",
+    format: "Blog",
+    year: 2025,
+    level: "build",
+    audience: "builder",
+    description:
+      "ramp's expense policy agent handles 65%+ of approvals fully automated. what they learned: clear reasoning, grounded facts, uncertainty handled honestly. the trust framework that made adoption happen.",
+  },
+  {
+    title: "How Ramp Fixes Merchant Matches with AI",
+    company: "Ramp",
+    topic: "MLOps & Production",
+    url: "https://engineering.ramp.com/post/fixing-merchant-classifications-with-ai",
+    format: "Blog",
+    year: 2025,
+    level: "build",
+    audience: "builder",
+    description:
+      "rag, embeddings, and computer vision on receipt images. was 1.5-3% manual before. agent now handles 100% in under 10 seconds. the full production stack with real eval numbers.",
+  },
+
   // ── Blogs (people doing the real work) ─────────────────────
   {
     title: "Things We Learned About LLMs in 2024",
@@ -1213,6 +1251,54 @@ export const GUIDES: Guide[] = [
     level: "intro",
     audience: "builder",
     description: "26 sections covering everything that mattered in 2025. willison at his most thorough.",
+  },
+  {
+    title: "Useful Patterns for Building HTML Tools",
+    company: "Simon Willison",
+    topic: "Skills & Tooling",
+    url: "https://simonwillison.net/2025/Dec/10/html-tools/",
+    format: "Blog",
+    year: 2025,
+    level: "build",
+    audience: "builder",
+    description:
+      "150+ single-file html+js tools built with llms, distilled into reusable patterns. clipboard as the core i/o primitive, url params, local storage, drag-and-drop. immediately actionable.",
+  },
+  {
+    title: "Prompt Injection Explained",
+    company: "Simon Willison",
+    topic: "Context & Harness",
+    url: "https://simonwillison.net/2023/May/2/prompt-injection-explained/",
+    format: "Blog",
+    year: 2023,
+    level: "build",
+    audience: "builder",
+    description:
+      "willison coined the term. what prompt injection is, why delimiters don't fix it, why it's an application-layer problem not a model problem. required reading before deploying anything public.",
+  },
+  {
+    title: "Using LLMs to Help Me Write Code",
+    company: "Simon Willison",
+    topic: "Skills & Tooling",
+    url: "https://simonwillison.net/2025/Mar/11/using-llms-for-code/",
+    format: "Blog",
+    year: 2025,
+    level: "build",
+    audience: "builder",
+    description:
+      "the honest practitioner take. llms don't make you faster. they let you ship things you'd never have justified spending time on. where they fail, and why the skill takes time to develop.",
+  },
+  {
+    title: "Catching Up on the Weird World of LLMs",
+    company: "Simon Willison",
+    topic: "Foundations",
+    url: "https://simonwillison.net/2023/Aug/3/weird-world-of-llms/",
+    format: "Blog",
+    year: 2023,
+    level: "intro",
+    audience: "builder",
+    description:
+      "his north bay python talk written in full. what llms are, how they're trained, hallucination, safety, ethics. the best entry point for developers who haven't been paying attention.",
   },
 
   // ── Dario Amodei ───────────────────────────────────────────

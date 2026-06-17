@@ -17,7 +17,7 @@
 
 the best explanations of ai aren't in courses or viral threads. they're written by the people **building** it, then scattered across a hundred cdns, arxiv links and personal blogs you'd never stumble on.
 
-this is every one worth reading, in one place. **110 hand-picked reads** from **30 sources**. no listicles, no reuploads, no seo slop. just the primary sources, ordered the way you'd actually learn them.
+this is every one worth reading, in one place. **117 hand-picked reads** from **31 sources**. no listicles, no reuploads, no seo slop. just the primary sources, ordered the way you'd actually learn them.
 
 read your way down this page and you go from zero to ai-native.
 
@@ -48,6 +48,8 @@ then pick a topic below and go deep.
 - **[Agentic AI on the Rise](https://pages.awscloud.com/rs/112-TZM-766/images/AWS_Marketplace_ebook_Agentic_AI.pdf)** · [AWS](https://aws.amazon.com) · 📄 pdf · 2025
 - **[AI Agents Course](https://huggingface.co/learn/agents-course)** · [Hugging Face](https://huggingface.co) · 🎓 course · 2025
 - **[LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)** · [Lilian Weng](https://lilianweng.github.io) · ✍️ blog · 2023
+- **[Why We Built Our Own Background Agent](https://builders.ramp.com/post/why-we-built-our-background-agent)** · [Ramp](https://ramp.com) · ✍️ blog · 2026
+- **[How To Build Agents Users Can Trust](https://builders.ramp.com/post/how-to-build-agents-users-can-trust)** · [Ramp](https://ramp.com) · ✍️ blog · 2025
 - **[Agents (Chip Huyen)](https://huyenchip.com/2025/01/07/agents.html)** · [Chip Huyen](https://huyenchip.com) · ✍️ blog · 2025
 
 ### 💬 Prompt Engineering
@@ -67,6 +69,7 @@ then pick a topic below and go deep.
 
 - **[Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Context Rot: How Input Length Hurts LLM Performance](https://research.trychroma.com/context-rot)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2025
+- **[Prompt Injection Explained](https://simonwillison.net/2023/May/2/prompt-injection-explained/)** · [Simon Willison](https://simonwillison.net) · ✍️ blog · 2023
 
 ### 📐 Foundations
 
@@ -93,6 +96,7 @@ then pick a topic below and go deep.
 - **[Neural Networks](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)** · [3Blue1Brown](https://www.3blue1brown.com) · 🎥 video · 2024
 - **[State of LLMs 2025](https://magazine.sebastianraschka.com/p/state-of-llms-2025)** · [Sebastian Raschka](https://sebastianraschka.com) · ✍️ blog · 2025
 - **[The Year in LLMs 2025](https://simonwillison.net/2025/Dec/31/the-year-in-llms/)** · [Simon Willison](https://simonwillison.net) · ✍️ blog · 2025
+- **[Catching Up on the Weird World of LLMs](https://simonwillison.net/2023/Aug/3/weird-world-of-llms/)** · [Simon Willison](https://simonwillison.net) · ✍️ blog · 2023
 - **[Why We Think](https://lilianweng.github.io/posts/2025-05-01-thinking/)** · [Lilian Weng](https://lilianweng.github.io) · ✍️ blog · 2025
 
 ### 📜 Papers
@@ -140,6 +144,7 @@ then pick a topic below and go deep.
 - **[Smol Course](https://huggingface.co/learn/smol-course)** · [Hugging Face](https://huggingface.co) · 🎓 course · 2025
 - **[Evaluating Chunking Strategies for Retrieval](https://research.trychroma.com/evaluating-chunking)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2024
 - **[Generative Benchmarking](https://research.trychroma.com/generative-benchmarking)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2025
+- **[How Ramp Fixes Merchant Matches with AI](https://engineering.ramp.com/post/fixing-merchant-classifications-with-ai)** · [Ramp](https://ramp.com) · ✍️ blog · 2025
 - **[Patterns for Building LLM-based Systems & Products](https://eugeneyan.com/writing/llm-patterns/)** · [Eugene Yan](https://eugeneyan.com) · ✍️ blog · 2023
 - **[What We Learned from a Year of Building with LLMs](https://applied-llms.org/)** · [Eugene Yan](https://eugeneyan.com) · ✍️ blog · 2024
 - **[Your AI Product Needs Evals](https://hamel.dev/blog/posts/evals/)** · [Hamel Husain](https://hamel.dev) · ✍️ blog · 2024
@@ -152,6 +157,8 @@ then pick a topic below and go deep.
 - **[Claude Code: Best Practices for Agentic Coding](https://www.anthropic.com/engineering/claude-code-best-practices)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Writing Effective Tools for Agents](https://www.anthropic.com/engineering/writing-tools-for-agents)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[MCP Introduction](https://modelcontextprotocol.io/introduction)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2024
+- **[Useful Patterns for Building HTML Tools](https://simonwillison.net/2025/Dec/10/html-tools/)** · [Simon Willison](https://simonwillison.net) · ✍️ blog · 2025
+- **[Using LLMs to Help Me Write Code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)** · [Simon Willison](https://simonwillison.net) · ✍️ blog · 2025
 
 ### 📊 Research & Economics
 
@@ -176,7 +183,7 @@ then pick a topic below and go deep.
 
 every link goes to a primary source. these are the people and labs who did the work. go follow them, they earned it.
 
-**the labs** · [Anthropic](https://www.anthropic.com) ([@AnthropicAI](https://x.com/AnthropicAI)) · [OpenAI](https://openai.com) ([@OpenAI](https://x.com/OpenAI)) · [Google](https://deepmind.google) ([@GoogleDeepMind](https://x.com/GoogleDeepMind)) · [Meta](https://ai.meta.com) ([@AIatMeta](https://x.com/AIatMeta)) · [Microsoft](https://www.microsoft.com/ai) · [Mistral](https://mistral.ai) ([@MistralAI](https://x.com/MistralAI)) · [Cohere](https://cohere.com) ([@cohere](https://x.com/cohere)) · [Hugging Face](https://huggingface.co) ([@huggingface](https://x.com/huggingface)) · [Chroma](https://www.trychroma.com) ([@trychroma](https://x.com/trychroma)) · [DeepSeek](https://www.deepseek.com) ([@deepseek_ai](https://x.com/deepseek_ai)) · [Qwen](https://qwenlm.github.io) ([@Alibaba_Qwen](https://x.com/Alibaba_Qwen)) · [Nous Research](https://nousresearch.com) · [NVIDIA](https://www.nvidia.com) ([@nvidia](https://x.com/nvidia)) · [AWS](https://aws.amazon.com) ([@awscloud](https://x.com/awscloud))
+**the labs** · [Anthropic](https://www.anthropic.com) ([@AnthropicAI](https://x.com/AnthropicAI)) · [OpenAI](https://openai.com) ([@OpenAI](https://x.com/OpenAI)) · [Google](https://deepmind.google) ([@GoogleDeepMind](https://x.com/GoogleDeepMind)) · [Meta](https://ai.meta.com) ([@AIatMeta](https://x.com/AIatMeta)) · [Microsoft](https://www.microsoft.com/ai) · [Mistral](https://mistral.ai) ([@MistralAI](https://x.com/MistralAI)) · [Cohere](https://cohere.com) ([@cohere](https://x.com/cohere)) · [Hugging Face](https://huggingface.co) ([@huggingface](https://x.com/huggingface)) · [Chroma](https://www.trychroma.com) ([@trychroma](https://x.com/trychroma)) · [DeepSeek](https://www.deepseek.com) ([@deepseek_ai](https://x.com/deepseek_ai)) · [Qwen](https://qwenlm.github.io) ([@Alibaba_Qwen](https://x.com/Alibaba_Qwen)) · [Nous Research](https://nousresearch.com) · [Ramp](https://ramp.com) · [NVIDIA](https://www.nvidia.com) ([@nvidia](https://x.com/nvidia)) · [AWS](https://aws.amazon.com) ([@awscloud](https://x.com/awscloud))
 
 **the people** · [Dario Amodei](https://darioamodei.com) ([@DarioAmodei](https://x.com/DarioAmodei)) · [Sam Altman](https://blog.samaltman.com) ([@sama](https://x.com/sama)) · [Leopold Aschenbrenner](https://situational-awareness.ai) ([@leopoldasch](https://x.com/leopoldasch)) · [Andrej Karpathy](https://karpathy.ai) ([@karpathy](https://x.com/karpathy)) · [Lilian Weng](https://lilianweng.github.io) ([@lilianweng](https://x.com/lilianweng)) · [Simon Willison](https://simonwillison.net) ([@simonw](https://x.com/simonw)) · [Chip Huyen](https://huyenchip.com) ([@chipro](https://x.com/chipro)) · [Hamel Husain](https://hamel.dev) ([@HamelHusain](https://x.com/HamelHusain)) · [Eugene Yan](https://eugeneyan.com) ([@eugeneyan](https://x.com/eugeneyan)) · [Jay Alammar](https://jalammar.github.io) ([@JayAlammar](https://x.com/JayAlammar)) · [Sebastian Raschka](https://sebastianraschka.com) ([@rasbt](https://x.com/rasbt)) · [Benedict Evans](https://www.ben-evans.com) ([@benedictevans](https://x.com/benedictevans)) · [3Blue1Brown](https://www.3blue1brown.com) ([@3blue1brown](https://x.com/3blue1brown))
 

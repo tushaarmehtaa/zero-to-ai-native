@@ -11,6 +11,7 @@ export const COMPANIES = [
   "DeepSeek",
   "Qwen",
   "Nous Research",
+  "Ramp",
   "NVIDIA",
   "AWS",
   // people & schools
