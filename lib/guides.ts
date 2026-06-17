@@ -254,6 +254,54 @@ export const GUIDES: Guide[] = [
     description: "reasoning effort, agentic eagerness, scope control. how to prompt the gpt-5 family without fighting it.",
   },
   {
+    title: "Introducing Codex",
+    company: "OpenAI",
+    topic: "Agents",
+    url: "https://openai.com/index/introducing-codex/",
+    format: "Web",
+    year: 2025,
+    level: "intro",
+    audience: "builder",
+    description:
+      "the launch of openai's async coding agent. runs in a sandboxed repo, handles multi-step tasks unsupervised. the product thesis for ai software engineering.",
+  },
+  {
+    title: "o1 System Card",
+    company: "OpenAI",
+    topic: "Papers",
+    url: "https://cdn.openai.com/o1-system-card.pdf",
+    format: "PDF",
+    year: 2024,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "how openai evaluated o1 for safety. what chain-of-thought reasoning changes about risk, and what alignment looks like for a model that plans before it answers.",
+  },
+  {
+    title: "OpenAI Model Spec",
+    company: "OpenAI",
+    topic: "Papers",
+    url: "https://model-spec.openai.com/2025-12-18.html",
+    format: "Web",
+    year: 2025,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "openai's governing document for model behavior. the principal hierarchy — operator, user, model defaults — and how conflicts resolve. their equivalent of a constitution.",
+  },
+  {
+    title: "Practices for Governing Agentic AI Systems",
+    company: "OpenAI",
+    topic: "Research & Economics",
+    url: "https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf",
+    format: "PDF",
+    year: 2023,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "the paper that defined the operator/user model and proposed baseline safety practices for agentic systems. foundational framing for anyone building on the api.",
+  },
+  {
     title: "Model Disproves the Erdős Unit Distance Conjecture",
     company: "OpenAI",
     topic: "Papers",
@@ -682,6 +730,18 @@ export const GUIDES: Guide[] = [
     level: "deep",
     audience: "researcher",
     description: "the transformer. every model you use today, claude, gpt, gemini, llama, descends from this one.",
+  },
+  {
+    title: "Scaling Laws for Neural Language Models",
+    company: "OpenAI",
+    topic: "Papers",
+    url: "https://arxiv.org/pdf/2001.08361",
+    format: "PDF",
+    year: 2020,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "kaplan et al. prove model performance follows power laws with parameters, data, and compute. the empirical foundation for every scaling decision made since.",
   },
   {
     title: "Language Models are Few-Shot Learners (GPT-3)",

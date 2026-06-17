@@ -17,7 +17,7 @@
 
 the best explanations of ai aren't in courses or viral threads. they're written by the people **building** it, then scattered across a hundred cdns, arxiv links and personal blogs you'd never stumble on.
 
-this is every one worth reading, in one place. **106 hand-picked reads** from **30 sources**. no listicles, no reuploads, no seo slop. just the primary sources, ordered the way you'd actually learn them.
+this is every one worth reading, in one place. **111 hand-picked reads** from **30 sources**. no listicles, no reuploads, no seo slop. just the primary sources, ordered the way you'd actually learn them.
 
 read your way down this page and you go from zero to ai-native.
 
@@ -42,6 +42,7 @@ then pick a topic below and go deep.
 - **[Project Vend: Phase Two](https://www.anthropic.com/research/project-vend-2)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Project Deal](https://www.anthropic.com/features/project-deal)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
 - **[A Practical Guide to Building Agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
+- **[Introducing Codex](https://openai.com/index/introducing-codex/)** · [OpenAI](https://openai.com) · 🌐 web · 2025
 - **[Agents](https://www.kaggle.com/whitepaper-agents)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[Agents Companion](https://www.kaggle.com/whitepaper-agent-companion)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners)** · [Microsoft](https://www.microsoft.com/ai) · 🎓 course · 2025
@@ -97,12 +98,15 @@ then pick a topic below and go deep.
 
 ### 📜 Papers
 
+- **[o1 System Card](https://cdn.openai.com/o1-system-card.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2024
+- **[OpenAI Model Spec](https://model-spec.openai.com/2025-12-18.html)** · [OpenAI](https://openai.com) · 🌐 web · 2025
 - **[Model Disproves the Erdős Unit Distance Conjecture](https://openai.com/index/model-disproves-discrete-geometry-conjecture/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
 - **[Claude's Constitution](https://www-cdn.anthropic.com/d0636f72a9493d279ed36b33987da3430bcb5911/claudes-constitution_webPDF_26-02.02a.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2026
 - **[Alignment Faking in Large Language Models](https://arxiv.org/pdf/2412.14093)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2024
 - **[Gemini Achieves IMO Gold Medal](https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/)** · [Google](https://deepmind.google) · 🌐 web · 2025
 - **[AlphaGeometry2](https://arxiv.org/abs/2502.03544)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[Attention Is All You Need](https://arxiv.org/pdf/1706.03762)** · [Google](https://deepmind.google) · 📄 pdf · 2017
+- **[Scaling Laws for Neural Language Models](https://arxiv.org/pdf/2001.08361)** · [OpenAI](https://openai.com) · 📄 pdf · 2020
 - **[Language Models are Few-Shot Learners (GPT-3)](https://arxiv.org/pdf/2005.14165)** · [OpenAI](https://openai.com) · 📄 pdf · 2020
 - **[Training Language Models to Follow Instructions (InstructGPT)](https://arxiv.org/pdf/2203.02155)** · [OpenAI](https://openai.com) · 📄 pdf · 2022
 - **[Chain-of-Thought Prompting Elicits Reasoning](https://arxiv.org/pdf/2201.11903)** · [Google](https://deepmind.google) · 📄 pdf · 2022
@@ -158,6 +162,7 @@ then pick a topic below and go deep.
 - **[Anthropic Economic Index: Economic Primitives](https://www-cdn.anthropic.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
 - **[Anthropic Economic Index: Geographic & Enterprise Adoption](https://assets.anthropic.com/m/218c82b858610fac/original/Economic-Index.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
 - **[The State of Enterprise AI 2025](https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
+- **[Practices for Governing Agentic AI Systems](https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2023
 - **[Gemini 3 Pro Frontier Safety Framework Report](https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_fsf_report.pdf)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[The Economics of Transformative AI](https://www.nber.org/books-and-chapters/economics-transformative-ai)** · [NBER](https://www.nber.org) · 🌐 web · 2025
 - **[MS&E435: Economics of the AI Supercycle](https://www.youtube.com/@MSE435EconomicsofAI)** · [Stanford](https://online.stanford.edu) · 🎥 video · 2026
