@@ -63,13 +63,13 @@ export function Hub() {
     <main className="mx-auto w-full max-w-6xl px-6 py-12 sm:py-16">
       {/* header */}
       <header className="mx-auto max-w-2xl">
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <GlitchTitle />
           <a
             href={REPO_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex shrink-0 items-center gap-2 rounded-md border border-border px-3 py-1.5 font-mono text-[12px] lowercase text-muted transition-colors hover:border-faint hover:text-foreground"
+            className="group flex w-fit shrink-0 items-center gap-2 rounded-md border border-border px-3 py-1.5 font-mono text-[12px] lowercase text-muted transition-colors hover:border-faint hover:text-foreground"
           >
             <GithubIcon className="h-3.5 w-3.5" />
             star

@@ -46,7 +46,7 @@ export function GlitchTitle() {
   }, []);
 
   return (
-    <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+    <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
       <span
         data-text={text}
         className={`glitch ${phase === "glitching" ? "is-glitching" : ""}`}

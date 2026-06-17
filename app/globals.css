@@ -36,7 +36,6 @@ body {
 .glitch {
   position: relative;
   display: inline-block;
-  white-space: pre;
 }
 .glitch.is-glitching {
   animation: glitch-jitter 0.16s steps(2) infinite;
