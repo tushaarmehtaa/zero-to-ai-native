@@ -254,18 +254,6 @@ export const GUIDES: Guide[] = [
     description: "reasoning effort, agentic eagerness, scope control. how to prompt the gpt-5 family without fighting it.",
   },
   {
-    title: "Introducing Codex",
-    company: "OpenAI",
-    topic: "Agents",
-    url: "https://openai.com/index/introducing-codex/",
-    format: "Web",
-    year: 2025,
-    level: "intro",
-    audience: "builder",
-    description:
-      "the launch of openai's async coding agent. runs in a sandboxed repo, handles multi-step tasks unsupervised. the product thesis for ai software engineering.",
-  },
-  {
     title: "o1 System Card",
     company: "OpenAI",
     topic: "Papers",

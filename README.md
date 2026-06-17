@@ -17,7 +17,7 @@
 
 the best explanations of ai aren't in courses or viral threads. they're written by the people **building** it, then scattered across a hundred cdns, arxiv links and personal blogs you'd never stumble on.
 
-this is every one worth reading, in one place. **111 hand-picked reads** from **30 sources**. no listicles, no reuploads, no seo slop. just the primary sources, ordered the way you'd actually learn them.
+this is every one worth reading, in one place. **110 hand-picked reads** from **30 sources**. no listicles, no reuploads, no seo slop. just the primary sources, ordered the way you'd actually learn them.
 
 read your way down this page and you go from zero to ai-native.
 
@@ -42,7 +42,6 @@ then pick a topic below and go deep.
 - **[Project Vend: Phase Two](https://www.anthropic.com/research/project-vend-2)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Project Deal](https://www.anthropic.com/features/project-deal)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
 - **[A Practical Guide to Building Agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
-- **[Introducing Codex](https://openai.com/index/introducing-codex/)** · [OpenAI](https://openai.com) · 🌐 web · 2025
 - **[Agents](https://www.kaggle.com/whitepaper-agents)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[Agents Companion](https://www.kaggle.com/whitepaper-agent-companion)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners)** · [Microsoft](https://www.microsoft.com/ai) · 🎓 course · 2025
