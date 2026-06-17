@@ -70,7 +70,7 @@ export function CardsView({ groups, groupKey }: { groups: Group[]; groupKey?: Gr
 
 /* ── board / kanban ───────────────────────────────────── */
 export function BoardView({ groups, groupKey }: { groups: Group[]; groupKey?: GroupKey }) {
-  const scrolls = groups.length > 4;
+  const scrolls = groups.length > 2;
   return (
     <div className="relative mx-auto max-w-5xl">
       {scrolls && (
@@ -154,7 +154,7 @@ export function TableView({ guides }: { guides: Guide[] }) {
 
   return (
     <div className="-mx-5 overflow-x-auto px-5">
-      <table className="w-full border-collapse text-[13px]">
+      <table className="w-full min-w-[640px] border-collapse text-[13px]">
         <thead>
           <tr className="border-b border-border">
             <Th k="title" label="guide" />
