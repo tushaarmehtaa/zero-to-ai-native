@@ -1,6 +1,6 @@
 export const COMPANIES = [
-  "Anthropic",
   "OpenAI",
+  "Anthropic",
   "Google",
   "Meta",
   "Microsoft",
