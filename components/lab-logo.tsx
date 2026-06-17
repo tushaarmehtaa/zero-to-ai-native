@@ -28,6 +28,7 @@ const SI: Partial<Record<Company, SimpleIcon>> = {
 
 // brand colours for the logos that aren't in the icon set
 const BRAND: Partial<Record<Company, string>> = {
+  Anthropic: "#ffffff",
   OpenAI: "#10a37f",
   AWS: "#ff9900",
   Google: "#4285f4", // simple-icons google hex is muted; use the real blue
