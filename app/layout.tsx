@@ -17,6 +17,13 @@ export const metadata: Metadata = {
   title: "zero to ai-native",
   description:
     "the best papers, guides, blogs and lectures on ai. straight from the people building it, grouped by level so you always know what to read next.",
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "zero to ai-native",
     description:
@@ -24,6 +31,7 @@ export const metadata: Metadata = {
     url: "https://zero-to-ai-native.vercel.app",
     siteName: "zero to ai-native",
     type: "website",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
@@ -31,6 +39,7 @@ export const metadata: Metadata = {
     description:
       "the best papers, guides, blogs and lectures on ai. straight from the people building it.",
     creator: "@tushaarmehtaa",
+    site: "@tushaarmehtaa",
   },
 };
 
