@@ -12,7 +12,7 @@ export default async function OpengraphImage() {
   const sources = new Set(GUIDES.map((g) => g.company)).size;
 
   const geistBold = await readFile(
-    join(process.cwd(), "node_modules/geist/dist/fonts/geist-sans/Geist-Bold.woff2")
+    join(process.cwd(), "node_modules/geist/dist/fonts/geist-sans/Geist-Bold.ttf")
   );
 
   const fonts = [{ name: "Geist", data: geistBold, weight: 700 as const }];
