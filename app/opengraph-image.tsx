@@ -10,8 +10,8 @@ export default async function OpengraphImage() {
   const sources = new Set(GUIDES.map((g) => g.company)).size;
 
   const geistBold = await fetch(
-    new URL("https://fonts.gstatic.com/s/geist/v1/UqyVK80MDZA1C_CgBoX0Zw.woff2")
-  ).then((res) => res.arrayBuffer()).catch(() => null);
+    "https://fonts.gstatic.com/s/geist/v1/UqyVK80MDZA1C_CgBoX0Zw.woff2"
+  ).then((res) => (res.ok ? res.arrayBuffer() : null)).catch(() => null);
 
   const fonts = geistBold
     ? [{ name: "Geist", data: geistBold, weight: 700 as const }]
