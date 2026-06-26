@@ -1,4 +1,6 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "fs/promises";
+import { join } from "path";
 import { GUIDES } from "@/lib/guides";
 
 export const alt = "zero to ai-native — the best papers, guides, blogs and lectures on ai";
@@ -9,13 +11,11 @@ export default async function OpengraphImage() {
   const reads = GUIDES.length;
   const sources = new Set(GUIDES.map((g) => g.company)).size;
 
-  const geistBold = await fetch(
-    "https://fonts.gstatic.com/s/geist/v1/UqyVK80MDZA1C_CgBoX0Zw.woff2"
-  ).then((res) => (res.ok ? res.arrayBuffer() : null)).catch(() => null);
+  const geistBold = await readFile(
+    join(process.cwd(), "node_modules/geist/dist/fonts/geist-sans/Geist-Bold.woff2")
+  );
 
-  const fonts = geistBold
-    ? [{ name: "Geist", data: geistBold, weight: 700 as const }]
-    : [];
+  const fonts = [{ name: "Geist", data: geistBold, weight: 700 as const }];
 
   return new ImageResponse(
     (
