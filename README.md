@@ -4,7 +4,7 @@
 
 # zero to ai-native
 
-**the best papers, guides, blogs and lectures on ai, straight from the people building it.**
+**primary-source papers, guides, blogs and lectures on ai, straight from the people building it.**
 
 ![GitHub stars](https://img.shields.io/github/stars/tushaarmehtaa/zero-to-ai-native?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/tushaarmehtaa/zero-to-ai-native?style=social)
@@ -15,11 +15,19 @@
 
 ---
 
-the best explanations of ai aren't in courses or viral threads. they're written by the people **building** it, then scattered across a hundred cdns, arxiv links and personal blogs you'd never stumble on.
+the useful explanations of ai are usually written by the people **building** it, then scattered across cdns, arxiv, lab blogs, docs, and lectures.
 
-this is every one worth reading, in one place. **117 hand-picked reads** from **31 sources**. no listicles, no reuploads, no seo slop. just the primary sources, ordered the way you'd actually learn them.
+this is a maintained path through **117 hand-picked reads** from **31 sources**. no listicles, no reuploads, no seo. just primary sources, ordered the way you'd actually learn them.
 
 read your way down this page and you go from zero to ai-native.
+
+## why this exists
+
+ai moves faster than courses can keep up. the best material is scattered across lab blogs, system cards, arxiv, docs, lectures, and personal essays.
+
+this repo keeps the primary sources in one place, with enough structure to make the path readable.
+
+the work is curation: read the source, reject weak links, keep the sequence useful, and make good additions easy to review.
 
 ## 🚀 start here
 
@@ -191,7 +199,7 @@ every link goes to a primary source. these are the people and labs who did the w
 
 ## ✍️ contributing
 
-found a banger that's missing? the whole catalog is one typed file: [`lib/guides.ts`](lib/guides.ts). add an entry and open a PR:
+found something that belongs here? the catalog lives in [`lib/guides.ts`](lib/guides.ts). add one entry and open a PR:
 
 ```ts
 {
@@ -207,7 +215,20 @@ found a banger that's missing? the whole catalog is one typed file: [`lib/guides
 }
 ```
 
-**rules:** primary sources only, no reuploads, no affiliate links, no slop. one plain sentence per entry. or just [open an issue](https://github.com/tushaarmehtaa/zero-to-ai-native/issues) and i'll add it.
+**standard:** primary sources only. no reuploads, affiliate links, seo posts, summaries, or hype. one clear sentence per entry.
+
+[read the curation standard](CURATION.md) or [open an issue](https://github.com/tushaarmehtaa/zero-to-ai-native/issues) with a source worth reviewing.
+
+## 🧭 maintenance
+
+the catalog is maintained as a living reading path, not a dump of links.
+
+- monthly sweeps for new primary-source material
+- review before adding, even when the source is popular
+- keep the README generated from the typed catalog
+- keep the learning path useful for both beginners and working builders
+
+see [ROADMAP.md](ROADMAP.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [CHANGELOG.md](CHANGELOG.md).
 
 ## 🛠️ run it
 
