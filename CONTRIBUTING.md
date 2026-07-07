@@ -2,6 +2,8 @@
 
 Add sources that make the learning path better, not just longer.
 
+Contributions should improve the sequence: what to read, what to build, or how to know the learner is ready to move on.
+
 ## Good additions
 
 - primary lab posts, docs, system cards, and guides
@@ -9,6 +11,8 @@ Add sources that make the learning path better, not just longer.
 - serious lectures or courses
 - engineering writeups with durable lessons
 - field studies with useful evidence
+- project ideas tied to a module
+- beginner notes for hard primary sources
 
 ## Skip
 
@@ -18,6 +22,7 @@ Add sources that make the learning path better, not just longer.
 - shallow roundups
 - ai-generated summaries
 - commentary that does not add a primary source
+- resources that are good but do not improve the path
 
 ## How to add one
 

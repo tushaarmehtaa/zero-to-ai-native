@@ -1,8 +1,8 @@
 /* Generates README.md from the catalog so the list never drifts from the data.
-   Run: npx tsx scripts/gen-readme.ts */
+   Run: node --experimental-strip-types scripts/gen-readme.ts */
 import { writeFileSync } from "fs";
-import { GUIDES } from "../lib/guides";
-import { TOPICS, type Company } from "../lib/taxonomy";
+import { GUIDES } from "../lib/guides.ts";
+import { TOPICS, type Company } from "../lib/taxonomy.ts";
 
 const REPO = "tushaarmehtaa/zero-to-ai-native";
 
@@ -129,7 +129,7 @@ const readme = `<div align="center">
 
 # zero to ai-native
 
-**the best papers, guides, blogs and lectures on ai, straight from the people building it.**
+**an open-source curriculum of primary-source ai material, from fundamentals to production systems.**
 
 ![GitHub stars](https://img.shields.io/github/stars/${REPO}?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/${REPO}?style=social)
@@ -140,11 +140,30 @@ const readme = `<div align="center">
 
 ---
 
-the best explanations of ai aren't in courses or viral threads. they're written by the people **building** it, then scattered across a hundred cdns, arxiv links and personal blogs you'd never stumble on.
+the useful explanations of ai are usually written by the people **building** it, then scattered across cdns, arxiv, lab blogs, docs, and lectures.
 
-this is every one worth reading, in one place. **${reads} hand-picked reads** from **${sources} sources**. no listicles, no reuploads, no seo slop. just the primary sources, ordered the way you'd actually learn them.
+this is a maintained path through **${reads} hand-picked reads** from **${sources} sources**. no listicles, no reuploads, no seo. just primary sources, ordered the way you'd actually learn them.
+
+maintained by [Tushar Mehta](https://x.com/tushaarmehtaa), who builds AI products and co-runs AI & Weekends, an AI builder community with 30+ hands-on events across India and 2,000+ builders.
 
 read your way down this page and you go from zero to ai-native.
+
+## why this exists
+
+ai moves faster than courses can keep up. the best material is scattered across lab blogs, system cards, arxiv, docs, lectures, and personal essays.
+
+this repo keeps the original sources in a path builders can actually follow: fundamentals, prompting, context, agents, evals, production, and safety.
+
+the work is curation: read the source, reject weak links, keep the sequence useful, and make good additions easy to review.
+
+## used for
+
+- self-directed learning
+- workshops and hackathons
+- ai & weekends sessions
+- finding the primary source before reading commentary
+
+[open the curriculum](https://zero-to-ai-native.vercel.app/curriculum) or browse the full catalog below.
 
 ## 🚀 start here
 
@@ -172,7 +191,7 @@ every link goes to a primary source. these are the people and labs who did the w
 
 ## ✍️ contributing
 
-found a banger that's missing? the whole catalog is one typed file: [\`lib/guides.ts\`](lib/guides.ts). add an entry and open a PR:
+found something that belongs here? the catalog lives in [\`lib/guides.ts\`](lib/guides.ts). add one entry and open a PR:
 
 \`\`\`ts
 {
@@ -188,7 +207,20 @@ found a banger that's missing? the whole catalog is one typed file: [\`lib/guide
 }
 \`\`\`
 
-**rules:** primary sources only, no reuploads, no affiliate links, no slop. one plain sentence per entry. or just [open an issue](https://github.com/${REPO}/issues) and i'll add it.
+**standard:** primary sources only. no reuploads, affiliate links, seo posts, summaries, or hype. one clear sentence per entry.
+
+[read the curation standard](CURATION.md) or [open an issue](https://github.com/${REPO}/issues) with a source worth reviewing.
+
+## 🧭 maintenance
+
+the catalog is maintained as a living reading path, not a dump of links.
+
+- monthly sweeps for new primary-source material
+- review before adding, even when the source is popular
+- keep the README generated from the typed catalog
+- keep the learning path useful for both beginners and working builders
+
+see [CURRICULUM.md](CURRICULUM.md), [ROADMAP.md](ROADMAP.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [CHANGELOG.md](CHANGELOG.md).
 
 ## 🛠️ run it
 

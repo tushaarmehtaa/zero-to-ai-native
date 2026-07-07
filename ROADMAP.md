@@ -1,20 +1,31 @@
 # Roadmap
 
-## Now
+## Phase 1
 
 - keep the catalog current with new primary-source AI material
 - review suggested links against the curation standard
 - keep the README and web app in sync with `lib/guides.ts`
-- add high-signal agent, eval, context, safety, and production resources
+- add the static curriculum path with modules, checkpoints, and project milestones
 
-## Next
+## Phase 2
 
-- add learning checkpoints for major sections
-- add project prompts after major topics
+- make the curriculum view easier to use in workshops and hackathons
 - add lightweight link checks
 - add catalog validation for duplicate URLs and missing taxonomy values
 - make contribution review easier for first-time contributors
 - publish periodic update notes when new resources are added
+
+## Phase 3
+
+- add local progress tracking
+- add reflection prompts and lightweight quizzes
+- add community-submitted project examples
+- add workshop guides for AI & Weekends and other groups
+
+## Later
+
+- consider accounts only if saved progress and community submissions need them
+- keep the public catalog usable without login
 
 ## Watchlist
 

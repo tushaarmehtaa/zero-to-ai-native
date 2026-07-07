@@ -119,6 +119,35 @@ export function BoardView({ groups, groupKey }: { groups: Group[]; groupKey?: Gr
 /* ── table ────────────────────────────────────────────── */
 type SortKey = "title" | "company" | "topic" | "format" | "pages" | "year";
 
+function SortHeader({
+  k,
+  label,
+  sort,
+  dir,
+  onToggle,
+  className = "",
+}: {
+  k: SortKey;
+  label: string;
+  sort: SortKey;
+  dir: 1 | -1;
+  onToggle: (key: SortKey) => void;
+  className?: string;
+}) {
+  return (
+    <th className={`pb-2 text-left font-mono text-[11px] font-normal lowercase tracking-wide ${className}`}>
+      <button
+        onClick={() => onToggle(k)}
+        className="inline-flex items-center gap-1 text-faint transition-colors hover:text-foreground"
+      >
+        {label}
+        {sort === k &&
+          (dir === 1 ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />)}
+      </button>
+    </th>
+  );
+}
+
 export function TableView({ guides }: { guides: Guide[] }) {
   const [sort, setSort] = useState<SortKey>("company");
   const [dir, setDir] = useState<1 | -1>(1);
@@ -139,29 +168,16 @@ export function TableView({ guides }: { guides: Guide[] }) {
     }
   };
 
-  const Th = ({ k, label, className = "" }: { k: SortKey; label: string; className?: string }) => (
-    <th className={`pb-2 text-left font-mono text-[11px] font-normal lowercase tracking-wide ${className}`}>
-      <button
-        onClick={() => toggle(k)}
-        className="inline-flex items-center gap-1 text-faint transition-colors hover:text-foreground"
-      >
-        {label}
-        {sort === k &&
-          (dir === 1 ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />)}
-      </button>
-    </th>
-  );
-
   return (
     <div className="-mx-5 overflow-x-auto px-5">
       <table className="w-full min-w-[640px] border-collapse text-[13px]">
         <thead>
           <tr className="border-b border-border">
-            <Th k="title" label="guide" />
-            <Th k="company" label="source" />
-            <Th k="topic" label="topic" />
-            <Th k="format" label="type" />
-            <Th k="year" label="yr" className="text-right" />
+            <SortHeader k="title" label="guide" sort={sort} dir={dir} onToggle={toggle} />
+            <SortHeader k="company" label="source" sort={sort} dir={dir} onToggle={toggle} />
+            <SortHeader k="topic" label="topic" sort={sort} dir={dir} onToggle={toggle} />
+            <SortHeader k="format" label="type" sort={sort} dir={dir} onToggle={toggle} />
+            <SortHeader k="year" label="yr" sort={sort} dir={dir} onToggle={toggle} className="text-right" />
           </tr>
         </thead>
         <tbody>

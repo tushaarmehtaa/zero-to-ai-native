@@ -12,11 +12,11 @@ export function GlitchTitle() {
   useEffect(() => {
     if (typeof window === "undefined") return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setPhase("done");
-      return;
+      const timeout = window.setTimeout(() => setPhase("done"), 0);
+      return () => window.clearTimeout(timeout);
     }
 
-    setPhase("glitching");
+    const phaseTimeout = window.setTimeout(() => setPhase("glitching"), 0);
     const duration = 1100;
     const start = performance.now();
     let raf = 0;
@@ -42,7 +42,10 @@ export function GlitchTitle() {
     };
 
     raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
+    return () => {
+      window.clearTimeout(phaseTimeout);
+      cancelAnimationFrame(raf);
+    };
   }, []);
 
   return (

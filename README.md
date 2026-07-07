@@ -38,6 +38,8 @@ the work is curation: read the source, reject weak links, keep the sequence usef
 - ai & weekends sessions
 - finding the primary source before reading commentary
 
+[open the curriculum](https://zero-to-ai-native.vercel.app/curriculum) or browse the full catalog below.
+
 ## 🚀 start here
 
 brand new? these five take you from "what is a neural net" to "i get how this works", in order:
@@ -237,7 +239,7 @@ the catalog is maintained as a living reading path, not a dump of links.
 - keep the README generated from the typed catalog
 - keep the learning path useful for both beginners and working builders
 
-see [ROADMAP.md](ROADMAP.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [CHANGELOG.md](CHANGELOG.md).
+see [CURRICULUM.md](CURRICULUM.md), [ROADMAP.md](ROADMAP.md), [CONTRIBUTING.md](CONTRIBUTING.md), and [CHANGELOG.md](CHANGELOG.md).
 
 ## 🛠️ run it
 

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://zero-to-ai-native.vercel.app"),
   title: "zero to ai-native",
   description:
-    "the best papers, guides, blogs and lectures on ai. straight from the people building it, grouped by level so you always know what to read next.",
+    "an open-source curriculum of primary-source AI material, from fundamentals to production systems.",
   alternates: {
     canonical: "/",
   },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "zero to ai-native",
     description:
-      "the best papers, guides, blogs and lectures on ai. straight from the people building it.",
+      "an open-source curriculum of primary-source AI material, from fundamentals to production systems.",
     url: "https://zero-to-ai-native.vercel.app",
     siteName: "zero to ai-native",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "zero to ai-native",
     description:
-      "the best papers, guides, blogs and lectures on ai. straight from the people building it.",
+      "an open-source curriculum of primary-source AI material, from fundamentals to production systems.",
     creator: "@tushaarmehtaa",
     site: "@tushaarmehtaa",
   },

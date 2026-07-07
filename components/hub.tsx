@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { motion } from "motion/react";
-import { Star } from "lucide-react";
+import { BookOpen, Star } from "lucide-react";
 import { GithubIcon } from "./github-icon";
 import { GUIDES } from "@/lib/guides";
 import { groupGuides } from "@/lib/grouping";
@@ -38,7 +39,9 @@ export function Hub() {
   const [query, setQuery] = useState("");
 
   useEffect(() => {
-    if (window.innerWidth < 640) setView("list");
+    if (window.innerWidth >= 640) return;
+    const timeout = window.setTimeout(() => setView("list"), 0);
+    return () => window.clearTimeout(timeout);
   }, []);
 
   const q = query.trim().toLowerCase();
@@ -69,16 +72,25 @@ export function Hub() {
       <header className="mx-auto max-w-2xl">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <GlitchTitle />
-          <a
-            href={REPO_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex w-fit shrink-0 items-center gap-2 rounded-md border border-border px-3 py-1.5 font-mono text-[12px] lowercase text-muted transition-colors hover:border-faint hover:text-foreground"
-          >
-            <GithubIcon className="h-3.5 w-3.5" />
-            star
-            <Star className="h-3 w-3 text-faint transition-all group-hover:fill-orange group-hover:text-orange" />
-          </a>
+          <div className="flex w-fit shrink-0 items-center gap-2">
+            <Link
+              href="/curriculum"
+              className="group flex items-center gap-2 rounded-md border border-border px-3 py-1.5 font-mono text-[12px] lowercase text-muted transition-colors hover:border-faint hover:text-foreground"
+            >
+              <BookOpen className="h-3.5 w-3.5 text-faint transition-colors group-hover:text-orange" />
+              curriculum
+            </Link>
+            <a
+              href={REPO_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 rounded-md border border-border px-3 py-1.5 font-mono text-[12px] lowercase text-muted transition-colors hover:border-faint hover:text-foreground"
+            >
+              <GithubIcon className="h-3.5 w-3.5" />
+              star
+              <Star className="h-3 w-3 text-faint transition-all group-hover:fill-orange group-hover:text-orange" />
+            </a>
+          </div>
         </div>
 
         <motion.div>
@@ -89,7 +101,7 @@ export function Hub() {
             variants={fadeUp}
             className="mt-5 text-lg leading-snug text-foreground"
           >
-            the best papers, guides, blogs and lectures on ai.
+            an open-source curriculum of primary-source ai material.
           </motion.p>
           <motion.p
             custom={1}
@@ -209,4 +221,3 @@ export function Hub() {
     </main>
   );
 }
-
