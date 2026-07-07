@@ -1,6 +1,6 @@
 # Contributing
 
-Add sources that make the learning path better.
+Add sources that make the learning path better, not just longer.
 
 ## Good additions
 
@@ -40,4 +40,3 @@ Edit `lib/guides.ts` and add one entry:
 Then open a PR.
 
 If you are unsure, open an issue with the link and why it matters.
-

@@ -9,6 +9,8 @@
 
 ## Next
 
+- add learning checkpoints for major sections
+- add project prompts after major topics
 - add lightweight link checks
 - add catalog validation for duplicate URLs and missing taxonomy values
 - make contribution review easier for first-time contributors
@@ -21,4 +23,3 @@
 - evals for production AI systems
 - safety reports and system cards from frontier labs
 - open-source maintenance under AI-assisted development
-

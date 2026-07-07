@@ -9,7 +9,7 @@ Every entry should do at least one of these:
 - save a builder meaningful research time
 - explain a core idea from the original source
 - correct a common mental model
-- document how frontier systems are built, used, evaluated, or governed
+- help a builder understand, build, evaluate, or responsibly use modern ai systems
 
 Popularity is not enough. Freshness is not enough. A source has to earn its place.
 
@@ -35,7 +35,7 @@ Good:
 
 Bad:
 
-> a must-read guide that changes everything.
+> a useful guide about agents.
 
 ## Bias
 

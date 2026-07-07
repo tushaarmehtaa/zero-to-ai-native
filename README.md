@@ -4,7 +4,7 @@
 
 # zero to ai-native
 
-**primary-source papers, guides, blogs and lectures on ai, straight from the people building it.**
+**an open-source curriculum of primary-source ai material, from fundamentals to production systems.**
 
 ![GitHub stars](https://img.shields.io/github/stars/tushaarmehtaa/zero-to-ai-native?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/tushaarmehtaa/zero-to-ai-native?style=social)
@@ -19,15 +19,24 @@ the useful explanations of ai are usually written by the people **building** it,
 
 this is a maintained path through **117 hand-picked reads** from **31 sources**. no listicles, no reuploads, no seo. just primary sources, ordered the way you'd actually learn them.
 
+maintained by [Tushar Mehta](https://x.com/tushaarmehtaa), who builds AI products and co-runs AI & Weekends, an AI builder community with 30+ hands-on events across India and 2,000+ builders.
+
 read your way down this page and you go from zero to ai-native.
 
 ## why this exists
 
 ai moves faster than courses can keep up. the best material is scattered across lab blogs, system cards, arxiv, docs, lectures, and personal essays.
 
-this repo keeps the primary sources in one place, with enough structure to make the path readable.
+this repo keeps the original sources in a path builders can actually follow: fundamentals, prompting, context, agents, evals, production, and safety.
 
 the work is curation: read the source, reject weak links, keep the sequence useful, and make good additions easy to review.
+
+## used for
+
+- self-directed learning
+- workshops and hackathons
+- ai & weekends sessions
+- finding the primary source before reading commentary
 
 ## 🚀 start here
 
