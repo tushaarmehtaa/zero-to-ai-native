@@ -5,7 +5,7 @@ export type ProjectMilestone = {
   difficulty: "beginner" | "intermediate" | "advanced";
   expectedOutput: string;
   suggestedStack: string;
-  proof: string;
+  check: string;
 };
 
 export type CurriculumModule = {
@@ -61,7 +61,7 @@ export const CURRICULUM: CurriculumModule[] = [
       difficulty: "beginner",
       expectedOutput: "a notebook or script that trains a tiny character-level model and samples text",
       suggestedStack: "python, pytorch or tinygrad, a small text corpus",
-      proof: "show training loss, sample output, and a short note on what improved after tuning",
+      check: "show training loss, sample output, and a short note on what improved after tuning",
     },
   },
   {
@@ -92,7 +92,7 @@ export const CURRICULUM: CurriculumModule[] = [
       difficulty: "beginner",
       expectedOutput: "five reusable prompts for a real workflow, each with inputs, expected output, and examples",
       suggestedStack: "claude, chatgpt, or any model playground",
-      proof: "include before/after outputs and explain which prompt changes improved reliability",
+      check: "include before/after outputs and explain which prompt changes improved reliability",
     },
   },
   {
@@ -123,7 +123,7 @@ export const CURRICULUM: CurriculumModule[] = [
       difficulty: "beginner",
       expectedOutput: "a searchable index over a folder of markdown or text files",
       suggestedStack: "typescript or python, embeddings API, sqlite or a local vector store",
-      proof: "show five queries, retrieved chunks, and one failure case you fixed",
+      check: "show five queries, retrieved chunks, and one failure case you fixed",
     },
   },
   {
@@ -154,7 +154,7 @@ export const CURRICULUM: CurriculumModule[] = [
       difficulty: "intermediate",
       expectedOutput: "a local app that answers questions with citations from uploaded PDFs",
       suggestedStack: "next.js or python, embeddings API, vector store, model API",
-      proof: "include citations, retrieval logs, and ten eval questions with pass/fail notes",
+      check: "include citations, retrieval logs, and ten eval questions with pass/fail notes",
     },
   },
   {
@@ -185,7 +185,7 @@ export const CURRICULUM: CurriculumModule[] = [
       difficulty: "intermediate",
       expectedOutput: "an assistant that gathers sources, compresses notes, and writes a sourced brief",
       suggestedStack: "typescript, model API, search or local documents, markdown output",
-      proof: "show the final brief, source list, and what context was kept or discarded",
+      check: "show the final brief, source list, and what context was kept or discarded",
     },
   },
   {
@@ -216,7 +216,7 @@ export const CURRICULUM: CurriculumModule[] = [
       difficulty: "intermediate",
       expectedOutput: "an agent that reads an issue, labels it, asks clarifying questions, and drafts a fix plan",
       suggestedStack: "typescript, github api, model API, structured outputs",
-      proof: "run it on ten issues and record correct labels, bad labels, and failure reasons",
+      check: "run it on ten issues and record correct labels, bad labels, and failure reasons",
     },
   },
   {
@@ -247,7 +247,7 @@ export const CURRICULUM: CurriculumModule[] = [
       difficulty: "intermediate",
       expectedOutput: "a repeatable eval harness with examples, expected behavior, and scoring notes",
       suggestedStack: "typescript or python, json fixtures, model API, simple report output",
-      proof: "compare two prompts or models and explain the regression you would ship or reject",
+      check: "compare two prompts or models and explain the regression you would ship or reject",
     },
   },
   {
@@ -268,7 +268,7 @@ export const CURRICULUM: CurriculumModule[] = [
     ],
     skipForNow: ["premature fine-tuning", "complex orchestration before instrumentation"],
     checkpoints: [
-      "identify the failure modes that matter to users",
+      "identify the failures users actually feel",
       "track cost, latency, quality, and feedback",
       "design fallbacks for model and retrieval failures",
       "know what must be monitored after launch",
@@ -278,7 +278,7 @@ export const CURRICULUM: CurriculumModule[] = [
       difficulty: "advanced",
       expectedOutput: "a deployed AI feature with auth, usage limits, feedback capture, and basic observability",
       suggestedStack: "next.js, model API, database, auth provider, logging",
-      proof: "include a demo link, failure-mode notes, and one iteration driven by feedback or evals",
+      check: "include a demo link, failure-mode notes, and one iteration driven by feedback or evals",
     },
   },
   {
@@ -309,7 +309,7 @@ export const CURRICULUM: CurriculumModule[] = [
       difficulty: "advanced",
       expectedOutput: "a concise risk review for one AI feature before launch",
       suggestedStack: "markdown, product spec, eval results, abuse-case checklist",
-      proof: "include risks, mitigations, monitoring, and a decision on what blocks launch",
+      check: "include risks, mitigations, monitoring, and a decision on what blocks launch",
     },
   },
 ];

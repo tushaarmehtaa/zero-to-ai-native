@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, CheckCircle2, Hammer, Route } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, CheckCircle2, Hammer } from "lucide-react";
 import { CURRICULUM, guidesForUrls, type CurriculumModule } from "@/lib/curriculum";
 
 function ResourceList({ title, urls }: { title: string; urls: string[] }) {
@@ -7,7 +7,7 @@ function ResourceList({ title, urls }: { title: string; urls: string[] }) {
 
   return (
     <div>
-      <h3 className="font-mono text-[11px] lowercase tracking-wide text-faint">{title}</h3>
+      <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-faint">{title}</h3>
       <div className="mt-3 divide-y divide-border">
         {guides.map((guide) => (
           <a
@@ -34,25 +34,25 @@ function ResourceList({ title, urls }: { title: string; urls: string[] }) {
 }
 
 function ModuleSection({ module, index }: { module: CurriculumModule; index: number }) {
+  const number = String(index + 1).padStart(2, "0");
+
   return (
-    <section id={module.slug} className="scroll-mt-8 border-t border-border py-10">
-      <div className="grid gap-8 lg:grid-cols-[240px_1fr]">
-        <aside>
-          <p className="font-mono text-[11px] lowercase tracking-wide text-orange">
-            module {String(index + 1).padStart(2, "0")}
-          </p>
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight">{module.title}</h2>
+    <section id={module.slug} className="scroll-mt-8 border-t border-border py-12">
+      <div className="grid gap-8 lg:grid-cols-[220px_1fr]">
+        <aside className="lg:sticky lg:top-8 lg:self-start">
+          <p className="font-mono text-5xl leading-none tracking-[-0.04em] text-orange/90">{number}</p>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight">{module.title}</h2>
           <p className="mt-3 text-[14px] leading-relaxed text-muted">{module.summary}</p>
         </aside>
 
         <div className="space-y-8">
           <div className="grid gap-5 md:grid-cols-2">
             <div>
-              <h3 className="font-mono text-[11px] lowercase tracking-wide text-faint">why it matters</h3>
+              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-faint">Why this pass exists</h3>
               <p className="mt-2 text-[14px] leading-relaxed text-muted">{module.why}</p>
             </div>
             <div>
-              <h3 className="font-mono text-[11px] lowercase tracking-wide text-faint">before you start</h3>
+              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-faint">Bring</h3>
               <ul className="mt-2 space-y-1.5 text-[14px] leading-relaxed text-muted">
                 {module.prerequisites.map((item) => (
                   <li key={item}>- {item}</li>
@@ -62,13 +62,13 @@ function ModuleSection({ module, index }: { module: CurriculumModule; index: num
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
-            <ResourceList title="read first" urls={module.readFirst} />
-            <ResourceList title="go deeper" urls={module.goDeeper} />
+            <ResourceList title="First pass" urls={module.readFirst} />
+            <ResourceList title="Second pass" urls={module.goDeeper} />
           </div>
 
           <div className="grid gap-8 md:grid-cols-2">
             <div>
-              <h3 className="font-mono text-[11px] lowercase tracking-wide text-faint">you are done when</h3>
+              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-faint">Exit checks</h3>
               <ul className="mt-3 space-y-2">
                 {module.checkpoints.map((checkpoint) => (
                   <li key={checkpoint} className="flex gap-2 text-[14px] leading-relaxed text-muted">
@@ -80,7 +80,7 @@ function ModuleSection({ module, index }: { module: CurriculumModule; index: num
             </div>
 
             <div>
-              <h3 className="font-mono text-[11px] lowercase tracking-wide text-faint">skip for now</h3>
+              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em] text-faint">Ignore</h3>
               <ul className="mt-3 space-y-1.5 text-[14px] leading-relaxed text-muted">
                 {module.skipForNow.map((item) => (
                   <li key={item}>- {item}</li>
@@ -92,7 +92,7 @@ function ModuleSection({ module, index }: { module: CurriculumModule; index: num
           <div className="border border-border p-5">
             <div className="flex items-center gap-2 text-orange">
               <Hammer className="h-4 w-4" />
-              <h3 className="font-mono text-[11px] lowercase tracking-wide">project milestone</h3>
+              <h3 className="font-mono text-[11px] uppercase tracking-[0.18em]">Build</h3>
             </div>
             <div className="mt-4 grid gap-5 md:grid-cols-[1fr_1.2fr]">
               <div>
@@ -103,10 +103,10 @@ function ModuleSection({ module, index }: { module: CurriculumModule; index: num
               </div>
               <div className="space-y-3 text-[14px] leading-relaxed text-muted">
                 <p>
-                  <span className="text-foreground">output:</span> {module.project.expectedOutput}
+                  <span className="text-foreground">Ship:</span> {module.project.expectedOutput}
                 </p>
                 <p>
-                  <span className="text-foreground">proof:</span> {module.project.proof}
+                  <span className="text-foreground">Check:</span> {module.project.check}
                 </p>
               </div>
             </div>
@@ -128,15 +128,11 @@ export function CurriculumView() {
           <ArrowLeft className="h-3.5 w-3.5" />
           all resources
         </Link>
-        <div className="mt-8 flex items-center gap-2 text-orange">
-          <Route className="h-4 w-4" />
-          <p className="font-mono text-[11px] lowercase tracking-wide">curriculum path</p>
-        </div>
-        <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">
-          from AI user to AI builder.
+        <h1 className="mt-8 max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl">
+          Read less. Build sooner.
         </h1>
         <p className="mt-5 max-w-2xl text-[16px] leading-relaxed text-muted">
-          A sequenced path through the original sources that matter, paired with checkpoints and projects so reading turns into proof of work.
+          Nine passes through the AI stack. Each pass tells you what to read, what to ignore, and what to ship before moving on.
         </p>
         <div className="mt-7 flex flex-wrap gap-2">
           {CURRICULUM.map((module, index) => (

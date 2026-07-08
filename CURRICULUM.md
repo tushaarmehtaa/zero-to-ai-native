@@ -21,7 +21,7 @@ The goal is to help builders answer four questions:
 8. Production AI
 9. Safety & Governance
 
-Each module has primary sources, checkpoints, and one project milestone.
+Each module has primary sources, checkpoints, and one build.
 
 ## Future shape
 

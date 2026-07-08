@@ -5,7 +5,7 @@
 - keep the catalog current with new primary-source AI material
 - review suggested links against the curation standard
 - keep the README and web app in sync with `lib/guides.ts`
-- add the static curriculum path with modules, checkpoints, and project milestones
+- add the static learning path with modules, checkpoints, and builds
 
 ## Phase 2
 
