@@ -38,7 +38,7 @@ export const CURRICULUM: CurriculumModule[] = [
     title: "Foundations",
     summary: "Build the base mental model: neural nets, transformers, language models, and why scale changed software.",
     why: "Everything else is easier when you understand what the model is doing, what it is not doing, and where the core abstractions came from.",
-    prerequisites: ["basic programming", "high-school algebra is enough for the first pass"],
+    prerequisites: ["basic programming", "high-school algebra is enough for the first time through"],
     readFirst: [
       url("Neural Networks"),
       url("Neural Networks: Zero to Hero"),

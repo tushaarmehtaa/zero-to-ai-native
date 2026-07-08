@@ -7,7 +7,7 @@ The goal is to help builders answer four questions:
 - what should I read first?
 - what can I skip for now?
 - what should I understand before moving on?
-- what should I build to prove I learned it?
+- what should I build after this?
 
 ## Current path
 
@@ -21,11 +21,10 @@ The goal is to help builders answer four questions:
 8. Production AI
 9. Safety & Governance
 
-Each module has primary sources, checkpoints, and one build.
+Each section has primary sources, checkpoints, and one small project.
 
 ## Future shape
 
 The curriculum can grow into a free AI engineering lab: original sources, practical projects, local progress, workshop guides, and community-submitted examples.
 
 The rule stays the same: add only what makes the path clearer.
-
