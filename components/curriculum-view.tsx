@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, CheckCircle2, PencilLine } from "lucide-react";
 import { CURRICULUM, guidesForUrls, type CurriculumModule } from "@/lib/curriculum";
+import { FormatIcon } from "./format-icon";
+import { LabLogo } from "./lab-logo";
 
 function ResourceList({ title, urls }: { title: string; urls: string[] }) {
   const guides = guidesForUrls(urls);
@@ -21,11 +23,20 @@ function ResourceList({ title, urls }: { title: string; urls: string[] }) {
               <span className="block text-[14px] font-medium leading-snug underline decoration-transparent underline-offset-[3px] group-hover:decoration-orange">
                 {guide.title}
               </span>
-              <span className="mt-1 block font-mono text-[11px] lowercase text-faint">
-                {guide.company} · {guide.format.toLowerCase()} · {guide.year}
+              <span className="mt-1 block font-mono text-[11px] text-faint">
+                {guide.year}
               </span>
             </span>
-            <ArrowUpRight className="mt-0.5 h-3.5 w-3.5 shrink-0 text-faint opacity-0 transition-opacity group-hover:opacity-100 group-hover:text-orange" />
+            <span className="flex shrink-0 items-center gap-2 text-faint">
+              <span
+                className="flex items-center gap-2"
+                title={`${guide.company} · ${guide.format.toLowerCase()}${guide.pages ? ` · ${guide.pages}pp` : ""}`}
+              >
+                <LabLogo company={guide.company} className="h-3.5 w-3.5" />
+                <FormatIcon format={guide.format} className="h-3.5 w-3.5" />
+              </span>
+              <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-100 group-hover:text-orange" />
+            </span>
           </a>
         ))}
       </div>
