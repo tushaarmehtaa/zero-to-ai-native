@@ -1,7 +1,8 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, CheckCircle2, PencilLine } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight, CheckCircle2, PencilLine } from "lucide-react";
 import { CURRICULUM, guidesForUrls, type CurriculumModule } from "@/lib/curriculum";
 import { FormatIcon } from "./format-icon";
+import { GithubIcon } from "./github-icon";
 import { LabLogo } from "./lab-logo";
 
 function ResourceList({ title, urls }: { title: string; urls: string[] }) {
@@ -163,6 +164,40 @@ export function CurriculumView() {
           <ModuleSection key={module.slug} module={module} index={index} />
         ))}
       </div>
+
+      <footer className="border-t border-border py-12">
+        <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
+          <div className="max-w-2xl">
+            <p className="font-mono text-[11px] lowercase tracking-wide text-orange">
+              end of the path, for now
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold tracking-tight">
+              keep going when you need more.
+            </h2>
+            <p className="mt-3 text-[14px] leading-relaxed text-muted">
+              This path gives you the order. The full catalog is there when you want more depth, another source, or a better explanation.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 sm:flex-row lg:justify-end">
+            <Link
+              href="/"
+              className="group inline-flex items-center justify-center gap-2 border border-border px-3 py-2 font-mono text-[12px] lowercase text-muted transition-colors hover:border-faint hover:text-foreground"
+            >
+              all resources
+              <ArrowRight className="h-3.5 w-3.5 text-faint transition-colors group-hover:text-orange" />
+            </Link>
+            <a
+              href="https://github.com/tushaarmehtaa/zero-to-ai-native/issues"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center gap-2 border border-border px-3 py-2 font-mono text-[12px] lowercase text-muted transition-colors hover:border-faint hover:text-foreground"
+            >
+              suggest a source
+              <GithubIcon className="h-3.5 w-3.5 text-faint transition-colors group-hover:text-orange" />
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
