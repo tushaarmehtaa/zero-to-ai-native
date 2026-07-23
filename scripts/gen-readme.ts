@@ -17,10 +17,10 @@ const SOURCE_URL: Partial<Record<Company, string>> = {
   "Hugging Face": "https://huggingface.co",
   Chroma: "https://www.trychroma.com",
   DeepSeek: "https://www.deepseek.com",
+  "Moonshot AI": "https://www.moonshot.ai",
   Qwen: "https://qwenlm.github.io",
   "Nous Research": "https://nousresearch.com",
   Ramp: "https://ramp.com",
-  NVIDIA: "https://www.nvidia.com",
   AWS: "https://aws.amazon.com",
   "Dario Amodei": "https://darioamodei.com",
   "Sam Altman": "https://blog.samaltman.com",
@@ -51,8 +51,8 @@ const X: Partial<Record<Company, string>> = {
   "Hugging Face": "huggingface",
   Chroma: "trychroma",
   DeepSeek: "deepseek_ai",
+  "Moonshot AI": "Kimi_Moonshot",
   Qwen: "Alibaba_Qwen",
-  NVIDIA: "nvidia",
   AWS: "awscloud",
   "Dario Amodei": "DarioAmodei",
   "Sam Altman": "sama",
@@ -79,6 +79,7 @@ const TOPIC_EMOJI: Record<string, string> = {
   "MLOps & Production": "⚙️",
   "Skills & Tooling": "🛠️",
   "Research & Economics": "📊",
+  "Perspectives & Futures": "🔭",
 };
 
 const FMT: Record<string, string> = {
@@ -108,7 +109,7 @@ for (const t of TOPICS) {
 // ── credits ─────────────────────────────────────────────────
 const LABS: Company[] = [
   "Anthropic", "OpenAI", "Google", "Meta", "Microsoft", "Mistral", "Cohere",
-  "Hugging Face", "Chroma", "DeepSeek", "Qwen", "Nous Research", "Ramp", "NVIDIA", "AWS",
+  "Hugging Face", "Chroma", "DeepSeek", "Moonshot AI", "Qwen", "Nous Research", "Ramp", "AWS",
 ];
 const PEOPLE: Company[] = [
   "Dario Amodei", "Sam Altman", "Leopold Aschenbrenner",

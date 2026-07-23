@@ -40,3 +40,13 @@ Bad:
 ## Bias
 
 When in doubt, keep the catalog smaller.
+
+## What does not belong in the core path
+
+Keep these in a clearly labeled optional track, or leave them out:
+
+- vendor collateral that is primarily selling a platform or service
+- annual roundups once a stronger, current synthesis already covers the same ground
+- predictions, policy arguments and personal visions presented as instruction
+
+Perspectives can be valuable context. They are not evidence, and should never be required reading for learning how systems work or how to build them.

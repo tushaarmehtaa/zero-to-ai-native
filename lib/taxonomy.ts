@@ -9,10 +9,10 @@ export const COMPANIES = [
   "Hugging Face",
   "Chroma",
   "DeepSeek",
+  "Moonshot AI",
   "Qwen",
   "Nous Research",
   "Ramp",
-  "NVIDIA",
   "AWS",
   // people & schools
   "Dario Amodei",
@@ -44,6 +44,7 @@ export const TOPICS = [
   "MLOps & Production",
   "Skills & Tooling",
   "Research & Economics",
+  "Perspectives & Futures",
 ] as const;
 export type Topic = (typeof TOPICS)[number];
 

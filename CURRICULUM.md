@@ -13,15 +13,14 @@ The goal is to help builders answer four questions:
 
 1. Foundations
 2. Prompting
-3. Embeddings
-4. RAG
-5. Context Engineering
-6. Agents
-7. Evals
-8. Production AI
-9. Safety & Governance
+3. Retrieval & RAG
+4. Context Engineering & Prompt Injection
+5. Agents & Tools
+6. Evals
+7. Production AI
+8. Safety & Governance
 
-Each section has primary sources, checkpoints, and one small project.
+Each section has a short required reading list, optional deeper material, checkpoints, and one small project. A resource is required only once in the path; the rest of the catalog remains available for exploration.
 
 ## Future shape
 

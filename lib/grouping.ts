@@ -10,6 +10,21 @@ import {
   TOPICS,
 } from "./taxonomy";
 
+export const PREFERRED_SOURCE = "OpenAI";
+
+// Keep the catalog's existing sequence intact while giving the preferred source
+// first position in every presentation that renders a guide collection.
+export function prioritizeGuides(guides: readonly Guide[]): Guide[] {
+  return guides
+    .map((guide, index) => ({ guide, index }))
+    .sort((a, b) => {
+      const aPriority = a.guide.company === PREFERRED_SOURCE ? 0 : 1;
+      const bPriority = b.guide.company === PREFERRED_SOURCE ? 0 : 1;
+      return aPriority - bPriority || a.index - b.index;
+    })
+    .map(({ guide }) => guide);
+}
+
 export function lengthOf(g: Guide): Length {
   if (g.pages) {
     if (g.pages < 25) return "quick";
@@ -64,7 +79,7 @@ export function groupGuides(guides: Guide[], key: GroupKey): Group[] {
   return bucketsFor(key)
     .map((bucket) => ({
       key: bucket,
-      items: guides.filter((g) => valueOf(g, key) === bucket),
+      items: prioritizeGuides(guides.filter((g) => valueOf(g, key) === bucket)),
     }))
     .filter((g) => g.items.length > 0);
 }

@@ -39,7 +39,7 @@ export function Hub() {
   const [query, setQuery] = useState("");
 
   useEffect(() => {
-    if (window.innerWidth >= 640) return;
+    if (window.innerWidth >= 768) return;
     const timeout = window.setTimeout(() => setView("list"), 0);
     return () => window.clearTimeout(timeout);
   }, []);
@@ -59,6 +59,13 @@ export function Hub() {
   );
 
   const groups = useMemo(() => groupGuides(matched, groupBy), [matched, groupBy]);
+
+  const availableViews = groupBy === "lab" ? VIEW_KEYS.filter((key) => key !== "board") : VIEW_KEYS;
+
+  const changeGroup = (nextGroup: GroupKey) => {
+    setGroupBy(nextGroup);
+    if (nextGroup === "lab" && view === "board") setView("cards");
+  };
 
   const matchedSourceCount = useMemo(() => new Set(matched.map((g) => g.company)).size, [matched]);
   const isFiltered = matched.length < GUIDES.length;
@@ -145,7 +152,7 @@ export function Hub() {
           <Dropdown
             label="view"
             value={view}
-            options={VIEW_KEYS}
+            options={availableViews}
             labelOf={(k) => VIEW_LABELS[k]}
             onChange={setView}
           />
@@ -153,9 +160,9 @@ export function Hub() {
             <Dropdown
               label="group"
               value={groupBy}
-              options={GROUP_KEYS}
-              labelOf={(k) => GROUP_LABELS[k]}
-              onChange={setGroupBy}
+            options={GROUP_KEYS}
+            labelOf={(k) => GROUP_LABELS[k]}
+            onChange={changeGroup}
               align="right"
             />
           ) : (

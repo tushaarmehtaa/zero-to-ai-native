@@ -328,15 +328,15 @@ export const GUIDES: Guide[] = [
     description: "how llms are built and how text generation works under the hood. the base layer.",
   },
   {
-    title: "Embeddings & Vector Stores",
+    title: "5-Day Gen AI Intensive",
     company: "Google",
     topic: "Foundations",
     url: "https://www.kaggle.com/learn-guide/5-day-genai",
-    format: "PDF",
+    format: "Course",
     year: 2025,
     level: "build",
     audience: "builder",
-    description: "embedding methods, vector search, and how rag actually retrieves the right thing.",
+    description: "a five-day course on foundational llms, embeddings, agents and production. use the relevant day when you need it; do not treat its modules as separate reads.",
   },
   {
     title: "Agents",
@@ -359,17 +359,6 @@ export const GUIDES: Guide[] = [
     level: "deep",
     audience: "builder",
     description: "the 102. agent evaluation methods and advanced patterns, for people who read the first one.",
-  },
-  {
-    title: "Solving Domain-Specific Problems & MLOps for Gen AI",
-    company: "Google",
-    topic: "MLOps & Production",
-    url: "https://www.kaggle.com/learn-guide/5-day-genai",
-    format: "Course",
-    year: 2025,
-    level: "deep",
-    audience: "builder",
-    description: "tuning models for a domain and running them in production. days 4 and 5 of the kaggle intensive.",
   },
   {
     title: "Gemini for Workspace Prompting Guide 101",
@@ -418,31 +407,7 @@ export const GUIDES: Guide[] = [
     description: "twenty-one lessons on building gen ai apps. the widely-used starting point.",
   },
 
-  // ── NVIDIA ─────────────────────────────────────────────────
-  {
-    title: "Generative AI in Practice",
-    company: "NVIDIA",
-    topic: "Enterprise & Adoption",
-    url: "https://www.nvidia.com/en-us/data-center/generative-ai-in-practice/",
-    format: "Web",
-    year: 2025,
-    level: "intro",
-    audience: "founder",
-    description: "how organizations deploy llms in production on real infrastructure. the hardware-side view.",
-  },
-
   // ── AWS ────────────────────────────────────────────────────
-  {
-    title: "Agentic AI on the Rise",
-    company: "AWS",
-    topic: "Agents",
-    url: "https://pages.awscloud.com/rs/112-TZM-766/images/AWS_Marketplace_ebook_Agentic_AI.pdf",
-    format: "PDF",
-    year: 2025,
-    level: "intro",
-    audience: "founder",
-    description: "where agentic value comes from, and how to run pre-built agents without building everything yourself.",
-  },
   {
     title: "Generative AI Lens (Well-Architected)",
     company: "AWS",
@@ -504,15 +469,15 @@ export const GUIDES: Guide[] = [
     description: "nine chapters with exercises, an example playground in each. the hands-on way to learn prompting claude.",
   },
   {
-    title: "The Financial Services Guide to Building Autonomous AI Agents",
+    title: "An Off Switch for Dual-Use Knowledge in AI Models",
     company: "Anthropic",
-    topic: "Enterprise & Adoption",
-    url: "https://resources.anthropic.com/financial-services-guide-aws-anthropic",
+    topic: "Papers",
+    url: "https://www.anthropic.com/research/off-switch-dual-use",
     format: "Web",
-    year: 2025,
-    level: "intro",
-    audience: "founder",
-    description: "when to reach for mcp and agent sdks, realistic timelines and team shapes, with real finance deployments.",
+    year: 2026,
+    level: "deep",
+    audience: "researcher",
+    description: "gram routes sensitive knowledge into removable modules. a promising early approach to capability access control, with its production limits made explicit.",
   },
 
   // ── OpenAI (more) ──────────────────────────────────────────
@@ -548,6 +513,28 @@ export const GUIDES: Guide[] = [
     level: "deep",
     audience: "builder",
     description: "when to fine-tune vs prompt, dataset hygiene, and splitting train from eval.",
+  },
+  {
+    title: "Separating Signal from Noise in Coding Evaluations",
+    company: "OpenAI",
+    topic: "MLOps & Production",
+    url: "https://openai.com/index/separating-signal-from-noise-coding-evaluations/",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "builder",
+    description: "an audit of swe-bench pro that finds roughly 30% broken tasks. required context for treating agentic-coding leaderboard scores seriously.",
+  },
+  {
+    title: "GPT-5.6 System Card",
+    company: "OpenAI",
+    topic: "Papers",
+    url: "https://deploymentsafety.openai.com/gpt-5-6",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "researcher",
+    description: "openai's deployment evidence for gpt-5.6: high cyber and bio capability classifications, safeguards, monitoring and red-team results.",
   },
 
   // ── Google (more) ──────────────────────────────────────────
@@ -646,6 +633,41 @@ export const GUIDES: Guide[] = [
     level: "intro",
     audience: "builder",
     description: "how to prompt a reasoning model: no system prompt, no forced chain-of-thought, temperature ~0.6.",
+  },
+
+  // ── Moonshot AI ────────────────────────────────────────────
+  {
+    title: "Kimi K3: Open Frontier Intelligence",
+    company: "Moonshot AI",
+    topic: "Papers",
+    url: "https://www.kimi.com/blog/kimi-k3",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "researcher",
+    description: "moonshot's 2.8t sparse multimodal model: architecture, deployment and benchmark protocol, plus unusually candid notes on harness compatibility and agent behavior.",
+  },
+  {
+    title: "PerceptionBench",
+    company: "Moonshot AI",
+    topic: "Papers",
+    url: "https://www.kimi.com/blog/perception-bench",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "researcher",
+    description: "a 3,000-sample benchmark that separates atomic visual perception from reasoning, exposing where multimodal models guess instead of see.",
+  },
+  {
+    title: "How We Scaled Kimi K2.5",
+    company: "Moonshot AI",
+    topic: "Foundations",
+    url: "https://www.nvidia.com/ja-jp/on-demand/session/gtc26-s81695/",
+    format: "Video",
+    year: 2026,
+    level: "deep",
+    audience: "researcher",
+    description: "moonshot founder zhilin yang on frontier-model scaling: muon, token efficiency, infrastructure co-design, linear attention and long-running agents.",
   },
 
   // ── Cohere ─────────────────────────────────────────────────
@@ -1008,17 +1030,6 @@ export const GUIDES: Guide[] = [
 
   // ── Blogs (people doing the real work) ─────────────────────
   {
-    title: "Things We Learned About LLMs in 2024",
-    company: "Simon Willison",
-    topic: "Foundations",
-    url: "https://simonwillison.net/2024/Dec/31/llms-in-2024/",
-    format: "Blog",
-    year: 2024,
-    level: "intro",
-    audience: "builder",
-    description: "the year in llms, plainly explained by the most reliable writer in the space.",
-  },
-  {
     title: "Patterns for Building LLM-based Systems & Products",
     company: "Eugene Yan",
     topic: "MLOps & Production",
@@ -1242,17 +1253,6 @@ export const GUIDES: Guide[] = [
     description: "the clearest annual review of where llms actually stand. architectures, training, benchmarks, all in one post.",
   },
   {
-    title: "The Year in LLMs 2025",
-    company: "Simon Willison",
-    topic: "Foundations",
-    url: "https://simonwillison.net/2025/Dec/31/the-year-in-llms/",
-    format: "Blog",
-    year: 2025,
-    level: "intro",
-    audience: "builder",
-    description: "26 sections covering everything that mattered in 2025. willison at his most thorough.",
-  },
-  {
     title: "Useful Patterns for Building HTML Tools",
     company: "Simon Willison",
     topic: "Skills & Tooling",
@@ -1288,24 +1288,11 @@ export const GUIDES: Guide[] = [
     description:
       "the honest practitioner take. llms don't make you faster. they let you ship things you'd never have justified spending time on. where they fail, and why the skill takes time to develop.",
   },
-  {
-    title: "Catching Up on the Weird World of LLMs",
-    company: "Simon Willison",
-    topic: "Foundations",
-    url: "https://simonwillison.net/2023/Aug/3/weird-world-of-llms/",
-    format: "Blog",
-    year: 2023,
-    level: "intro",
-    audience: "builder",
-    description:
-      "his north bay python talk written in full. what llms are, how they're trained, hallucination, safety, ethics. the best entry point for developers who haven't been paying attention.",
-  },
-
-  // ── Dario Amodei ───────────────────────────────────────────
+  // ── Perspectives & futures ─────────────────────────────────
   {
     title: "Machines of Loving Grace",
     company: "Dario Amodei",
-    topic: "Research & Economics",
+    topic: "Perspectives & Futures",
     url: "https://darioamodei.com/essay/machines-of-loving-grace",
     format: "Blog",
     year: 2024,
@@ -1317,7 +1304,7 @@ export const GUIDES: Guide[] = [
   {
     title: "The Adolescence of Technology",
     company: "Dario Amodei",
-    topic: "Research & Economics",
+    topic: "Perspectives & Futures",
     url: "https://darioamodei.com/essay/the-adolescence-of-technology",
     format: "Blog",
     year: 2026,
@@ -1329,7 +1316,7 @@ export const GUIDES: Guide[] = [
   {
     title: "Policy on the AI Exponential",
     company: "Dario Amodei",
-    topic: "Research & Economics",
+    topic: "Perspectives & Futures",
     url: "https://darioamodei.com/post/policy-on-the-ai-exponential",
     format: "Blog",
     year: 2025,
@@ -1343,7 +1330,7 @@ export const GUIDES: Guide[] = [
   {
     title: "The Intelligence Age",
     company: "Sam Altman",
-    topic: "Research & Economics",
+    topic: "Perspectives & Futures",
     url: "https://blog.samaltman.com/the-intelligence-age",
     format: "Blog",
     year: 2024,
@@ -1357,7 +1344,7 @@ export const GUIDES: Guide[] = [
   {
     title: "Situational Awareness: The Decade Ahead",
     company: "Leopold Aschenbrenner",
-    topic: "Research & Economics",
+    topic: "Perspectives & Futures",
     url: "https://situational-awareness.ai",
     format: "PDF",
     year: 2024,

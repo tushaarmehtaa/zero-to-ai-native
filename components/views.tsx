@@ -7,6 +7,7 @@ import type { Guide } from "@/lib/guides";
 import type { Group } from "@/lib/grouping";
 import type { Company, GroupKey } from "@/lib/taxonomy";
 import { COMPANIES } from "@/lib/taxonomy";
+import { PREFERRED_SOURCE } from "@/lib/grouping";
 import { GuideRow } from "./guide-row";
 import { GuideCard } from "./guide-card";
 import { LabLogo } from "./lab-logo";
@@ -153,6 +154,12 @@ export function TableView({ guides }: { guides: Guide[] }) {
   const [dir, setDir] = useState<1 | -1>(1);
 
   const sorted = [...guides].sort((a, b) => {
+    if (sort === "company") {
+      const aPriority = a.company === PREFERRED_SOURCE ? 0 : 1;
+      const bPriority = b.company === PREFERRED_SOURCE ? 0 : 1;
+      if (aPriority !== bPriority) return (aPriority - bPriority) * dir;
+    }
+
     const av = a[sort] ?? 0;
     const bv = b[sort] ?? 0;
     if (av < bv) return -1 * dir;
