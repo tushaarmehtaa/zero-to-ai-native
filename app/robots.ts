@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://zero-to-ai-native.vercel.app/sitemap.xml",
+    sitemap: "https://www.zerotoainative.xyz/sitemap.xml",
   };
 }

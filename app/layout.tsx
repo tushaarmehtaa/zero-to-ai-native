@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zero-to-ai-native.vercel.app"),
+  metadataBase: new URL("https://www.zerotoainative.xyz"),
   title: "zero to ai-native",
   description:
     "an open-source curriculum of primary-source AI material, from fundamentals to production systems.",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "zero to ai-native",
     description:
       "an open-source curriculum of primary-source AI material, from fundamentals to production systems.",
-    url: "https://zero-to-ai-native.vercel.app",
+    url: "https://www.zerotoainative.xyz",
     siteName: "zero to ai-native",
     type: "website",
     locale: "en_US",

@@ -166,7 +166,7 @@ the work is curation: read the source, reject weak links, keep the sequence usef
 - ai & weekends sessions
 - finding the primary source before reading commentary
 
-[open the curriculum](https://zero-to-ai-native.vercel.app/curriculum) or browse the full catalog below.
+[open the curriculum](https://www.zerotoainative.xyz/curriculum) or browse the full catalog below.
 
 ## 🚀 start here
 

@@ -3,13 +3,13 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://zero-to-ai-native.vercel.app",
+      url: "https://www.zerotoainative.xyz",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://zero-to-ai-native.vercel.app/curriculum",
+      url: "https://www.zerotoainative.xyz/curriculum",
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
