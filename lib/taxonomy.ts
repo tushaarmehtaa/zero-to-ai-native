@@ -14,6 +14,7 @@ export const COMPANIES = [
   "Nous Research",
   "Ramp",
   "AWS",
+  "Shopify",
   // people & schools
   "Dario Amodei",
   "Sam Altman",

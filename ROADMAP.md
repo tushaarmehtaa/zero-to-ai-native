@@ -5,13 +5,13 @@
 - keep the catalog current with new primary-source AI material
 - review suggested links against the curation standard
 - keep the README and web app in sync with `lib/guides.ts`
+- validate duplicate links, taxonomy values, URLs, years, and curriculum references
 - add the static curriculum with modules, checkpoints, and practice projects
 
 ## Phase 2
 
 - make the curriculum view easier to use in workshops and hackathons
 - add lightweight link checks
-- add catalog validation for duplicate URLs and missing taxonomy values
 - make contribution review easier for first-time contributors
 - publish periodic update notes when new resources are added
 

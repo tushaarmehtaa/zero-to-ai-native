@@ -1,4 +1,4 @@
-import { GUIDES, type Guide } from "./guides";
+import { GUIDES, type Guide } from "./guides.ts";
 
 export type ProjectMilestone = {
   title: string;
@@ -106,6 +106,7 @@ export const CURRICULUM: CurriculumModule[] = [
     ],
     goDeeper: [
       url("Context Rot: How Input Length Hurts LLM Performance"),
+      url("Chroma Context-1: Training a Self-Editing Search Agent"),
       url("Patterns for Building LLM-based Systems & Products"),
     ],
     skipForNow: ["custom embedding training", "graph RAG", "vendor-specific frameworks"],
@@ -136,6 +137,8 @@ export const CURRICULUM: CurriculumModule[] = [
     ],
     goDeeper: [
       url("Claude Code: Best Practices for Agentic Coding"),
+      url("Harness Engineering: Leveraging Codex in an Agent-First World"),
+      url("Harness Design for Long-Running Application Development"),
     ],
     skipForNow: ["giant-context brute force", "memory systems without evals"],
     checkpoints: [
@@ -164,7 +167,8 @@ export const CURRICULUM: CurriculumModule[] = [
       url("Writing Effective Tools for Agents"),
     ],
     goDeeper: [
-      url("Building Effective AI Agents"),
+      url("Unrolling the Codex Agent Loop"),
+      url("Towards a Science of Scaling Agent Systems"),
       url("MCP Introduction"),
       url("How To Build Agents Users Can Trust"),
     ],
@@ -191,10 +195,11 @@ export const CURRICULUM: CurriculumModule[] = [
     prerequisites: ["prompting", "rag or agents"],
     readFirst: [
       url("Evaluation Best Practices"),
+      url("Demystifying Evals for AI Agents"),
       url("Your AI Product Needs Evals"),
-      url("Separating Signal from Noise in Coding Evaluations"),
     ],
     goDeeper: [
+      url("Separating Signal from Noise in Coding Evaluations"),
       url("A Field Guide to Rapidly Improving AI Products"),
       url("Generative Benchmarking"),
     ],
@@ -227,6 +232,7 @@ export const CURRICULUM: CurriculumModule[] = [
     goDeeper: [
       url("A Field Guide to Rapidly Improving AI Products"),
       url("Patterns for Building LLM-based Systems & Products"),
+      url("Under the River"),
     ],
     skipForNow: ["premature fine-tuning", "complex orchestration before instrumentation"],
     checkpoints: [
@@ -251,10 +257,11 @@ export const CURRICULUM: CurriculumModule[] = [
     prerequisites: ["foundations", "agents", "evals"],
     readFirst: [
       url("Practices for Governing Agentic AI Systems"),
+      url("Running Codex Safely at OpenAI"),
       url("GPT-5.6 System Card"),
-      url("An Off Switch for Dual-Use Knowledge in AI Models"),
     ],
     goDeeper: [
+      url("An Off Switch for Dual-Use Knowledge in AI Models"),
       url("Alignment Faking in Large Language Models"),
       url("Claude's Constitution"),
       url("Llama Responsible Use Guide"),

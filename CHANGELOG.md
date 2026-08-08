@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-08-08
+
+- added ten primary-source guides on agent loops, harness engineering, agent evals, multi-agent scaling, self-editing retrieval, orchestration, safety, self-improvement, and production agent infrastructure
+- added Shopify as a source for its River and Aquifer architecture writeup
+- promoted the strongest new material into Retrieval, Context Engineering, Agents, Evals, Production AI, and Safety curriculum modules
+- replaced a duplicated agent architecture PDF in the curriculum with implementation-level agent loop and multi-agent evidence
+- documented a five-part inclusion gate that separates research discovery from catalog and curriculum acceptance
+- documented the promotion rule from research watchlist to catalog to curriculum
+- added automated catalog validation for duplicate titles and URLs, taxonomy values, HTTPS links, years, and curriculum references
+- regenerated the README from the typed catalog
+
 ## 2026-07-21
 
 - added Moonshot AI, Kimi K3, PerceptionBench and Zhilin Yang's GTC scaling talk

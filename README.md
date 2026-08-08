@@ -17,7 +17,7 @@
 
 the useful explanations of ai are usually written by the people **building** it, then scattered across cdns, arxiv, lab blogs, docs, and lectures.
 
-this is a maintained path through **116 hand-picked reads** from **31 sources**. no listicles, no reuploads, no seo. just primary sources, ordered the way you'd actually learn them.
+this is a maintained path through **126 hand-picked reads** from **32 sources**. no listicles, no reuploads, no seo. just primary sources, ordered the way you'd actually learn them.
 
 maintained by [Tushar Mehta](https://x.com/tushaarmehtaa), who builds AI products and co-runs AI & Weekends, an AI builder community with 30+ hands-on events across India and 2,000+ builders.
 
@@ -64,6 +64,9 @@ then pick a topic below and go deep.
 - **[Agents](https://www.kaggle.com/whitepaper-agents)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[Agents Companion](https://www.kaggle.com/whitepaper-agent-companion)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners)** · [Microsoft](https://www.microsoft.com/ai) · 🎓 course · 2025
+- **[Unrolling the Codex Agent Loop](https://openai.com/index/unrolling-the-codex-agent-loop/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
+- **[An Open-Source Spec for Codex Orchestration: Symphony](https://openai.com/index/open-source-codex-orchestration-symphony/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
+- **[Towards a Science of Scaling Agent Systems](https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/)** · [Google](https://deepmind.google) · 🌐 web · 2026
 - **[AI Agents Course](https://huggingface.co/learn/agents-course)** · [Hugging Face](https://huggingface.co) · 🎓 course · 2025
 - **[LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)** · [Lilian Weng](https://lilianweng.github.io) · ✍️ blog · 2023
 - **[Why We Built Our Own Background Agent](https://builders.ramp.com/post/why-we-built-our-background-agent)** · [Ramp](https://ramp.com) · ✍️ blog · 2026
@@ -86,7 +89,10 @@ then pick a topic below and go deep.
 ### 🧠 Context & Harness
 
 - **[Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
+- **[Harness Design for Long-Running Application Development](https://www.anthropic.com/engineering/harness-design-long-running-apps)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
+- **[Harness Engineering: Leveraging Codex in an Agent-First World](https://openai.com/index/harness-engineering/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
 - **[Context Rot: How Input Length Hurts LLM Performance](https://research.trychroma.com/context-rot)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2025
+- **[Chroma Context-1: Training a Self-Editing Search Agent](https://www.trychroma.com/research/context-1)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2026
 - **[Prompt Injection Explained](https://simonwillison.net/2023/May/2/prompt-injection-explained/)** · [Simon Willison](https://simonwillison.net) · ✍️ blog · 2023
 
 ### 📐 Foundations
@@ -156,12 +162,16 @@ then pick a topic below and go deep.
 
 - **[From Experiments to Deployments](https://cdn.openai.com/business-guides-and-resources/from-experiments-to-deployments_whitepaper_11-25.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
 - **[Generative AI Lens (Well-Architected)](https://docs.aws.amazon.com/pdfs/wellarchitected/latest/generative-ai-lens/generative-ai-lens.pdf)** · [AWS](https://aws.amazon.com) · 📄 pdf · 2025
+- **[Demystifying Evals for AI Agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
 - **[Evaluation Best Practices](https://developers.openai.com/api/docs/guides/evaluation-best-practices)** · [OpenAI](https://openai.com) · 🌐 web · 2025
 - **[Fine-tuning Best Practices](https://developers.openai.com/api/docs/guides/fine-tuning-best-practices)** · [OpenAI](https://openai.com) · 🌐 web · 2025
 - **[Separating Signal from Noise in Coding Evaluations](https://openai.com/index/separating-signal-from-noise-coding-evaluations/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
+- **[Building Self-Improving Tax Agents with Codex](https://openai.com/index/building-self-improving-tax-agents-with-codex/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
+- **[Running Codex Safely at OpenAI](https://openai.com/index/running-codex-safely/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
 - **[Smol Course](https://huggingface.co/learn/smol-course)** · [Hugging Face](https://huggingface.co) · 🎓 course · 2025
 - **[Evaluating Chunking Strategies for Retrieval](https://research.trychroma.com/evaluating-chunking)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2024
 - **[Generative Benchmarking](https://research.trychroma.com/generative-benchmarking)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2025
+- **[Under the River](https://shopify.engineering/under-the-river)** · [Shopify](https://shopify.engineering) · 🌐 web · 2026
 - **[How Ramp Fixes Merchant Matches with AI](https://engineering.ramp.com/post/fixing-merchant-classifications-with-ai)** · [Ramp](https://ramp.com) · ✍️ blog · 2025
 - **[Patterns for Building LLM-based Systems & Products](https://eugeneyan.com/writing/llm-patterns/)** · [Eugene Yan](https://eugeneyan.com) · ✍️ blog · 2023
 - **[What We Learned from a Year of Building with LLMs](https://applied-llms.org/)** · [Eugene Yan](https://eugeneyan.com) · ✍️ blog · 2024
@@ -204,7 +214,7 @@ then pick a topic below and go deep.
 
 every link goes to a primary source. these are the people and labs who did the work. go follow them, they earned it.
 
-**the labs** · [Anthropic](https://www.anthropic.com) ([@AnthropicAI](https://x.com/AnthropicAI)) · [OpenAI](https://openai.com) ([@OpenAI](https://x.com/OpenAI)) · [Google](https://deepmind.google) ([@GoogleDeepMind](https://x.com/GoogleDeepMind)) · [Meta](https://ai.meta.com) ([@AIatMeta](https://x.com/AIatMeta)) · [Microsoft](https://www.microsoft.com/ai) · [Mistral](https://mistral.ai) ([@MistralAI](https://x.com/MistralAI)) · [Cohere](https://cohere.com) ([@cohere](https://x.com/cohere)) · [Hugging Face](https://huggingface.co) ([@huggingface](https://x.com/huggingface)) · [Chroma](https://www.trychroma.com) ([@trychroma](https://x.com/trychroma)) · [DeepSeek](https://www.deepseek.com) ([@deepseek_ai](https://x.com/deepseek_ai)) · [Moonshot AI](https://www.moonshot.ai) ([@Kimi_Moonshot](https://x.com/Kimi_Moonshot)) · [Qwen](https://qwenlm.github.io) ([@Alibaba_Qwen](https://x.com/Alibaba_Qwen)) · [Nous Research](https://nousresearch.com) · [Ramp](https://ramp.com) · [AWS](https://aws.amazon.com) ([@awscloud](https://x.com/awscloud))
+**the labs** · [Anthropic](https://www.anthropic.com) ([@AnthropicAI](https://x.com/AnthropicAI)) · [OpenAI](https://openai.com) ([@OpenAI](https://x.com/OpenAI)) · [Google](https://deepmind.google) ([@GoogleDeepMind](https://x.com/GoogleDeepMind)) · [Meta](https://ai.meta.com) ([@AIatMeta](https://x.com/AIatMeta)) · [Microsoft](https://www.microsoft.com/ai) · [Mistral](https://mistral.ai) ([@MistralAI](https://x.com/MistralAI)) · [Cohere](https://cohere.com) ([@cohere](https://x.com/cohere)) · [Hugging Face](https://huggingface.co) ([@huggingface](https://x.com/huggingface)) · [Chroma](https://www.trychroma.com) ([@trychroma](https://x.com/trychroma)) · [DeepSeek](https://www.deepseek.com) ([@deepseek_ai](https://x.com/deepseek_ai)) · [Moonshot AI](https://www.moonshot.ai) ([@Kimi_Moonshot](https://x.com/Kimi_Moonshot)) · [Qwen](https://qwenlm.github.io) ([@Alibaba_Qwen](https://x.com/Alibaba_Qwen)) · [Nous Research](https://nousresearch.com) · [Ramp](https://ramp.com) · [AWS](https://aws.amazon.com) ([@awscloud](https://x.com/awscloud)) · [Shopify](https://shopify.engineering) ([@ShopifyEng](https://x.com/ShopifyEng))
 
 **the people** · [Dario Amodei](https://darioamodei.com) ([@DarioAmodei](https://x.com/DarioAmodei)) · [Sam Altman](https://blog.samaltman.com) ([@sama](https://x.com/sama)) · [Leopold Aschenbrenner](https://situational-awareness.ai) ([@leopoldasch](https://x.com/leopoldasch)) · [Andrej Karpathy](https://karpathy.ai) ([@karpathy](https://x.com/karpathy)) · [Lilian Weng](https://lilianweng.github.io) ([@lilianweng](https://x.com/lilianweng)) · [Simon Willison](https://simonwillison.net) ([@simonw](https://x.com/simonw)) · [Chip Huyen](https://huyenchip.com) ([@chipro](https://x.com/chipro)) · [Hamel Husain](https://hamel.dev) ([@HamelHusain](https://x.com/HamelHusain)) · [Eugene Yan](https://eugeneyan.com) ([@eugeneyan](https://x.com/eugeneyan)) · [Jay Alammar](https://jalammar.github.io) ([@JayAlammar](https://x.com/JayAlammar)) · [Sebastian Raschka](https://sebastianraschka.com) ([@rasbt](https://x.com/rasbt)) · [Benedict Evans](https://www.ben-evans.com) ([@benedictevans](https://x.com/benedictevans)) · [3Blue1Brown](https://www.3blue1brown.com) ([@3blue1brown](https://x.com/3blue1brown))
 
@@ -229,6 +239,8 @@ found something that belongs here? the catalog lives in [`lib/guides.ts`](lib/gu
 ```
 
 **standard:** primary sources only. no reuploads, affiliate links, seo posts, summaries, or hype. one clear sentence per entry.
+
+before opening a pr, run `npm run validate:catalog`, `npm run lint`, and regenerate this file with `node --experimental-strip-types scripts/gen-readme.ts`.
 
 [read the curation standard](CURATION.md) or [open an issue](https://github.com/tushaarmehtaa/zero-to-ai-native/issues) with a source worth reviewing.
 

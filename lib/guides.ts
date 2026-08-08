@@ -479,6 +479,30 @@ export const GUIDES: Guide[] = [
     audience: "researcher",
     description: "gram routes sensitive knowledge into removable modules. a promising early approach to capability access control, with its production limits made explicit.",
   },
+  {
+    title: "Demystifying Evals for AI Agents",
+    company: "Anthropic",
+    topic: "MLOps & Production",
+    url: "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+    format: "Web",
+    year: 2026,
+    level: "build",
+    audience: "builder",
+    description:
+      "a concrete vocabulary for agent evals—tasks, trials, graders, transcripts and outcomes—and how to combine code, model and human grading.",
+  },
+  {
+    title: "Harness Design for Long-Running Application Development",
+    company: "Anthropic",
+    topic: "Context & Harness",
+    url: "https://www.anthropic.com/engineering/harness-design-long-running-apps",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "builder",
+    description:
+      "planner, generator and evaluator agents; context resets; and structured handoffs for multi-hour builds, tested through methodical ablations.",
+  },
 
   // ── OpenAI (more) ──────────────────────────────────────────
   {
@@ -536,6 +560,66 @@ export const GUIDES: Guide[] = [
     audience: "researcher",
     description: "openai's deployment evidence for gpt-5.6: high cyber and bio capability classifications, safeguards, monitoring and red-team results.",
   },
+  {
+    title: "Unrolling the Codex Agent Loop",
+    company: "OpenAI",
+    topic: "Agents",
+    url: "https://openai.com/index/unrolling-the-codex-agent-loop/",
+    format: "Web",
+    year: 2026,
+    level: "build",
+    audience: "builder",
+    description:
+      "a line-by-line mental model of how prompts, tool calls, outputs, context growth and stateless requests form an agent loop.",
+  },
+  {
+    title: "Harness Engineering: Leveraging Codex in an Agent-First World",
+    company: "OpenAI",
+    topic: "Context & Harness",
+    url: "https://openai.com/index/harness-engineering/",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "builder",
+    description:
+      "what changes when agents write the code: make repository knowledge legible, turn standards into checks and treat feedback loops as infrastructure.",
+  },
+  {
+    title: "An Open-Source Spec for Codex Orchestration: Symphony",
+    company: "OpenAI",
+    topic: "Agents",
+    url: "https://openai.com/index/open-source-codex-orchestration-symphony/",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "builder",
+    description:
+      "an open spec for mapping issue-tracker states to isolated agent runs, retries and human review—the control plane beyond parallel chat tabs.",
+  },
+  {
+    title: "Building Self-Improving Tax Agents with Codex",
+    company: "OpenAI",
+    topic: "MLOps & Production",
+    url: "https://openai.com/index/building-self-improving-tax-agents-with-codex/",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "builder",
+    description:
+      "a production loop that turns expert corrections and traces into evals, then uses those evals to drive measurable system changes.",
+  },
+  {
+    title: "Running Codex Safely at OpenAI",
+    company: "OpenAI",
+    topic: "MLOps & Production",
+    url: "https://openai.com/index/running-codex-safely/",
+    format: "Web",
+    year: 2026,
+    level: "build",
+    audience: "builder",
+    description:
+      "a practical control model for deployed coding agents: sandboxes, approvals, network policy, scoped identity, managed configuration and audit logs.",
+  },
 
   // ── Google (more) ──────────────────────────────────────────
   {
@@ -583,6 +667,18 @@ export const GUIDES: Guide[] = [
     audience: "researcher",
     description:
       "the system behind the imo breakthrough. neuro-symbolic geometry solver built on gemini, surpassing the average human gold medalist.",
+  },
+  {
+    title: "Towards a Science of Scaling Agent Systems",
+    company: "Google",
+    topic: "Agents",
+    url: "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "builder",
+    description:
+      "180 controlled configurations show when multi-agent architectures help or hurt, turning orchestration from intuition into a task-dependent choice.",
   },
 
   // ── Meta ───────────────────────────────────────────────────
@@ -942,6 +1038,32 @@ export const GUIDES: Guide[] = [
     level: "build",
     audience: "builder",
     description: "generate evals from your own documents instead of trusting generic benchmarks.",
+  },
+  {
+    title: "Chroma Context-1: Training a Self-Editing Search Agent",
+    company: "Chroma",
+    topic: "Context & Harness",
+    url: "https://www.trychroma.com/research/context-1",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "builder",
+    description:
+      "multi-hop retrieval with a search agent that decomposes queries and edits its working context, including training, harness and evaluation details.",
+  },
+
+  // ── Shopify (production agent infrastructure) ──────────────
+  {
+    title: "Under the River",
+    company: "Shopify",
+    topic: "MLOps & Production",
+    url: "https://shopify.engineering/under-the-river",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "builder",
+    description:
+      "production architecture for durable agent sessions: separate harness and sandbox, keep an event log, reuse profiles and let humans join the same thread.",
   },
 
   // ── Lilian Weng (Lil'Log) ──────────────────────────────────

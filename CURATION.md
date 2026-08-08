@@ -13,6 +13,18 @@ Every entry should do at least one of these:
 
 Popularity is not enough. Freshness is not enough. A source has to earn its place.
 
+## The inclusion gate
+
+Before adding a source, answer all five:
+
+1. **Transfer:** what can a learner understand, decide, build, or evaluate better after reading it?
+2. **Evidence:** does it include a mechanism, implementation, experiment, field result, or inspectable method rather than a claim alone?
+3. **Originality:** does it add a durable idea the catalog does not already teach more clearly?
+4. **Shelf life:** will the central lesson remain useful after the named model or product changes?
+5. **Placement:** is there an honest topic, level, audience, and curriculum position for it?
+
+If any answer is weak, leave the source on the research watchlist. Discovery is not inclusion.
+
 ## Source rule
 
 Use the closest primary source available:
@@ -40,6 +52,8 @@ Bad:
 ## Bias
 
 When in doubt, keep the catalog smaller.
+
+The full catalog may preserve valuable advanced or specialized work. The curriculum has a higher bar: short required lists, no repeated required reading, and a concrete reason each resource appears at that point in the sequence.
 
 ## What does not belong in the core path
 

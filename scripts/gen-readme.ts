@@ -22,6 +22,7 @@ const SOURCE_URL: Partial<Record<Company, string>> = {
   "Nous Research": "https://nousresearch.com",
   Ramp: "https://ramp.com",
   AWS: "https://aws.amazon.com",
+  Shopify: "https://shopify.engineering",
   "Dario Amodei": "https://darioamodei.com",
   "Sam Altman": "https://blog.samaltman.com",
   "Leopold Aschenbrenner": "https://situational-awareness.ai",
@@ -54,6 +55,7 @@ const X: Partial<Record<Company, string>> = {
   "Moonshot AI": "Kimi_Moonshot",
   Qwen: "Alibaba_Qwen",
   AWS: "awscloud",
+  Shopify: "ShopifyEng",
   "Dario Amodei": "DarioAmodei",
   "Sam Altman": "sama",
   "Leopold Aschenbrenner": "leopoldasch",
@@ -109,7 +111,7 @@ for (const t of TOPICS) {
 // ── credits ─────────────────────────────────────────────────
 const LABS: Company[] = [
   "Anthropic", "OpenAI", "Google", "Meta", "Microsoft", "Mistral", "Cohere",
-  "Hugging Face", "Chroma", "DeepSeek", "Moonshot AI", "Qwen", "Nous Research", "Ramp", "AWS",
+  "Hugging Face", "Chroma", "DeepSeek", "Moonshot AI", "Qwen", "Nous Research", "Ramp", "AWS", "Shopify",
 ];
 const PEOPLE: Company[] = [
   "Dario Amodei", "Sam Altman", "Leopold Aschenbrenner",
@@ -209,6 +211,8 @@ found something that belongs here? the catalog lives in [\`lib/guides.ts\`](lib/
 \`\`\`
 
 **standard:** primary sources only. no reuploads, affiliate links, seo posts, summaries, or hype. one clear sentence per entry.
+
+before opening a pr, run \`npm run validate:catalog\`, \`npm run lint\`, and regenerate this file with \`node --experimental-strip-types scripts/gen-readme.ts\`.
 
 [read the curation standard](CURATION.md) or [open an issue](https://github.com/${REPO}/issues) with a source worth reviewing.
 

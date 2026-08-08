@@ -22,6 +22,8 @@ The goal is to help builders answer four questions:
 
 Each section has a short required reading list, optional deeper material, checkpoints, and one small project. A resource is required only once in the path; the rest of the catalog remains available for exploration.
 
+New sources do not enter the path because they are recent or widely shared. They move from research watchlist to catalog, then into the curriculum only when they add a non-redundant skill or mental model at a specific point in the sequence. See [CURATION.md](CURATION.md) for the inclusion gate.
+
 ## Future shape
 
 The curriculum can grow into a free AI engineering lab: original sources, practical projects, local progress, workshop guides, and community-submitted examples.

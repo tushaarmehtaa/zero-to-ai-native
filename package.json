@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate:catalog": "node --experimental-strip-types scripts/validate-catalog.ts"
   },
   "dependencies": {
     "geist": "^1.7.2",

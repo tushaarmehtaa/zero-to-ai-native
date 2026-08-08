@@ -9,6 +9,7 @@ import {
   siMeta,
   siMistralai,
   siQwen,
+  siShopify,
 } from "simple-icons";
 import type { Company } from "@/lib/taxonomy";
 
@@ -22,6 +23,7 @@ const SI: Partial<Record<Company, SimpleIcon>> = {
   Mistral: siMistralai,
   DeepSeek: siDeepseek,
   Qwen: siQwen,
+  Shopify: siShopify,
 };
 
 // brand colours for the logos that aren't in the icon set

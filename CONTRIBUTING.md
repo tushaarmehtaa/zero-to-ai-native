@@ -44,4 +44,13 @@ Edit `lib/guides.ts` and add one entry:
 
 Then open a PR.
 
+In the PR description, include:
+
+- the skill or mental model the source teaches
+- the evidence or implementation detail that makes it trustworthy
+- the closest existing catalog entry and why this is not redundant
+- where it belongs in the catalog, and whether it is strong enough for the curriculum
+
+Run `npm run validate:catalog`, `npm run lint`, and regenerate `README.md` with `node --experimental-strip-types scripts/gen-readme.ts` before submitting.
+
 If you are unsure, open an issue with the link and why it matters.
