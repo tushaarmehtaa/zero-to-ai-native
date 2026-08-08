@@ -32,36 +32,10 @@ body {
   background: color-mix(in srgb, var(--orange) 30%, transparent);
 }
 
-/* glitch title: chromatic split + jitter while settling */
-.glitch {
-  position: relative;
-  display: inline-block;
-}
-.glitch.is-glitching {
-  animation: glitch-jitter 0.16s steps(2) infinite;
-  text-shadow: 0.04em 0 var(--orange), -0.04em 0 #33d6ff;
-}
-@keyframes glitch-jitter {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(-1px, 1px); }
-  50% { transform: translate(1px, -1px); }
-  75% { transform: translate(-1px, 0); }
-  100% { transform: translate(0, 0); }
-}
-.glitch-caret {
-  display: inline-block;
-  width: 0.5ch;
-  margin-left: 0.05em;
-  background: var(--orange);
-  animation: caret-blink 0.9s steps(1) infinite;
-}
-@keyframes caret-blink {
-  0%, 50% { opacity: 1; }
-  50.01%, 100% { opacity: 0; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .glitch.is-glitching { animation: none; text-shadow: none; }
-  .glitch-caret { animation: none; opacity: 0; }
+/* Skip layout and paint for catalog groups until they approach the viewport. */
+.catalog-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 480px;
 }
 
 /* links: underline in orange, text goes orange on hover */

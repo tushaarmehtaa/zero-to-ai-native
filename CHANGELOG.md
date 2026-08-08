@@ -2,6 +2,8 @@
 
 ## 2026-08-08
 
+- stabilized refresh and first load by removing the post-hydration mobile view swap, long catalog stagger, and layout-moving title animation
+- made the compact list the consistent default view and deferred off-screen catalog rendering
 - added ten primary-source guides on agent loops, harness engineering, agent evals, multi-agent scaling, self-editing retrieval, orchestration, safety, self-improvement, and production agent infrastructure
 - added Shopify as a source for its River and Aquifer architecture writeup
 - promoted the strongest new material into Retrieval, Context Engineering, Agents, Evals, Production AI, and Safety curriculum modules

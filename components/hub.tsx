@@ -1,8 +1,7 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
-import { motion } from "motion/react";
 import { BookOpen, Star } from "lucide-react";
 import { GithubIcon } from "./github-icon";
 import { GUIDES } from "@/lib/guides";
@@ -15,7 +14,7 @@ import {
 } from "@/lib/taxonomy";
 import { BoardView, CardsView, ListView, TableView } from "./views";
 import { Dropdown } from "./dropdown";
-import { GlitchTitle } from "./glitch-title";
+import { SiteTitle } from "./site-title";
 
 const GROUP_KEYS: GroupKey[] = ["topic", "level", "lab", "format"];
 const VIEW_KEYS: ViewKey[] = ["list", "table", "board", "cards"];
@@ -24,25 +23,10 @@ const VIEW_KEYS: ViewKey[] = ["list", "table", "board", "cards"];
 const REPO_URL = "https://github.com/tushaarmehtaa/zero-to-ai-native";
 const X_URL = "https://x.com/tushaarmehtaa";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 12 },
-  show: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.45, delay: 0.15 + i * 0.08, ease: "easeOut" as const },
-  }),
-};
-
 export function Hub() {
-  const [view, setView] = useState<ViewKey>("board");
+  const [view, setView] = useState<ViewKey>("list");
   const [groupBy, setGroupBy] = useState<GroupKey>("level");
   const [query, setQuery] = useState("");
-
-  useEffect(() => {
-    if (window.innerWidth >= 768) return;
-    const timeout = window.setTimeout(() => setView("list"), 0);
-    return () => window.clearTimeout(timeout);
-  }, []);
 
   const q = query.trim().toLowerCase();
 
@@ -78,7 +62,7 @@ export function Hub() {
       {/* header */}
       <header className="mx-auto max-w-2xl">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <GlitchTitle />
+          <SiteTitle />
           <div className="flex w-fit shrink-0 items-center gap-2">
             <Link
               href="/curriculum"
@@ -100,47 +84,23 @@ export function Hub() {
           </div>
         </div>
 
-        <motion.div>
-          <motion.p
-            custom={0}
-            initial="hidden"
-            animate="show"
-            variants={fadeUp}
-            className="mt-5 text-lg leading-snug text-foreground"
-          >
+        <div>
+          <p className="mt-5 text-lg leading-snug text-foreground">
             an open-source curriculum of primary-source ai material.
-          </motion.p>
-          <motion.p
-            custom={1}
-            initial="hidden"
-            animate="show"
-            variants={fadeUp}
-            className="mt-2 text-[15px] leading-relaxed text-muted"
-          >
+          </p>
+          <p className="mt-2 text-[15px] leading-relaxed text-muted">
             straight from the people building it. grouped by{" "}
             <span className="text-foreground">{GROUP_LABELS[groupBy]}</span>, so you always know what to read
             next.
-          </motion.p>
-          <motion.p
-            custom={2}
-            initial="hidden"
-            animate="show"
-            variants={fadeUp}
-            className="mt-5 font-mono text-[11px] lowercase tracking-wide text-faint"
-          >
+          </p>
+          <p className="mt-5 font-mono text-[11px] lowercase tracking-wide text-faint">
             {isFiltered ? `${matched.length} of ${GUIDES.length}` : GUIDES.length} reads · {matchedSourceCount} sources
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
       </header>
 
       {/* controls */}
-      <motion.div
-        custom={3}
-        initial="hidden"
-        animate="show"
-        variants={fadeUp}
-        className="mx-auto mt-10 max-w-2xl space-y-4"
-      >
+      <div className="mx-auto mt-10 max-w-2xl space-y-4">
         <input
           value={query}
           onChange={(e) => setQuery(e.target.value)}
@@ -160,9 +120,9 @@ export function Hub() {
             <Dropdown
               label="group"
               value={groupBy}
-            options={GROUP_KEYS}
-            labelOf={(k) => GROUP_LABELS[k]}
-            onChange={changeGroup}
+              options={GROUP_KEYS}
+              labelOf={(k) => GROUP_LABELS[k]}
+              onChange={changeGroup}
               align="right"
             />
           ) : (
@@ -171,7 +131,7 @@ export function Hub() {
             </span>
           )}
         </div>
-      </motion.div>
+      </div>
 
       {/* the active view */}
       <div className="mt-14">

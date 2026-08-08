@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "motion/react";
 import { ArrowUpRight, ChevronDown, ChevronUp } from "lucide-react";
 import type { Guide } from "@/lib/guides";
 import type { Group } from "@/lib/grouping";
@@ -12,11 +11,6 @@ import { GuideRow } from "./guide-row";
 import { GuideCard } from "./guide-card";
 import { LabLogo } from "./lab-logo";
 import { FormatIcon } from "./format-icon";
-
-const stagger = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.025 } },
-};
 
 function SectionLabel({ bucket, groupKey }: { bucket: string; groupKey?: GroupKey }) {
   const showLogo = groupKey === "lab" && (COMPANIES as readonly string[]).includes(bucket);
@@ -31,14 +25,9 @@ function SectionLabel({ bucket, groupKey }: { bucket: string; groupKey?: GroupKe
 /* ── list ─────────────────────────────────────────────── */
 export function ListView({ groups, groupKey }: { groups: Group[]; groupKey?: GroupKey }) {
   return (
-    <motion.div
-      variants={stagger}
-      initial="hidden"
-      animate="show"
-      className="space-y-12"
-    >
+    <div className="space-y-12">
       {groups.map((group) => (
-        <section key={group.key}>
+        <section key={group.key} className="catalog-section">
           <SectionLabel bucket={group.key} groupKey={groupKey} />
           <div className="divide-y divide-border">
             {group.items.map((g) => (
@@ -47,16 +36,16 @@ export function ListView({ groups, groupKey }: { groups: Group[]; groupKey?: Gro
           </div>
         </section>
       ))}
-    </motion.div>
+    </div>
   );
 }
 
 /* ── cards ────────────────────────────────────────────── */
 export function CardsView({ groups, groupKey }: { groups: Group[]; groupKey?: GroupKey }) {
   return (
-    <motion.div variants={stagger} initial="hidden" animate="show" className="space-y-10">
+    <div className="space-y-10">
       {groups.map((group) => (
-        <section key={group.key}>
+        <section key={group.key} className="catalog-section">
           <SectionLabel bucket={group.key} groupKey={groupKey} />
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {group.items.map((g) => (
@@ -65,7 +54,7 @@ export function CardsView({ groups, groupKey }: { groups: Group[]; groupKey?: Gr
           </div>
         </section>
       ))}
-    </motion.div>
+    </div>
   );
 }
 
@@ -92,16 +81,11 @@ export function BoardView({ groups, groupKey }: { groups: Group[]; groupKey?: Gr
                 <SectionLabel bucket={group.key} groupKey={groupKey} />
                 <span className="font-mono text-[10px] text-faint">{group.items.length}</span>
               </div>
-              <motion.div
-                variants={stagger}
-                initial="hidden"
-                animate="show"
-                className="flex flex-col gap-3"
-              >
+              <div className="flex flex-col gap-3">
                 {group.items.map((g) => (
                   <GuideCard key={g.url + g.title} guide={g} compact />
                 ))}
-              </motion.div>
+              </div>
             </div>
           ))}
         </div>

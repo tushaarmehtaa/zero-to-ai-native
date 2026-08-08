@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import type { Guide } from "@/lib/guides";
 import { LabLogo } from "./lab-logo";
@@ -8,8 +7,7 @@ import { FormatIcon } from "./format-icon";
 
 export function GuideRow({ guide }: { guide: Guide }) {
   return (
-    <motion.a
-      variants={{ hidden: { opacity: 0, y: 10 }, show: { opacity: 1, y: 0 } }}
+    <a
       href={guide.url}
       target="_blank"
       rel="noopener noreferrer"
@@ -31,6 +29,6 @@ export function GuideRow({ guide }: { guide: Guide }) {
         </div>
       </div>
       <p className="max-w-prose text-[14px] leading-relaxed text-muted">{guide.description}</p>
-    </motion.a>
+    </a>
   );
 }

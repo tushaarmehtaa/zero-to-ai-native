@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
 import type { Guide } from "@/lib/guides";
 import { LabLogo } from "./lab-logo";
@@ -8,13 +7,11 @@ import { FormatIcon } from "./format-icon";
 
 export function GuideCard({ guide, compact = false }: { guide: Guide; compact?: boolean }) {
   return (
-    <motion.a
-      variants={{ hidden: { opacity: 0, y: 10 }, show: { opacity: 1, y: 0 } }}
-      whileHover={{ y: -2 }}
+    <a
       href={guide.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex flex-col gap-2 rounded-lg border border-border p-4 transition-colors hover:border-white/20 hover:bg-white/[0.02]"
+      className="group flex flex-col gap-2 rounded-lg border border-border p-4 transition-[border-color,background-color,transform] hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/[0.02]"
     >
       <div className="flex items-center justify-between gap-2 text-faint">
         <span
@@ -32,6 +29,6 @@ export function GuideCard({ guide, compact = false }: { guide: Guide; compact?: 
       {!compact && (
         <p className="line-clamp-3 text-[13px] leading-relaxed text-muted">{guide.description}</p>
       )}
-    </motion.a>
+    </a>
   );
 }

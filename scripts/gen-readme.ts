@@ -235,7 +235,7 @@ cd zero-to-ai-native
 npm install && npm run dev
 \`\`\`
 
-next.js · geist · tailwind · motion. static, no backend.
+next.js · geist · tailwind. static, no backend.
 
 ## ⭐ star history
 
