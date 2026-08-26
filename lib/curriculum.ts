@@ -292,3 +292,7 @@ export function guideForUrl(guideUrl: string): Guide {
 export function guidesForUrls(urls: string[]): Guide[] {
   return urls.map(guideForUrl);
 }
+
+export function moduleForSlug(slug: string): CurriculumModule | undefined {
+  return CURRICULUM.find((module) => module.slug === slug);
+}

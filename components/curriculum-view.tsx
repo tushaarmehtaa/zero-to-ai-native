@@ -53,8 +53,19 @@ function ModuleSection({ module, index }: { module: CurriculumModule; index: num
           <p className="font-mono text-[12px] lowercase tracking-wide text-orange">
             part {index + 1}
           </p>
-          <h2 className="mt-3 text-2xl font-semibold tracking-tight">{module.title}</h2>
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight">
+            <Link href={`/curriculum/${module.slug}`} className="hover:text-orange">
+              {module.title}
+            </Link>
+          </h2>
           <p className="mt-3 text-[14px] leading-relaxed text-muted">{module.summary}</p>
+          <Link
+            href={`/curriculum/${module.slug}`}
+            className="group mt-4 inline-flex items-center gap-2 font-mono text-[11px] lowercase text-faint transition-colors hover:text-foreground"
+          >
+            open module
+            <ArrowRight className="h-3.5 w-3.5 transition-colors group-hover:text-orange" />
+          </Link>
         </aside>
 
         <div className="space-y-8">
@@ -148,13 +159,13 @@ export function CurriculumView() {
         </p>
         <div className="mt-7 flex flex-wrap gap-2">
           {CURRICULUM.map((module, index) => (
-            <a
+            <Link
               key={module.slug}
-              href={`#${module.slug}`}
+              href={`/curriculum/${module.slug}`}
               className="border border-border px-3 py-1.5 font-mono text-[11px] lowercase text-muted transition-colors hover:border-faint hover:text-foreground"
             >
               {index + 1}. {module.title}
-            </a>
+            </Link>
           ))}
         </div>
       </header>
