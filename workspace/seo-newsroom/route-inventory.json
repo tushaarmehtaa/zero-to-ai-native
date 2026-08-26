@@ -1,0 +1,11 @@
+{
+  "observed_at": "2026-08-27",
+  "routes": [
+    { "class": "/", "count": 1, "search_job": "browse the full curated primary-source catalog", "indexable": true },
+    { "class": "/curriculum", "count": 1, "search_job": "understand the complete ordered AI learning path", "indexable": true },
+    { "class": "/curriculum/[slug]", "count": 8, "search_job": "learn one AI discipline through ordered readings, checkpoints, and a project", "indexable": true },
+    { "class": "/topics/[slug]", "count": 0, "search_job": "future: understand and navigate a durable AI topic", "indexable": "only after evidence and demand" },
+    { "class": "/paths/[slug]", "count": 0, "search_job": "future: follow a materially reordered path for a real audience", "indexable": "only after module evidence" },
+    { "class": "/workshops/[slug]", "count": 0, "search_job": "future: prepare for and follow up on firsthand AI & Weekends teaching", "indexable": "only with firsthand material" }
+  ]
+}

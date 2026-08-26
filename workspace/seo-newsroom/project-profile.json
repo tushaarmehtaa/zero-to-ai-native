@@ -1,0 +1,14 @@
+{
+  "project_name": "Zero to AI Native",
+  "project_type": "open-source curriculum and curated catalog",
+  "canonical_host": "https://www.zerotoainative.xyz",
+  "primary_audience": ["software builders learning modern AI systems", "workshop and hackathon participants"],
+  "reader_jobs": ["learn AI concepts in a useful order", "find the strongest primary source", "prove understanding through a project"],
+  "valuable_outcomes": ["curriculum use", "GitHub engagement", "AI & Weekends workshop use", "completed learning projects"],
+  "owned_evidence": ["126 curated sources", "five-part admission gate", "eight sequenced modules", "checkpoints and projects", "AI & Weekends teaching experience"],
+  "editorial_territory": "Help builders learn modern AI systems from the strongest original sources, in an honest sequence from foundations through safety.",
+  "publishing_ceiling": { "new_indexable_urls": 1, "period": "Asia/Kolkata calendar day" },
+  "expected_cadence": "zero or one new page per week initially",
+  "deployment_rule": "reviewed active session only; commit to main and verify production",
+  "platform_data_status": "No Search Console, Bing, analytics, backlink, or conversion export found in the repository on 2026-08-27."
+}

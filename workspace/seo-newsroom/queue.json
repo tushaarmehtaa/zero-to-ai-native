@@ -1,0 +1,45 @@
+{
+  "updated_at": "2026-08-27T00:00:00+05:30",
+  "items": [
+    {
+      "id": "broken-link-the-intelligence-age",
+      "title": "Repair or remove The Intelligence Age source",
+      "state": "needs_owner",
+      "score": 74,
+      "decision": "existing catalog maintenance; the primary URL returns 404 and no replacement has been verified",
+      "source": "https://blog.samaltman.com/the-intelligence-age",
+      "overlap": ["catalog Perspectives & Futures section"],
+      "next_action": "Find an author-controlled replacement or remove the entry; do not silently substitute a rehost."
+    },
+    {
+      "id": "trustworthy-agents-in-practice",
+      "title": "Trustworthy agents in practice",
+      "state": "researching",
+      "score": 79,
+      "decision": "research brief; compare with existing Agents & Tools and Safety & Governance readings before any catalog change",
+      "source": "https://www.anthropic.com/research/trustworthy-agents",
+      "overlap": ["/curriculum/agents", "/curriculum/safety-governance"],
+      "next_action": "Apply the five-part admission gate and identify a durable lesson not already taught by Ramp and existing governance sources."
+    },
+    {
+      "id": "openai-in-house-data-agent",
+      "title": "Inside OpenAI's in-house data agent",
+      "state": "watchlist",
+      "score": 72,
+      "decision": "possible catalog addition or production-module source; no new URL",
+      "source": "https://openai.com/index/inside-our-in-house-data-agent/",
+      "overlap": ["/curriculum/agents", "/curriculum/evals", "/curriculum/production-ai"],
+      "next_action": "Compare its context, permissions, and eval mechanisms with current production readings."
+    },
+    {
+      "id": "agentkit-wind-down",
+      "title": "AgentKit product wind-down",
+      "state": "watchlist",
+      "score": 56,
+      "decision": "maintenance signal only; avoid adding product-specific Agent Builder or hosted Evals material",
+      "source": "https://openai.com/index/introducing-agentkit/",
+      "overlap": ["catalog and curriculum references to vendor-specific agent tooling"],
+      "next_action": "Confirm no current required reading depends on the retiring products before 2026-11-30."
+    }
+  ]
+}

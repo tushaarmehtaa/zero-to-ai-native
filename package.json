@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "validate:catalog": "node --experimental-strip-types scripts/validate-catalog.ts"
+    "validate:catalog": "node --experimental-strip-types scripts/validate-catalog.ts",
+    "check:links": "node --experimental-strip-types scripts/check-links.ts"
   },
   "dependencies": {
     "geist": "^1.7.2",

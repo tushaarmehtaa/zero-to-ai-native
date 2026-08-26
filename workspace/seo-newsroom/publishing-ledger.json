@@ -1,0 +1,20 @@
+{
+  "timezone": "Asia/Kolkata",
+  "hard_ceiling": { "new_indexable_urls": 1, "period": "calendar day" },
+  "entries": [
+    {
+      "date": "2026-08-27",
+      "urls": [
+        "/curriculum/foundations",
+        "/curriculum/prompting",
+        "/curriculum/retrieval-rag",
+        "/curriculum/context-engineering",
+        "/curriculum/agents",
+        "/curriculum/evals",
+        "/curriculum/production-ai",
+        "/curriculum/safety-governance"
+      ],
+      "note": "Initial route-family launch predates newsroom enforcement. Future releases must respect the ceiling."
+    }
+  ]
+}

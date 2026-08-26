@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ephemeral SEO newsroom runs
+/workspace/seo-newsroom/runs/*
+!/workspace/seo-newsroom/runs/.gitkeep

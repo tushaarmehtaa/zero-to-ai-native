@@ -1,0 +1,13 @@
+{
+  "primary": [
+    "OpenAI research, engineering, developer documentation, system cards, and repositories",
+    "Anthropic research, engineering, documentation, system cards, and repositories",
+    "Google DeepMind research and official developer material",
+    "Meta AI research and official repositories",
+    "Microsoft, Mistral, Cohere, Hugging Face, Chroma, and major open-model labs",
+    "arXiv and original institutional course pages",
+    "AI & Weekends workshop notes and participant evidence supplied by Tushar"
+  ],
+  "discovery_only": ["Hacker News", "Product Hunt", "search result pages", "social posts"],
+  "maintenance": ["lib/guides.ts URL health", "curriculum placement and overlap", "repository inbox", "Search Console exports when supplied"]
+}
