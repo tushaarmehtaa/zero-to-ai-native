@@ -4,12 +4,12 @@
     {
       "id": "broken-link-the-intelligence-age",
       "title": "Repair or remove The Intelligence Age source",
-      "state": "needs_owner",
+      "state": "update_existing",
       "score": 74,
-      "decision": "existing catalog maintenance; the primary URL returns 404 and no replacement has been verified",
-      "source": "https://blog.samaltman.com/the-intelligence-age",
+      "decision": "resolved: update to the verified author-controlled replacement",
+      "source": "https://ia.samaltman.com/",
       "overlap": ["catalog Perspectives & Futures section"],
-      "next_action": "Find an author-controlled replacement or remove the entry; do not silently substitute a rehost."
+      "next_action": "Resolved locally: post-change health run reports 200 with no redirect. Verify again after deployment."
     },
     {
       "id": "trustworthy-agents-in-practice",

@@ -75,13 +75,13 @@ then pick a topic below and go deep.
 
 ### 💬 Prompt Engineering
 
-- **[GPT-5 Prompting Guide](https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide)** · [OpenAI](https://openai.com) · 🌐 web · 2025
+- **[GPT-5 Prompting Guide](https://developers.openai.com/cookbook/examples/gpt-5/gpt-5_prompting_guide)** · [OpenAI](https://openai.com) · 🌐 web · 2025
 - **[Prompt Engineering](https://www.kaggle.com/whitepaper-prompt-engineering)** · [Google](https://deepmind.google) · 📄 pdf · 2024
 - **[Gemini for Workspace Prompting Guide 101](https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf)** · [Google](https://deepmind.google) · 📄 pdf · 2024
 - **[Gemini Enterprise Prompt Guide](https://cloud.google.com/gemini-enterprise/resources/prompt-guide)** · [Google](https://deepmind.google) · 🌐 web · 2025
 - **[Prompt Engineering Interactive Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)** · [Anthropic](https://www.anthropic.com) · 🎓 course · 2025
-- **[GPT-4.1 Prompting Guide](https://cookbook.openai.com/examples/gpt4-1_prompting_guide)** · [OpenAI](https://openai.com) · 🌐 web · 2025
-- **[Llama Prompting Guide](https://www.llama.com/docs/how-to-guides/prompting/)** · [Meta](https://ai.meta.com) · 🌐 web · 2025
+- **[GPT-4.1 Prompting Guide](https://developers.openai.com/cookbook/examples/gpt4-1_prompting_guide)** · [OpenAI](https://openai.com) · 🌐 web · 2025
+- **[Llama Prompting Guide](https://developer.meta.com/ai/docs/how-to-guides/prompting/)** · [Meta](https://ai.meta.com) · 🌐 web · 2025
 - **[Prompting Capabilities](https://docs.mistral.ai/capabilities/completion/prompting_capabilities)** · [Mistral](https://mistral.ai) · 🌐 web · 2025
 - **[DeepSeek-R1 Usage Recommendations](https://github.com/deepseek-ai/DeepSeek-R1)** · [DeepSeek](https://www.deepseek.com) · 🌐 web · 2025
 - **[Prompt Engineering (In-Context Prompting)](https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/)** · [Lilian Weng](https://lilianweng.github.io) · ✍️ blog · 2023
@@ -91,7 +91,7 @@ then pick a topic below and go deep.
 - **[Effective Context Engineering for AI Agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Harness Design for Long-Running Application Development](https://www.anthropic.com/engineering/harness-design-long-running-apps)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
 - **[Harness Engineering: Leveraging Codex in an Agent-First World](https://openai.com/index/harness-engineering/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
-- **[Context Rot: How Input Length Hurts LLM Performance](https://research.trychroma.com/context-rot)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2025
+- **[Context Rot: How Input Length Hurts LLM Performance](https://www.trychroma.com/research/context-rot)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2025
 - **[Chroma Context-1: Training a Self-Editing Search Agent](https://www.trychroma.com/research/context-1)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2026
 - **[Prompt Injection Explained](https://simonwillison.net/2023/May/2/prompt-injection-explained/)** · [Simon Willison](https://simonwillison.net) · ✍️ blog · 2023
 
@@ -100,7 +100,7 @@ then pick a topic below and go deep.
 - **[Foundational LLMs & Text Generation](https://www.kaggle.com/whitepaper-foundational-llm-and-text-generation)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[5-Day Gen AI Intensive](https://www.kaggle.com/learn-guide/5-day-genai)** · [Google](https://deepmind.google) · 🎓 course · 2025
 - **[Generative AI for Beginners](https://microsoft.github.io/generative-ai-for-beginners/)** · [Microsoft](https://www.microsoft.com/ai) · 🎓 course · 2025
-- **[Gemini (whitepaper)](https://www.android.com/static/pdf/gemini-whitepaper.pdf)** · [Google](https://deepmind.google) · 📄 pdf · 2025
+- **[Gemini (whitepaper)](https://static.googleusercontent.com/media/www.android.com/en//static/pdf/gemini-whitepaper.pdf)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[How We Scaled Kimi K2.5](https://www.nvidia.com/ja-jp/on-demand/session/gtc26-s81695/)** · [Moonshot AI](https://www.moonshot.ai) · 🎥 video · 2026
 - **[LLM University (LLMU)](https://cohere.com/llmu)** · [Cohere](https://cohere.com) · 🎓 course · 2025
 - **[LLM Course](https://huggingface.co/learn/llm-course)** · [Hugging Face](https://huggingface.co) · 🎓 course · 2025
@@ -132,8 +132,8 @@ then pick a topic below and go deep.
 - **[GPT-5.6 System Card](https://deploymentsafety.openai.com/gpt-5-6)** · [OpenAI](https://openai.com) · 🌐 web · 2026
 - **[Gemini Achieves IMO Gold Medal](https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/)** · [Google](https://deepmind.google) · 🌐 web · 2025
 - **[AlphaGeometry2](https://arxiv.org/abs/2502.03544)** · [Google](https://deepmind.google) · 📄 pdf · 2025
-- **[Kimi K3: Open Frontier Intelligence](https://www.kimi.com/blog/kimi-k3)** · [Moonshot AI](https://www.moonshot.ai) · 🌐 web · 2026
-- **[PerceptionBench](https://www.kimi.com/blog/perception-bench)** · [Moonshot AI](https://www.moonshot.ai) · 🌐 web · 2026
+- **[Kimi K3: Open Frontier Intelligence](https://www.kimi.ai/blog/kimi-k3)** · [Moonshot AI](https://www.moonshot.ai) · 🌐 web · 2026
+- **[PerceptionBench](https://www.kimi.ai/blog/perception-bench)** · [Moonshot AI](https://www.moonshot.ai) · 🌐 web · 2026
 - **[Attention Is All You Need](https://arxiv.org/pdf/1706.03762)** · [Google](https://deepmind.google) · 📄 pdf · 2017
 - **[Scaling Laws for Neural Language Models](https://arxiv.org/pdf/2001.08361)** · [OpenAI](https://openai.com) · 📄 pdf · 2020
 - **[Language Models are Few-Shot Learners (GPT-3)](https://arxiv.org/pdf/2005.14165)** · [OpenAI](https://openai.com) · 📄 pdf · 2020
@@ -153,7 +153,7 @@ then pick a topic below and go deep.
 
 ### 🏢 Enterprise & Adoption
 
-- **[Building Trusted AI in the Enterprise](https://assets.anthropic.com/m/66daaa23018ab0fd/original/Anthropic-enterprise-ebook-digital.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
+- **[Building Trusted AI in the Enterprise](https://www-cdn.anthropic.com/e5c9de22bc8884089970bd262ca0c8b952cb9136.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
 - **[Identifying and Scaling AI Use Cases](https://cdn.openai.com/business-guides-and-resources/identifying-and-scaling-ai-use-cases.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
 - **[AI in the Enterprise](https://cdn.openai.com/business-guides-and-resources/ai-in-the-enterprise.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
 - **[Llama Responsible Use Guide](https://github.com/meta-llama/llama/blob/main/Responsible-Use-Guide.pdf)** · [Meta](https://ai.meta.com) · 📄 pdf · 2024
@@ -169,8 +169,8 @@ then pick a topic below and go deep.
 - **[Building Self-Improving Tax Agents with Codex](https://openai.com/index/building-self-improving-tax-agents-with-codex/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
 - **[Running Codex Safely at OpenAI](https://openai.com/index/running-codex-safely/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
 - **[Smol Course](https://huggingface.co/learn/smol-course)** · [Hugging Face](https://huggingface.co) · 🎓 course · 2025
-- **[Evaluating Chunking Strategies for Retrieval](https://research.trychroma.com/evaluating-chunking)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2024
-- **[Generative Benchmarking](https://research.trychroma.com/generative-benchmarking)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2025
+- **[Evaluating Chunking Strategies for Retrieval](https://www.trychroma.com/research/evaluating-chunking)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2024
+- **[Generative Benchmarking](https://www.trychroma.com/research/generative-benchmarking)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2025
 - **[Under the River](https://shopify.engineering/under-the-river)** · [Shopify](https://shopify.engineering) · 🌐 web · 2026
 - **[How Ramp Fixes Merchant Matches with AI](https://engineering.ramp.com/post/fixing-merchant-classifications-with-ai)** · [Ramp](https://ramp.com) · ✍️ blog · 2025
 - **[Patterns for Building LLM-based Systems & Products](https://eugeneyan.com/writing/llm-patterns/)** · [Eugene Yan](https://eugeneyan.com) · ✍️ blog · 2023
@@ -182,7 +182,7 @@ then pick a topic below and go deep.
 ### 🛠️ Skills & Tooling
 
 - **[The Complete Guide to Building Skills for Claude](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
-- **[Claude Code: Best Practices for Agentic Coding](https://www.anthropic.com/engineering/claude-code-best-practices)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
+- **[Claude Code: Best Practices for Agentic Coding](https://code.claude.com/docs/en/best-practices)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Writing Effective Tools for Agents](https://www.anthropic.com/engineering/writing-tools-for-agents)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[MCP Introduction](https://modelcontextprotocol.io/introduction)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2024
 - **[Useful Patterns for Building HTML Tools](https://simonwillison.net/2025/Dec/10/html-tools/)** · [Simon Willison](https://simonwillison.net) · ✍️ blog · 2025
@@ -194,7 +194,7 @@ then pick a topic below and go deep.
 - **[When AI Builds Itself](https://www.anthropic.com/institute/recursive-self-improvement)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
 - **[Exploring Model Welfare](https://www.anthropic.com/research/exploring-model-welfare)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Anthropic Economic Index: Economic Primitives](https://www-cdn.anthropic.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
-- **[Anthropic Economic Index: Geographic & Enterprise Adoption](https://assets.anthropic.com/m/218c82b858610fac/original/Economic-Index.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
+- **[Anthropic Economic Index: Geographic & Enterprise Adoption](https://www-cdn.anthropic.com/7b76335c444876a93fa22a63aabb4aeb820aff25.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
 - **[The State of Enterprise AI 2025](https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
 - **[Practices for Governing Agentic AI Systems](https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2023
 - **[Gemini 3 Pro Frontier Safety Framework Report](https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_fsf_report.pdf)** · [Google](https://deepmind.google) · 📄 pdf · 2025
@@ -207,7 +207,7 @@ then pick a topic below and go deep.
 - **[Machines of Loving Grace](https://darioamodei.com/essay/machines-of-loving-grace)** · [Dario Amodei](https://darioamodei.com) · ✍️ blog · 2024
 - **[The Adolescence of Technology](https://darioamodei.com/essay/the-adolescence-of-technology)** · [Dario Amodei](https://darioamodei.com) · ✍️ blog · 2026
 - **[Policy on the AI Exponential](https://darioamodei.com/post/policy-on-the-ai-exponential)** · [Dario Amodei](https://darioamodei.com) · ✍️ blog · 2025
-- **[The Intelligence Age](https://blog.samaltman.com/the-intelligence-age)** · [Sam Altman](https://blog.samaltman.com) · ✍️ blog · 2024
+- **[The Intelligence Age](https://ia.samaltman.com/)** · [Sam Altman](https://blog.samaltman.com) · ✍️ blog · 2024
 - **[Situational Awareness: The Decade Ahead](https://situational-awareness.ai)** · [Leopold Aschenbrenner](https://situational-awareness.ai) · 📄 pdf · 2024
 
 ## 🙏 sources &amp; credits

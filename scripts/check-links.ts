@@ -57,17 +57,26 @@ async function main() {
   await Promise.all(Array.from({ length: concurrency }, worker));
   results.sort((a, b) => a.title.localeCompare(b.title));
 
+  const blocked = results.filter(({ status }) => status === 401 || status === 403);
   const failures = results.filter(
-    ({ status }) => status === "error" || (typeof status === "number" && status >= 400),
+    ({ status }) =>
+      status === "error" ||
+      (typeof status === "number" && status >= 400 && status !== 401 && status !== 403),
   );
   const redirects = results.filter(
     ({ url, finalUrl }) => finalUrl && new URL(url).hostname !== new URL(finalUrl).hostname,
   );
 
   console.log(`checked ${results.length} catalog links`);
-  console.log(`${failures.length} require review; ${redirects.length} changed host`);
+  console.log(`${failures.length} broken; ${blocked.length} access-blocked; ${redirects.length} changed host`);
   for (const result of failures) {
     console.log(`${result.status}\t${result.title}\t${result.url}${result.error ? `\t${result.error}` : ""}`);
+  }
+  for (const result of blocked) {
+    console.log(`blocked:${result.status}\t${result.title}\t${result.url}`);
+  }
+  for (const result of redirects) {
+    console.log(`redirect\t${result.title}\t${result.url}\t${result.finalUrl}`);
   }
 
   if (failures.length > 0) process.exitCode = 1;
