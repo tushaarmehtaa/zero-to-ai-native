@@ -10,5 +10,5 @@
   "publishing_ceiling": { "new_indexable_urls": 1, "period": "Asia/Kolkata calendar day" },
   "expected_cadence": "zero or one new page per week initially",
   "deployment_rule": "reviewed active session only; commit to main and verify production",
-  "platform_data_status": "No Search Console, Bing, analytics, backlink, or conversion export found in the repository on 2026-08-27."
+  "platform_data_status": "A Google Search Console HTML verification token was supplied and added on 2026-08-27. Ownership confirmation and Search Console performance/indexation data remain unavailable until verified in Google."
 }
