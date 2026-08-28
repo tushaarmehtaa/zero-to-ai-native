@@ -4,7 +4,7 @@ import { CurriculumView } from "@/components/curriculum-view";
 export const metadata: Metadata = {
   title: "curriculum",
   description:
-    "a sequenced open-source AI engineering curriculum with primary sources, checkpoints, and project milestones.",
+    "an open-source eight-module AI subject map and a six-rung agent-native practice ladder, with evidence-gated projects.",
   alternates: {
     canonical: "/curriculum",
   },

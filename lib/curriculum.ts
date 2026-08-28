@@ -13,12 +13,16 @@ export type CurriculumModule = {
   title: string;
   summary: string;
   why: string;
-  prerequisites: string[];
+  prerequisites: {
+    reading: string[];
+    deeperPractice: string[];
+  };
   readFirst: string[];
   goDeeper: string[];
   skipForNow: string[];
   checkpoints: string[];
-  project: ProjectMilestone;
+  agentPractice: ProjectMilestone;
+  deeperProject: ProjectMilestone;
 };
 
 const guideByUrl = new Map<string, Guide>();
@@ -26,7 +30,7 @@ for (const guide of GUIDES) {
   if (!guideByUrl.has(guide.url)) guideByUrl.set(guide.url, guide);
 }
 
-function url(title: string): string {
+export function guideUrl(title: string): string {
   const guide = GUIDES.find((item) => item.title === title);
   if (!guide) throw new Error(`Missing guide: ${title}`);
   return guide.url;
@@ -38,15 +42,18 @@ export const CURRICULUM: CurriculumModule[] = [
     title: "Foundations",
     summary: "Build the base mental model: neural nets, transformers, language models, and why scale changed software.",
     why: "Everything else is easier when you understand what the model is doing, what it is not doing, and where the core abstractions came from.",
-    prerequisites: ["basic programming", "high-school algebra is enough for the first time through"],
+    prerequisites: {
+      reading: ["none; start with the visual explanations"],
+      deeperPractice: ["basic programming", "high-school algebra"],
+    },
     readFirst: [
-      url("Neural Networks: Zero to Hero"),
-      url("The Illustrated Transformer"),
-      url("Deep Dive into LLMs like ChatGPT"),
+      guideUrl("Neural Networks: Zero to Hero"),
+      guideUrl("The Illustrated Transformer"),
+      guideUrl("Deep Dive into LLMs like ChatGPT"),
     ],
     goDeeper: [
-      url("Foundational LLMs & Text Generation"),
-      url("Attention Is All You Need"),
+      guideUrl("Foundational LLMs & Text Generation"),
+      guideUrl("Attention Is All You Need"),
     ],
     skipForNow: ["training infrastructure details", "frontier safety reports", "fine-tuning papers"],
     checkpoints: [
@@ -55,9 +62,16 @@ export const CURRICULUM: CurriculumModule[] = [
       "explain tokens, embeddings, next-token prediction, and context windows",
       "know why transformers replaced earlier sequence models",
     ],
-    project: {
-      title: "Build a tiny autocomplete model",
+    agentPractice: {
+      title: "Test what a model actually knows",
       difficulty: "beginner",
+      expectedOutput: "a short evidence log of five controlled model probes, including one confident error and one context-window failure",
+      suggestedStack: "codex or claude, markdown, screenshots",
+      check: "show the input, output, claim you checked, external evidence, and what you would trust differently next time",
+    },
+    deeperProject: {
+      title: "Build a tiny autocomplete model",
+      difficulty: "intermediate",
       expectedOutput: "a notebook or script that trains a tiny character-level model and samples text",
       suggestedStack: "python, pytorch or tinygrad, a small text corpus",
       check: "show training loss, sample output, and a short note on what improved after tuning",
@@ -68,15 +82,16 @@ export const CURRICULUM: CurriculumModule[] = [
     title: "Prompting",
     summary: "Learn how to turn vague intent into reliable model behavior.",
     why: "Prompting is the first control surface. Good prompts make later systems easier to evaluate, debug, and operate.",
-    prerequisites: ["foundations", "basic comfort using chat models"],
+    prerequisites: {
+      reading: ["basic comfort using a chat model"],
+      deeperPractice: ["foundations mental model"],
+    },
     readFirst: [
-      url("GPT-5 Prompting Guide"),
-      url("Prompt Engineering"),
-      url("Prompt Engineering Interactive Tutorial"),
+      guideUrl("Prompt Engineering"),
+      guideUrl("Prompt Engineering Interactive Tutorial"),
     ],
     goDeeper: [
-      url("GPT-4.1 Prompting Guide"),
-      url("Prompt Engineering (In-Context Prompting)"),
+      guideUrl("Prompt Engineering (In-Context Prompting)"),
     ],
     skipForNow: ["model-specific tricks that do not transfer", "long prompt libraries without evals"],
     checkpoints: [
@@ -85,7 +100,14 @@ export const CURRICULUM: CurriculumModule[] = [
       "separate instruction quality from model capability",
       "know when prompting is no longer enough",
     ],
-    project: {
+    agentPractice: {
+      title: "Turn one job into a bounded specification",
+      difficulty: "beginner",
+      expectedOutput: "a reusable task specification with a named user, input, output, constraints, examples, and stop conditions",
+      suggestedStack: "codex or claude, markdown, one real workflow",
+      check: "run the same specification three times and explain which differences are acceptable and which violate the contract",
+    },
+    deeperProject: {
       title: "Build a prompt pack for one workflow",
       difficulty: "beginner",
       expectedOutput: "five reusable prompts for a real workflow, each with inputs, expected output, and examples",
@@ -98,16 +120,18 @@ export const CURRICULUM: CurriculumModule[] = [
     title: "Retrieval & RAG",
     summary: "Learn semantic retrieval, chunking, and grounded generation as one system.",
     why: "Retrieval and generation fail together in real products. Treating them as one layer makes it easier to debug relevance, citations, and answer quality.",
-    prerequisites: ["foundations", "prompting", "basic arrays and vectors"],
+    prerequisites: {
+      reading: ["foundations", "prompting"],
+      deeperPractice: ["basic arrays and vectors", "basic API work"],
+    },
     readFirst: [
-      url("5-Day Gen AI Intensive"),
-      url("Evaluating Chunking Strategies for Retrieval"),
-      url("Retrieval-Augmented Generation (RAG)"),
+      guideUrl("Evaluating Chunking Strategies for Retrieval"),
+      guideUrl("Retrieval-Augmented Generation (RAG)"),
     ],
     goDeeper: [
-      url("Context Rot: How Input Length Hurts LLM Performance"),
-      url("Chroma Context-1: Training a Self-Editing Search Agent"),
-      url("Patterns for Building LLM-based Systems & Products"),
+      guideUrl("Context Rot: How Input Length Hurts LLM Performance"),
+      guideUrl("Chroma Context-1: Training a Self-Editing Search Agent"),
+      guideUrl("Patterns for Building LLM-based Systems & Products"),
     ],
     skipForNow: ["custom embedding training", "graph RAG", "vendor-specific frameworks"],
     checkpoints: [
@@ -117,7 +141,14 @@ export const CURRICULUM: CurriculumModule[] = [
       "separate retrieval quality from answer quality",
       "create a small eval set for grounded answers",
     ],
-    project: {
+    agentPractice: {
+      title: "Add cited answers to your product",
+      difficulty: "beginner",
+      expectedOutput: "a small retrieval slice that answers from a prepared document set and exposes the retrieved chunks",
+      suggestedStack: "starter repository, model API, prepared documents",
+      check: "answer five questions with citations and identify whether each failure came from retrieval or generation",
+    },
+    deeperProject: {
       title: "Build a cited knowledge assistant",
       difficulty: "intermediate",
       expectedOutput: "a local app that searches a document folder and answers with citations",
@@ -130,15 +161,18 @@ export const CURRICULUM: CurriculumModule[] = [
     title: "Context Engineering & Prompt Injection",
     summary: "Learn what belongs in the model window, what should be fetched, and what should be compressed away.",
     why: "Context is the working memory of an AI system. Good context design is often the difference between a demo and a useful product.",
-    prerequisites: ["prompting", "retrieval & rag"],
+    prerequisites: {
+      reading: ["prompting"],
+      deeperPractice: ["retrieval & rag", "basic TypeScript or Python"],
+    },
     readFirst: [
-      url("Effective Context Engineering for AI Agents"),
-      url("Prompt Injection Explained"),
+      guideUrl("Effective Context Engineering for AI Agents"),
+      guideUrl("Prompt Injection Explained"),
     ],
     goDeeper: [
-      url("Claude Code: Best Practices for Agentic Coding"),
-      url("Harness Engineering: Leveraging Codex in an Agent-First World"),
-      url("Harness Design for Long-Running Application Development"),
+      guideUrl("Claude Code: Best Practices for Agentic Coding"),
+      guideUrl("Harness Engineering: Leveraging Codex in an Agent-First World"),
+      guideUrl("Harness Design for Long-Running Application Development"),
     ],
     skipForNow: ["giant-context brute force", "memory systems without evals"],
     checkpoints: [
@@ -147,7 +181,14 @@ export const CURRICULUM: CurriculumModule[] = [
       "identify a prompt-injection boundary and its mitigations",
       "explain how context rot changes system design",
     ],
-    project: {
+    agentPractice: {
+      title: "Make your repository legible to an agent",
+      difficulty: "beginner",
+      expectedOutput: "an AGENTS.md file, a context map, and one prompt-injection test for the product you are building",
+      suggestedStack: "codex or claude, AGENTS.md, repository logs",
+      check: "a fresh agent can find the right files, run the right check, and refuse the injected instruction without extra explanation",
+    },
+    deeperProject: {
       title: "Build an AI research assistant",
       difficulty: "intermediate",
       expectedOutput: "an assistant that gathers sources, compresses notes, and writes a sourced brief",
@@ -160,17 +201,20 @@ export const CURRICULUM: CurriculumModule[] = [
     title: "Agents & Tools",
     summary: "Move from single model calls to systems that use tools, plan work, and handle failure.",
     why: "Agents are useful when work requires decisions, tools, feedback, and multiple steps. They also fail in new ways.",
-    prerequisites: ["prompting", "context engineering", "basic API work"],
+    prerequisites: {
+      reading: ["prompting", "context engineering"],
+      deeperPractice: ["basic API work", "structured data"],
+    },
     readFirst: [
-      url("A Practical Guide to Building Agents"),
-      url("Building Effective Agents (essay)"),
-      url("Writing Effective Tools for Agents"),
+      guideUrl("A Practical Guide to Building Agents"),
+      guideUrl("Building Effective Agents (essay)"),
+      guideUrl("Writing Effective Tools for Agents"),
     ],
     goDeeper: [
-      url("Unrolling the Codex Agent Loop"),
-      url("Towards a Science of Scaling Agent Systems"),
-      url("MCP Introduction"),
-      url("How To Build Agents Users Can Trust"),
+      guideUrl("Unrolling the Codex Agent Loop"),
+      guideUrl("Towards a Science of Scaling Agent Systems"),
+      guideUrl("MCP Introduction"),
+      guideUrl("How To Build Agents Users Can Trust"),
     ],
     skipForNow: ["autonomous everything", "multi-agent architectures before one agent works"],
     checkpoints: [
@@ -179,7 +223,14 @@ export const CURRICULUM: CurriculumModule[] = [
       "handle uncertainty, retries, and partial failure",
       "measure whether the agent is getting more reliable",
     ],
-    project: {
+    agentPractice: {
+      title: "Give one agent one reliable tool",
+      difficulty: "beginner",
+      expectedOutput: "one typed tool with a narrow purpose, inspectable output, and an explicit failure result",
+      suggestedStack: "codex or claude, starter repository, typed script",
+      check: "the agent uses the tool correctly on five cases and stops or asks for help on the seeded failure",
+    },
+    deeperProject: {
       title: "Build a GitHub issue triage agent",
       difficulty: "intermediate",
       expectedOutput: "an agent that reads an issue, labels it, asks clarifying questions, and drafts a fix plan",
@@ -192,16 +243,19 @@ export const CURRICULUM: CurriculumModule[] = [
     title: "Evals",
     summary: "Measure model behavior so quality improves for reasons you can explain.",
     why: "Without evals, AI product work becomes vibes. Evals turn errors into a system you can improve.",
-    prerequisites: ["prompting", "rag or agents"],
+    prerequisites: {
+      reading: ["prompting", "one real model failure"],
+      deeperPractice: ["rag or agents", "JSON fixtures", "basic scripting"],
+    },
     readFirst: [
-      url("Evaluation Best Practices"),
-      url("Demystifying Evals for AI Agents"),
-      url("Your AI Product Needs Evals"),
+      guideUrl("Evaluation Best Practices"),
+      guideUrl("Demystifying Evals for AI Agents"),
+      guideUrl("Your AI Product Needs Evals"),
     ],
     goDeeper: [
-      url("Separating Signal from Noise in Coding Evaluations"),
-      url("A Field Guide to Rapidly Improving AI Products"),
-      url("Generative Benchmarking"),
+      guideUrl("Separating Signal from Noise in Coding Evaluations"),
+      guideUrl("A Field Guide to Rapidly Improving AI Products"),
+      guideUrl("Generative Benchmarking"),
     ],
     skipForNow: ["leaderboards", "generic benchmarks that do not match your product"],
     checkpoints: [
@@ -210,7 +264,14 @@ export const CURRICULUM: CurriculumModule[] = [
       "use error analysis to choose the next change",
       "know when an eval is being gamed",
     ],
-    project: {
+    agentPractice: {
+      title: "Turn five failures into checks",
+      difficulty: "beginner",
+      expectedOutput: "five fixtures from real failures and a command that reports which behaviors pass or fail",
+      suggestedStack: "starter repository, JSON fixtures, executable verification skill",
+      check: "the checks catch the seeded regression and a fresh agent can run them without asking you how",
+    },
+    deeperProject: {
       title: "Build an eval set for an LLM feature",
       difficulty: "intermediate",
       expectedOutput: "a repeatable eval harness with examples, expected behavior, and scoring notes",
@@ -223,16 +284,19 @@ export const CURRICULUM: CurriculumModule[] = [
     title: "Production AI",
     summary: "Turn a working demo into a system people can rely on.",
     why: "Production AI is mostly product engineering: reliability, cost, latency, observability, feedback, and iteration.",
-    prerequisites: ["retrieval & rag or agents", "evals", "basic full-stack development"],
+    prerequisites: {
+      reading: ["one working product slice", "basic eval literacy"],
+      deeperPractice: ["retrieval & rag or agents", "basic full-stack development"],
+    },
     readFirst: [
-      url("From Experiments to Deployments"),
-      url("Building LLM Applications for Production"),
-      url("What We Learned from a Year of Building with LLMs"),
+      guideUrl("From Experiments to Deployments"),
+      guideUrl("Building LLM Applications for Production"),
+      guideUrl("What We Learned from a Year of Building with LLMs"),
     ],
     goDeeper: [
-      url("A Field Guide to Rapidly Improving AI Products"),
-      url("Patterns for Building LLM-based Systems & Products"),
-      url("Under the River"),
+      guideUrl("A Field Guide to Rapidly Improving AI Products"),
+      guideUrl("Patterns for Building LLM-based Systems & Products"),
+      guideUrl("Under the River"),
     ],
     skipForNow: ["premature fine-tuning", "complex orchestration before instrumentation"],
     checkpoints: [
@@ -241,7 +305,14 @@ export const CURRICULUM: CurriculumModule[] = [
       "design fallbacks for model and retrieval failures",
       "know what must be monitored after launch",
     ],
-    project: {
+    agentPractice: {
+      title: "Make your product observable",
+      difficulty: "intermediate",
+      expectedOutput: "a deployed product slice with error logs, a usage ceiling, feedback capture, and one recovery path",
+      suggestedStack: "the evolving course product, hosting logs, analytics",
+      check: "another person can trigger the feature, you can explain one failure from evidence, and the system fails safely at its limit",
+    },
+    deeperProject: {
       title: "Ship a small AI product slice",
       difficulty: "advanced",
       expectedOutput: "a deployed AI feature with auth, usage limits, feedback capture, and basic observability",
@@ -254,26 +325,42 @@ export const CURRICULUM: CurriculumModule[] = [
     title: "Safety & Governance",
     summary: "Understand how frontier systems are evaluated, governed, and constrained.",
     why: "Capable AI systems create product, security, policy, and social risks. Builders need enough safety literacy to make better decisions.",
-    prerequisites: ["foundations", "agents", "evals"],
+    prerequisites: {
+      reading: ["foundations", "one product or agent you can examine"],
+      deeperPractice: ["agents", "evals", "production failure notes"],
+    },
     readFirst: [
-      url("Practices for Governing Agentic AI Systems"),
-      url("Running Codex Safely at OpenAI"),
-      url("GPT-5.6 System Card"),
+      guideUrl("Practices for Governing Agentic AI Systems"),
+      guideUrl("Running Codex Safely at OpenAI"),
+      guideUrl("GPT-5.6 System Card"),
+      guideUrl("Anthropic Economic Index: Economic Primitives"),
     ],
     goDeeper: [
-      url("An Off Switch for Dual-Use Knowledge in AI Models"),
-      url("Alignment Faking in Large Language Models"),
-      url("Claude's Constitution"),
-      url("Llama Responsible Use Guide"),
+      guideUrl("An Off Switch for Dual-Use Knowledge in AI Models"),
+      guideUrl("Alignment Faking in Large Language Models"),
+      guideUrl("Claude's Constitution"),
+      guideUrl("Llama Responsible Use Guide"),
+      guideUrl("AI Eats the World"),
+      guideUrl("MS&E435: Economics of the AI Supercycle"),
+      guideUrl("Machines of Loving Grace"),
+      guideUrl("The Adolescence of Technology"),
     ],
     skipForNow: ["policy fights without technical grounding", "abstract doom or hype pieces"],
     checkpoints: [
       "explain why agentic systems need different controls",
       "identify misuse, overreliance, privacy, and security risks",
       "read a system card or safety report critically",
+      "separate technical evidence, economic forecasts, and advocacy",
       "design a basic risk review for an AI product",
     ],
-    project: {
+    agentPractice: {
+      title: "Test the boundaries before launch",
+      difficulty: "intermediate",
+      expectedOutput: "an abuse-case exercise covering permissions, private data, overreliance, and one plausible misuse path",
+      suggestedStack: "the evolving course product, markdown, product logs",
+      check: "show the attempted failures, observed behavior, mitigation, monitoring signal, and what would block launch",
+    },
+    deeperProject: {
       title: "Write a launch risk review",
       difficulty: "advanced",
       expectedOutput: "a concise risk review for one AI feature before launch",

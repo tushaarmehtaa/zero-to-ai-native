@@ -1,149 +1,40 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, ArrowUpRight, CheckCircle2, PencilLine } from "lucide-react";
-import { CURRICULUM, guidesForUrls, type CurriculumModule } from "@/lib/curriculum";
-import { FormatIcon } from "./format-icon";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { CURRICULUM } from "@/lib/curriculum";
+import { LADDER } from "@/lib/ladder";
 import { GithubIcon } from "./github-icon";
-import { LabLogo } from "./lab-logo";
 
-function ResourceList({ title, urls }: { title: string; urls: string[] }) {
-  const guides = guidesForUrls(urls);
-
-  return (
-    <div>
-      <h3 className="font-mono text-[11px] lowercase tracking-wide text-faint">{title}</h3>
-      <div className="mt-3 divide-y divide-border">
-        {guides.map((guide) => (
-          <a
-            key={guide.url}
-            href={guide.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-start justify-between gap-4 py-3"
-          >
-            <span>
-              <span className="block text-[14px] font-medium leading-snug underline decoration-transparent underline-offset-[3px] group-hover:decoration-orange">
-                {guide.title}
-              </span>
-              <span className="mt-1 block font-mono text-[11px] text-faint">
-                {guide.year}
-              </span>
-            </span>
-            <span className="flex shrink-0 items-center gap-2 text-faint">
-              <span
-                className="flex items-center gap-2"
-                title={`${guide.company} · ${guide.format.toLowerCase()}${guide.pages ? ` · ${guide.pages}pp` : ""}`}
-              >
-                <LabLogo company={guide.company} className="h-3.5 w-3.5" />
-                <FormatIcon format={guide.format} className="h-3.5 w-3.5" />
-              </span>
-              <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-opacity group-hover:opacity-100 group-hover:text-orange" />
-            </span>
-          </a>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function ModuleSection({ module, index }: { module: CurriculumModule; index: number }) {
-  return (
-    <section id={module.slug} className="scroll-mt-8 border-t border-border py-12">
-      <div className="grid gap-8 lg:grid-cols-[220px_1fr]">
-        <aside className="lg:sticky lg:top-8 lg:self-start">
-          <p className="font-mono text-[12px] lowercase tracking-wide text-orange">
-            part {index + 1}
-          </p>
-          <h2 className="mt-3 text-2xl font-semibold tracking-tight">
-            <Link href={`/curriculum/${module.slug}`} className="hover:text-orange">
-              {module.title}
-            </Link>
-          </h2>
-          <p className="mt-3 text-[14px] leading-relaxed text-muted">{module.summary}</p>
-          <Link
-            href={`/curriculum/${module.slug}`}
-            className="group mt-4 inline-flex items-center gap-2 font-mono text-[11px] lowercase text-faint transition-colors hover:text-foreground"
-          >
-            open module
-            <ArrowRight className="h-3.5 w-3.5 transition-colors group-hover:text-orange" />
-          </Link>
-        </aside>
-
-        <div className="space-y-8">
-          <div className="grid gap-5 md:grid-cols-2">
-            <div>
-              <h3 className="font-mono text-[11px] lowercase tracking-wide text-faint">why learn this</h3>
-              <p className="mt-2 text-[14px] leading-relaxed text-muted">{module.why}</p>
-            </div>
-            <div>
-              <h3 className="font-mono text-[11px] lowercase tracking-wide text-faint">before this</h3>
-              <ul className="mt-2 space-y-1.5 text-[14px] leading-relaxed text-muted">
-                {module.prerequisites.map((item) => (
-                  <li key={item}>- {item}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2">
-            <ResourceList title="start with" urls={module.readFirst} />
-            <ResourceList title="read next" urls={module.goDeeper} />
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-2">
-            <div>
-              <h3 className="font-mono text-[11px] lowercase tracking-wide text-faint">you should be able to</h3>
-              <ul className="mt-3 space-y-2">
-                {module.checkpoints.map((checkpoint) => (
-                  <li key={checkpoint} className="flex gap-2 text-[14px] leading-relaxed text-muted">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-orange" />
-                    <span>{checkpoint}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-mono text-[11px] lowercase tracking-wide text-faint">save for later</h3>
-              <ul className="mt-3 space-y-1.5 text-[14px] leading-relaxed text-muted">
-                {module.skipForNow.map((item) => (
-                  <li key={item}>- {item}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          <div className="border border-border p-5">
-            <div className="flex items-center gap-2 text-orange">
-              <PencilLine className="h-4 w-4" />
-              <h3 className="font-mono text-[11px] lowercase tracking-wide">practice</h3>
-            </div>
-            <div className="mt-4 grid gap-5 md:grid-cols-[1fr_1.2fr]">
-              <div>
-                <p className="text-[16px] font-medium">{module.project.title}</p>
-                <p className="mt-2 font-mono text-[11px] lowercase text-faint">
-                  {module.project.difficulty} · {module.project.suggestedStack}
-                </p>
-              </div>
-              <div className="space-y-3 text-[14px] leading-relaxed text-muted">
-                <p>
-                  <span className="text-foreground">make:</span> {module.project.expectedOutput}
-                </p>
-                <p>
-                  <span className="text-foreground">you know it works when:</span> {module.project.check}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+const RUNG_INDEX_COPY = [
+  {
+    title: "Turn an idea into a small live product",
+    summary: "Choose one useful job, build the smallest working version, and put it at a public URL.",
+  },
+  {
+    title: "Check what the agent changed",
+    summary: "Use the diff, logs, and working product to decide whether the change is actually correct.",
+  },
+  {
+    title: "Make the project check itself",
+    summary: "Add tests, logs, and scripts so the agent can catch its own mistakes before you review them.",
+  },
+  {
+    title: "Split work without losing control",
+    summary: "Give separate jobs clear boundaries, then bring the results together without hidden conflicts.",
+  },
+  {
+    title: "Run feedback loops with limits",
+    summary: "Let the agent iterate against real checks while time, cost, and stop conditions stay fixed.",
+  },
+  {
+    title: "Own a product people use",
+    summary: "Handle real users, failures, costs, misuse, and model changes after the first launch.",
+  },
+] as const;
 
 export function CurriculumView() {
   return (
-    <main className="mx-auto w-full max-w-6xl px-6 py-12 sm:py-16">
-      <header className="max-w-3xl">
+    <main className="mx-auto w-full max-w-5xl px-5 py-10 sm:px-6 sm:py-16">
+      <header className="max-w-2xl">
         <Link
           href="/"
           className="inline-flex items-center gap-2 font-mono text-[11px] lowercase tracking-wide text-faint transition-colors hover:text-foreground"
@@ -151,62 +42,104 @@ export function CurriculumView() {
           <ArrowLeft className="h-3.5 w-3.5" />
           all resources
         </Link>
-        <h1 className="mt-8 max-w-2xl text-4xl font-semibold tracking-tight sm:text-5xl">
-          learn ai in the right order.
+        <h1 className="mt-10 max-w-xl text-4xl font-semibold tracking-[-0.04em] sm:text-6xl">
+          Learn what matters. Build what you can prove.
         </h1>
-        <p className="mt-5 max-w-2xl text-[16px] leading-relaxed text-muted">
-          Start with the original sources. Build small things as you go. Skip the noise until you need it.
+        <p className="mt-5 max-w-xl text-[16px] leading-relaxed text-muted sm:text-[17px]">
+          Eight subjects explain AI. Six practical steps teach you to build with an agent.
         </p>
-        <div className="mt-7 flex flex-wrap gap-2">
+      </header>
+
+      <section aria-labelledby="modules-heading" className="mt-16 sm:mt-24">
+        <div className="max-w-xl">
+          <h2 id="modules-heading" className="text-2xl font-semibold tracking-tight sm:text-3xl">
+            Understand AI
+          </h2>
+          <p className="mt-2 text-[14px] leading-relaxed text-muted">
+            Start with Foundations, or open the subject you need now.
+          </p>
+        </div>
+
+        <div className="mt-7 grid border-t border-border md:grid-cols-2">
           {CURRICULUM.map((module, index) => (
             <Link
               key={module.slug}
               href={`/curriculum/${module.slug}`}
-              className="border border-border px-3 py-1.5 font-mono text-[11px] lowercase text-muted transition-colors hover:border-faint hover:text-foreground"
+              className="group border-b border-border py-6 transition-colors hover:bg-[#0d0d0d] md:odd:pr-8 md:even:pl-8 md:even:border-l"
             >
-              {index + 1}. {module.title}
+              <div className="flex gap-4">
+                <span className="pt-1 font-mono text-[10px] text-orange">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-[18px] font-medium tracking-tight transition-colors group-hover:text-orange">
+                    {module.title}
+                  </h3>
+                  <p className="mt-2 max-w-md text-[13px] leading-relaxed text-muted">
+                    {module.summary}
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-2 font-mono text-[10px] lowercase text-faint">
+                    open module
+                    <ArrowRight className="h-3 w-3 transition-transform group-hover:translate-x-1 group-hover:text-orange" />
+                  </span>
+                </div>
+              </div>
             </Link>
           ))}
         </div>
-      </header>
+      </section>
 
-      <div className="mt-12">
-        {CURRICULUM.map((module, index) => (
-          <ModuleSection key={module.slug} module={module} index={index} />
-        ))}
-      </div>
+      <section aria-labelledby="rungs-heading" className="mt-20 sm:mt-28">
+        <div className="max-w-xl">
+          <h2 id="rungs-heading" className="text-2xl font-semibold tracking-tight sm:text-3xl">
+            Build with an agent
+          </h2>
+          <p className="mt-2 text-[14px] leading-relaxed text-muted">
+            One product grows across six steps. The first step is free.
+          </p>
+        </div>
 
-      <footer className="border-t border-border py-12">
-        <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-end">
-          <div className="max-w-2xl">
-            <p className="font-mono text-[11px] lowercase tracking-wide text-orange">
-              end of the path, for now
-            </p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight">
-              keep going when you need more.
-            </h2>
-            <p className="mt-3 text-[14px] leading-relaxed text-muted">
-              This path gives you the order. The full catalog is there when you want more depth, another source, or a better explanation.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2 sm:flex-row lg:justify-end">
+        <div className="mt-7 border-t border-border">
+          {LADDER.map((rung, index) => (
             <Link
-              href="/"
-              className="group inline-flex items-center justify-center gap-2 border border-border px-3 py-2 font-mono text-[12px] lowercase text-muted transition-colors hover:border-faint hover:text-foreground"
+              key={rung.slug}
+              href={`/curriculum/rung-${index + 1}`}
+              className="group grid gap-3 border-b border-border py-6 transition-colors hover:bg-[#0d0d0d] sm:grid-cols-[3rem_minmax(0,1fr)_auto] sm:items-center sm:gap-5"
             >
-              all resources
-              <ArrowRight className="h-3.5 w-3.5 text-faint transition-colors group-hover:text-orange" />
+              <span className="font-mono text-[11px] text-orange">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <div className="min-w-0">
+                <h3 className="text-[18px] font-medium tracking-tight transition-colors group-hover:text-orange">
+                  {RUNG_INDEX_COPY[index].title}
+                </h3>
+                <p className="mt-2 max-w-2xl text-[13px] leading-relaxed text-muted">
+                  {RUNG_INDEX_COPY[index].summary}
+                </p>
+              </div>
+              <div className="flex items-center justify-between gap-5 sm:justify-end">
+                <span className="font-mono text-[10px] lowercase text-faint">
+                  {rung.hours} hours · {rung.access}
+                </span>
+                <ArrowRight className="h-4 w-4 text-faint transition-transform group-hover:translate-x-1 group-hover:text-orange" />
+              </div>
             </Link>
-            <a
-              href="https://github.com/tushaarmehtaa/zero-to-ai-native/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-2 border border-border px-3 py-2 font-mono text-[12px] lowercase text-muted transition-colors hover:border-faint hover:text-foreground"
-            >
-              suggest a source
-              <GithubIcon className="h-3.5 w-3.5 text-faint transition-colors group-hover:text-orange" />
-            </a>
-          </div>
+          ))}
+        </div>
+      </section>
+
+      <footer className="mt-24 border-t border-border py-10 sm:mt-32">
+        <div className="flex flex-col gap-5 text-[13px] leading-relaxed text-muted sm:flex-row sm:items-center sm:justify-between">
+          <p>The catalog and eight modules stay free. The guided course is paid after rung one.</p>
+          <a
+            href="https://github.com/tushaarmehtaa/zero-to-ai-native/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex shrink-0 items-center gap-2 font-mono text-[10px] lowercase text-faint hover:text-foreground"
+          >
+            suggest a source
+            <GithubIcon className="h-3.5 w-3.5 transition-colors group-hover:text-orange" />
+          </a>
         </div>
       </footer>
     </main>

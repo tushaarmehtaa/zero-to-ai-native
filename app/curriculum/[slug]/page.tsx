@@ -53,12 +53,12 @@ export default async function CurriculumModulePage({ params }: Props) {
       name: "Zero to AI Native",
       url: "https://www.zerotoainative.xyz",
     },
-    educationalLevel: learningModule.project.difficulty,
+    educationalLevel: learningModule.agentPractice.difficulty,
     teaches: learningModule.checkpoints,
     hasCourseInstance: {
       "@type": "CourseInstance",
       courseMode: "online",
-      courseWorkload: `${learningModule.readFirst.length + learningModule.goDeeper.length} readings and 1 practical project`,
+      courseWorkload: `${learningModule.readFirst.length + learningModule.goDeeper.length} readings and 2 practical projects`,
     },
   };
 

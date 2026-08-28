@@ -1,5 +1,6 @@
 import { CURRICULUM } from "../lib/curriculum.ts";
 import { GUIDES } from "../lib/guides.ts";
+import { CORE_HOURS, FREE_HOURS, LADDER } from "../lib/ladder.ts";
 import {
   AUDIENCES,
   COMPANIES,
@@ -64,6 +65,39 @@ for (const curriculumModule of CURRICULUM) {
   }
 }
 
+const modulesBySlug = new Map(CURRICULUM.map((curriculumModule) => [curriculumModule.slug, curriculumModule]));
+
+reportDuplicates("ladder rung slug", LADDER.map((rung) => rung.slug));
+
+for (const rung of LADDER) {
+  const prefix = `ladder rung \"${rung.title}\"`;
+  const mappedModules = Object.keys(rung.modules);
+
+  if (mappedModules.length !== CURRICULUM.length) {
+    errors.push(`${prefix} must map all ${CURRICULUM.length} curriculum modules`);
+  }
+  if (rung.access === "free" && !rung.practice) {
+    errors.push(`${prefix} is free but has no complete practice lab`);
+  }
+  if (rung.access === "paid" && rung.practice) {
+    errors.push(`${prefix} exposes paid practice content in the open curriculum`);
+  }
+
+  for (const reading of rung.requiredReading) {
+    const curriculumModule = modulesBySlug.get(reading.module);
+    if (!curriculumModule) {
+      errors.push(`${prefix} references unknown module: ${reading.module}`);
+      continue;
+    }
+    if (!curriculumModule.readFirst.includes(reading.url)) {
+      errors.push(`${prefix} reading must come from ${curriculumModule.title}'s start-with list: ${reading.url}`);
+    }
+  }
+}
+
+if (CORE_HOURS !== 60) errors.push(`guided ladder must total 60 hours, found ${CORE_HOURS}`);
+if (FREE_HOURS !== 12) errors.push(`free ladder must total 12 hours, found ${FREE_HOURS}`);
+
 reportDuplicates("required curriculum resource", requiredUrls);
 
 if (errors.length) {
@@ -71,5 +105,5 @@ if (errors.length) {
   for (const error of errors) console.error(`- ${error}`);
   process.exitCode = 1;
 } else {
-  console.log(`catalog valid: ${GUIDES.length} guides, ${CURRICULUM.length} modules`);
+  console.log(`catalog valid: ${GUIDES.length} guides, ${CURRICULUM.length} modules, ${LADDER.length} rungs, ${CORE_HOURS} guided hours`);
 }
