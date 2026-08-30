@@ -3,7 +3,7 @@ import { readFile } from "fs/promises";
 import { join } from "path";
 import { GUIDES } from "@/lib/guides";
 
-export const alt = "zero to ai-native — the best papers, guides, blogs and lectures on ai";
+export const alt = "Zero to AI-Native: the best papers, guides, blogs and lectures on AI";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -49,10 +49,9 @@ export default async function OpengraphImage() {
               fontSize: "20px",
               color: "#52525b",
               letterSpacing: "0.12em",
-              textTransform: "lowercase",
             }}
           >
-            zero-to-ai-native
+            Zero to AI-Native
           </div>
         </div>
 
@@ -69,7 +68,7 @@ export default async function OpengraphImage() {
               lineHeight: 0.95,
             }}
           >
-            zero to ai-native
+            Zero to AI-Native
           </div>
           <div
             style={{
@@ -80,7 +79,7 @@ export default async function OpengraphImage() {
               lineHeight: 1.35,
             }}
           >
-            the best papers, guides, blogs and lectures on ai.
+            The best papers, guides, blogs and lectures on AI.
           </div>
         </div>
 
@@ -104,7 +103,7 @@ export default async function OpengraphImage() {
             <span style={{ margin: "0 16px", color: "#27272a" }}>·</span>
             {sources} sources
             <span style={{ margin: "0 16px", color: "#27272a" }}>·</span>
-            <span style={{ color: "#ff5e33" }}>straight from the people building it</span>
+            <span style={{ color: "#ff5e33" }}>Straight from the people building it</span>
           </div>
         </div>
       </div>

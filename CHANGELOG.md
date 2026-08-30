@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-08-30
+
+- switched the site from dark-first to a light theme, with contrast-checked tokens for body, muted, and accent text
+- fixed the ladder practice detail views (`/curriculum` rung links 404'd; wired the ladder view onto the curriculum page with working in-page anchors)
+- audited the catalog and curriculum against the inclusion gate: cut two results-announcement entries and two vendor-collateral prompting guides, removed a redundant Gemini entry in favor of the stronger AlphaGeometry2 paper, relabeled a mis-tagged catalog entry, fixed a Stanford link that pointed at a whole channel instead of the specific lecture
+- split the safety-governance module's optional reading into "read next" (evidence) and a separately labeled "perspectives, not evidence" section
+- rebalanced the practice ladder's required reading so no single source is reused more than twice across rungs (previously up to four)
+- added a live GitHub star count to the homepage and footer, fetched server-side
+- added a "coming soon" gate for the curriculum entry point, with a waitlist email capture (local store for now, swappable for a hosted provider)
+- rebuilt the homepage hero: centered layout, new headline and copy, a handwritten annotation with a custom SVG arrow, a researcher-avatar strip, live stats line
+- redesigned the closing section into a short creator note: small photo, bio, and simple centered footer links (X, GitHub star, share)
+- normal sentence-case capitalization across the site's UI chrome (removed forced-lowercase styling and a bug that was lowercasing company names like "OpenAI" in the table view)
+
 ## 2026-08-08
 
 - stabilized refresh and first load by removing the post-hydration mobile view swap, long catalog stagger, and layout-moving title animation

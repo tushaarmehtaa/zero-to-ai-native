@@ -43,3 +43,6 @@ next-env.d.ts
 # ephemeral SEO newsroom runs
 /workspace/seo-newsroom/runs/*
 !/workspace/seo-newsroom/runs/.gitkeep
+
+# local waitlist store (placeholder until Supabase is wired up)
+/data/waitlist.jsonl

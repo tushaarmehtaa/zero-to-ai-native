@@ -19,7 +19,7 @@ function ReadingList({ label, urls }: { label: string; urls: string[] }) {
     <section aria-labelledby={`${label.replaceAll(" ", "-")}-heading`}>
       <h2
         id={`${label.replaceAll(" ", "-")}-heading`}
-        className="font-mono text-[11px] lowercase tracking-wide text-orange"
+        className="font-mono text-[11px] tracking-wide text-orange"
       >
         {label}
       </h2>
@@ -39,14 +39,14 @@ function ReadingList({ label, urls }: { label: string; urls: string[] }) {
               <span className="block text-[15px] font-medium leading-snug underline decoration-transparent underline-offset-4 transition-colors group-hover:decoration-orange">
                 {guide.title}
               </span>
-              <span className="mt-1.5 block font-mono text-[11px] lowercase text-faint">
+              <span className="mt-1.5 block font-mono text-[11px] text-faint">
                 {guide.company} · {guide.year} · {guide.format}
               </span>
             </span>
             <span className="flex items-center gap-2 pt-0.5 text-faint">
               <LabLogo company={guide.company} className="h-3.5 w-3.5" />
               <FormatIcon format={guide.format} className="h-3.5 w-3.5" />
-              <ArrowUpRight className="h-3.5 w-3.5 transition-colors group-hover:text-orange" />
+              <ArrowUpRight className="h-3.5 w-3.5 transition-colors group-hover:text-orange" aria-hidden="true" />
             </span>
           </a>
         ))}
@@ -66,18 +66,18 @@ export function ModulePage({ module }: { module: CurriculumModule }) {
       <nav aria-label="Breadcrumb">
         <Link
           href="/curriculum"
-          className="inline-flex items-center gap-2 font-mono text-[11px] lowercase tracking-wide text-faint transition-colors hover:text-foreground"
+          className="inline-flex items-center gap-2 font-mono text-[11px] tracking-wide text-faint transition-colors hover:text-foreground"
         >
-          <ArrowLeft className="h-3.5 w-3.5" />
-          curriculum
+          <ArrowLeft className="h-3.5 w-3.5" aria-hidden="true" />
+          Curriculum
         </Link>
       </nav>
 
       <header className="mt-10 border-b border-border pb-12 sm:mt-14 sm:pb-16">
         <div className="grid gap-8 lg:grid-cols-[1fr_16rem] lg:items-end">
           <div className="max-w-3xl">
-            <p className="font-mono text-[12px] lowercase tracking-wide text-orange">
-              module {String(index + 1).padStart(2, "0")} / {String(CURRICULUM.length).padStart(2, "0")}
+            <p className="font-mono text-[12px] tracking-wide text-orange">
+              Module {String(index + 1).padStart(2, "0")} / {String(CURRICULUM.length).padStart(2, "0")}
             </p>
             <h1 className="mt-4 text-4xl font-semibold tracking-[-0.04em] sm:text-6xl">
               {module.title}
@@ -87,7 +87,7 @@ export function ModulePage({ module }: { module: CurriculumModule }) {
             </p>
           </div>
           <div className="border-l-2 border-orange pl-4">
-            <p className="font-mono text-[10px] lowercase tracking-wide text-faint">the point</p>
+            <p className="font-mono text-[10px] tracking-wide text-faint">The point</p>
             <p className="mt-2 text-[14px] leading-relaxed text-muted">{module.why}</p>
           </div>
         </div>
@@ -96,88 +96,91 @@ export function ModulePage({ module }: { module: CurriculumModule }) {
       <div className="grid gap-12 py-12 lg:grid-cols-[14rem_1fr] lg:gap-16 sm:py-16">
         <aside className="space-y-8 lg:sticky lg:top-8 lg:self-start">
           <div>
-            <h2 className="font-mono text-[11px] lowercase tracking-wide text-orange">you are here</h2>
+            <h2 className="font-mono text-[11px] tracking-wide text-orange">You are here</h2>
             <p className="mt-3 text-[13px] leading-relaxed text-muted">
               Module {index + 1} of {CURRICULUM.length} on the subject map.
             </p>
             <ul className="mt-3 space-y-2">
               {rungTouches.map((rung) => (
                 <li key={rung.slug} className="text-[12px] leading-relaxed text-faint">
-                  rung {LADDER.indexOf(rung) + 1} · {MODULE_DEPTH_LABELS[rung.modules[module.slug]]}
+                  Rung {LADDER.indexOf(rung) + 1} · {MODULE_DEPTH_LABELS[rung.modules[module.slug]]}
                 </li>
               ))}
             </ul>
-            <Link href="/curriculum#practice-ladder" className="mt-3 inline-block font-mono text-[10px] lowercase text-faint hover:text-foreground">
-              see the practice ladder →
+            <Link href="/curriculum#practice-ladder" className="mt-3 inline-block font-mono text-[10px] text-faint hover:text-foreground">
+              See the practice ladder →
             </Link>
           </div>
           <div>
-            <h2 className="font-mono text-[11px] lowercase tracking-wide text-faint">before you start</h2>
+            <h2 className="font-mono text-[11px] tracking-wide text-faint">Before you start</h2>
             <ul className="mt-3 space-y-2">
               {module.prerequisites.reading.map((item) => (
                 <li key={item} className="flex gap-2 text-[13px] leading-relaxed text-muted">
-                  <Circle className="mt-1.5 h-1.5 w-1.5 shrink-0 fill-orange text-orange" />
+                  <Circle className="mt-1.5 h-1.5 w-1.5 shrink-0 fill-orange text-orange" aria-hidden="true" />
                   {item}
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h2 className="font-mono text-[11px] lowercase tracking-wide text-faint">before deeper practice</h2>
+            <h2 className="font-mono text-[11px] tracking-wide text-faint">Before deeper practice</h2>
             <ul className="mt-3 space-y-2">
               {module.prerequisites.deeperPractice.map((item) => (
                 <li key={item} className="flex gap-2 text-[13px] leading-relaxed text-muted">
-                  <Circle className="mt-1.5 h-1.5 w-1.5 shrink-0 fill-orange text-orange" />
+                  <Circle className="mt-1.5 h-1.5 w-1.5 shrink-0 fill-orange text-orange" aria-hidden="true" />
                   {item}
                 </li>
               ))}
             </ul>
           </div>
           <div>
-            <h2 className="font-mono text-[11px] lowercase tracking-wide text-faint">save for later</h2>
+            <h2 className="font-mono text-[11px] tracking-wide text-faint">Save for later</h2>
             <ul className="mt-3 space-y-2">
               {module.skipForNow.map((item) => (
-                <li key={item} className="text-[13px] leading-relaxed text-faint">— {item}</li>
+                <li key={item} className="text-[13px] leading-relaxed text-faint">- {item}</li>
               ))}
             </ul>
           </div>
         </aside>
 
         <div className="space-y-14">
-          <ReadingList label="start with" urls={module.readFirst} />
-          <ReadingList label="read next" urls={module.goDeeper} />
+          <ReadingList label="Start with" urls={module.readFirst} />
+          <ReadingList label="Read next" urls={module.goDeeper} />
+          {module.perspectives && module.perspectives.length > 0 && (
+            <ReadingList label="Perspectives, not evidence" urls={module.perspectives} />
+          )}
 
           <section className="grid gap-8 border-t border-border pt-10 md:grid-cols-2">
             <div>
-              <h2 className="font-mono text-[11px] lowercase tracking-wide text-orange">understanding check</h2>
+              <h2 className="font-mono text-[11px] tracking-wide text-orange">Understanding check</h2>
               <p className="mt-3 text-xl font-semibold tracking-tight">You should be able to…</p>
             </div>
             <ul className="space-y-3">
               {module.checkpoints.map((checkpoint) => (
                 <li key={checkpoint} className="flex gap-3 text-[14px] leading-relaxed text-muted">
-                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-orange" />
+                  <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-orange" aria-hidden="true" />
                   {checkpoint}
                 </li>
               ))}
             </ul>
           </section>
 
-          <section className="border border-orange/40 bg-[#0d0d0d] p-6 sm:p-8">
+          <section className="border border-orange/40 bg-orange/[0.04] p-6 sm:p-8">
             <div className="flex items-center gap-2 text-orange">
-              <PencilLine className="h-4 w-4" />
-              <h2 className="font-mono text-[11px] lowercase tracking-wide">practice with an agent</h2>
+              <PencilLine className="h-4 w-4" aria-hidden="true" />
+              <h2 className="font-mono text-[11px] tracking-wide">Practice with an agent</h2>
             </div>
             <h3 className="mt-5 text-2xl font-semibold tracking-tight">{module.agentPractice.title}</h3>
-            <p className="mt-2 font-mono text-[11px] lowercase text-faint">
+            <p className="mt-2 font-mono text-[11px] text-faint">
               {module.agentPractice.difficulty} · {module.agentPractice.suggestedStack}
             </p>
             <div className="mt-7 grid gap-6 border-t border-border pt-6 md:grid-cols-2">
               <div>
-                <p className="font-mono text-[10px] lowercase tracking-wide text-faint">make</p>
+                <p className="font-mono text-[10px] tracking-wide text-faint">Make</p>
                 <p className="mt-2 text-[14px] leading-relaxed text-muted">{module.agentPractice.expectedOutput}</p>
               </div>
               <div>
-                <p className="font-mono text-[10px] lowercase tracking-wide text-faint">you know it works when</p>
+                <p className="font-mono text-[10px] tracking-wide text-faint">You know it works when</p>
                 <p className="mt-2 text-[14px] leading-relaxed text-muted">{module.agentPractice.check}</p>
               </div>
             </div>
@@ -185,20 +188,20 @@ export function ModulePage({ module }: { module: CurriculumModule }) {
 
           <section className="border border-border p-6 sm:p-8">
             <div className="flex items-center gap-2 text-orange">
-              <PencilLine className="h-4 w-4" />
-              <h2 className="font-mono text-[11px] lowercase tracking-wide">go deeper by building</h2>
+              <PencilLine className="h-4 w-4" aria-hidden="true" />
+              <h2 className="font-mono text-[11px] tracking-wide">Go deeper by building</h2>
             </div>
             <h3 className="mt-5 text-2xl font-semibold tracking-tight">{module.deeperProject.title}</h3>
-            <p className="mt-2 font-mono text-[11px] lowercase text-faint">
+            <p className="mt-2 font-mono text-[11px] text-faint">
               {module.deeperProject.difficulty} · {module.deeperProject.suggestedStack}
             </p>
             <div className="mt-7 grid gap-6 border-t border-border pt-6 md:grid-cols-2">
               <div>
-                <p className="font-mono text-[10px] lowercase tracking-wide text-faint">make</p>
+                <p className="font-mono text-[10px] tracking-wide text-faint">Make</p>
                 <p className="mt-2 text-[14px] leading-relaxed text-muted">{module.deeperProject.expectedOutput}</p>
               </div>
               <div>
-                <p className="font-mono text-[10px] lowercase tracking-wide text-faint">you know it works when</p>
+                <p className="font-mono text-[10px] tracking-wide text-faint">You know it works when</p>
                 <p className="mt-2 text-[14px] leading-relaxed text-muted">{module.deeperProject.check}</p>
               </div>
             </div>
@@ -210,26 +213,26 @@ export function ModulePage({ module }: { module: CurriculumModule }) {
         <div className="py-6 sm:pr-6">
           {previous ? (
             <Link href={`/curriculum/${previous.slug}`} className="group block">
-              <span className="font-mono text-[10px] lowercase text-faint">previous module</span>
+              <span className="font-mono text-[10px] text-faint">Previous module</span>
               <span className="mt-2 flex items-center gap-2 text-[15px] font-medium group-hover:text-orange">
-                <ArrowLeft className="h-4 w-4" /> {previous.title}
+                <ArrowLeft className="h-4 w-4" aria-hidden="true" /> {previous.title}
               </span>
             </Link>
-          ) : <span className="font-mono text-[10px] lowercase text-faint">start of the path</span>}
+          ) : <span className="font-mono text-[10px] text-faint">Start of the path</span>}
         </div>
         <div className="border-t border-border py-6 sm:border-l sm:border-t-0 sm:pl-6 sm:text-right">
           {next ? (
             <Link href={`/curriculum/${next.slug}`} className="group block">
-              <span className="font-mono text-[10px] lowercase text-faint">next module</span>
+              <span className="font-mono text-[10px] text-faint">Next module</span>
               <span className="mt-2 flex items-center gap-2 text-[15px] font-medium group-hover:text-orange sm:justify-end">
-                {next.title} <ArrowRight className="h-4 w-4" />
+                {next.title} <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </span>
             </Link>
           ) : (
             <Link href="/" className="group block">
-              <span className="font-mono text-[10px] lowercase text-faint">keep exploring</span>
+              <span className="font-mono text-[10px] text-faint">Keep exploring</span>
               <span className="mt-2 flex items-center gap-2 text-[15px] font-medium group-hover:text-orange sm:justify-end">
-                full catalog <ArrowRight className="h-4 w-4" />
+                Full catalog <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </span>
             </Link>
           )}

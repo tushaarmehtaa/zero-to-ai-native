@@ -17,7 +17,7 @@
 
 the useful explanations of ai are usually written by the people **building** it, then scattered across cdns, arxiv, lab blogs, docs, and lectures.
 
-this is a maintained path through **126 hand-picked reads** from **32 sources**. no listicles, no reuploads, no seo. just primary sources, ordered the way you'd actually learn them.
+this is a maintained path through **122 hand-picked reads** from **32 sources**. no listicles, no reuploads, no seo. just primary sources, ordered the way you'd actually learn them.
 
 maintained by [Tushar Mehta](https://x.com/tushaarmehtaa), who builds AI products and co-runs AI & Weekends, an AI builder community with 30+ hands-on events across India and 2,000+ builders.
 
@@ -77,8 +77,6 @@ then pick a topic below and go deep.
 
 - **[GPT-5 Prompting Guide](https://developers.openai.com/cookbook/examples/gpt-5/gpt-5_prompting_guide)** · [OpenAI](https://openai.com) · 🌐 web · 2025
 - **[Prompt Engineering](https://www.kaggle.com/whitepaper-prompt-engineering)** · [Google](https://deepmind.google) · 📄 pdf · 2024
-- **[Gemini for Workspace Prompting Guide 101](https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf)** · [Google](https://deepmind.google) · 📄 pdf · 2024
-- **[Gemini Enterprise Prompt Guide](https://cloud.google.com/gemini-enterprise/resources/prompt-guide)** · [Google](https://deepmind.google) · 🌐 web · 2025
 - **[Prompt Engineering Interactive Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)** · [Anthropic](https://www.anthropic.com) · 🎓 course · 2025
 - **[GPT-4.1 Prompting Guide](https://developers.openai.com/cookbook/examples/gpt4-1_prompting_guide)** · [OpenAI](https://openai.com) · 🌐 web · 2025
 - **[Llama Prompting Guide](https://developer.meta.com/ai/docs/how-to-guides/prompting/)** · [Meta](https://ai.meta.com) · 🌐 web · 2025
@@ -125,12 +123,10 @@ then pick a topic below and go deep.
 
 - **[o1 System Card](https://cdn.openai.com/o1-system-card.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2024
 - **[OpenAI Model Spec](https://model-spec.openai.com/2025-12-18.html)** · [OpenAI](https://openai.com) · 🌐 web · 2025
-- **[Model Disproves the Erdős Unit Distance Conjecture](https://openai.com/index/model-disproves-discrete-geometry-conjecture/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
 - **[Claude's Constitution](https://www-cdn.anthropic.com/d0636f72a9493d279ed36b33987da3430bcb5911/claudes-constitution_webPDF_26-02.02a.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2026
 - **[Alignment Faking in Large Language Models](https://arxiv.org/pdf/2412.14093)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2024
 - **[An Off Switch for Dual-Use Knowledge in AI Models](https://www.anthropic.com/research/off-switch-dual-use)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
 - **[GPT-5.6 System Card](https://deploymentsafety.openai.com/gpt-5-6)** · [OpenAI](https://openai.com) · 🌐 web · 2026
-- **[Gemini Achieves IMO Gold Medal](https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/)** · [Google](https://deepmind.google) · 🌐 web · 2025
 - **[AlphaGeometry2](https://arxiv.org/abs/2502.03544)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[Kimi K3: Open Frontier Intelligence](https://www.kimi.ai/blog/kimi-k3)** · [Moonshot AI](https://www.moonshot.ai) · 🌐 web · 2026
 - **[PerceptionBench](https://www.kimi.ai/blog/perception-bench)** · [Moonshot AI](https://www.moonshot.ai) · 🌐 web · 2026
@@ -156,6 +152,7 @@ then pick a topic below and go deep.
 - **[Building Trusted AI in the Enterprise](https://www-cdn.anthropic.com/e5c9de22bc8884089970bd262ca0c8b952cb9136.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
 - **[Identifying and Scaling AI Use Cases](https://cdn.openai.com/business-guides-and-resources/identifying-and-scaling-ai-use-cases.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
 - **[AI in the Enterprise](https://cdn.openai.com/business-guides-and-resources/ai-in-the-enterprise.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
+- **[The State of Enterprise AI 2025](https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
 - **[Llama Responsible Use Guide](https://github.com/meta-llama/llama/blob/main/Responsible-Use-Guide.pdf)** · [Meta](https://ai.meta.com) · 📄 pdf · 2024
 
 ### ⚙️ MLOps & Production
@@ -195,11 +192,10 @@ then pick a topic below and go deep.
 - **[Exploring Model Welfare](https://www.anthropic.com/research/exploring-model-welfare)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Anthropic Economic Index: Economic Primitives](https://www-cdn.anthropic.com/096d94c1a91c6480806d8f24b2344c7e2a4bc666.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
 - **[Anthropic Economic Index: Geographic & Enterprise Adoption](https://www-cdn.anthropic.com/7b76335c444876a93fa22a63aabb4aeb820aff25.pdf)** · [Anthropic](https://www.anthropic.com) · 📄 pdf · 2025
-- **[The State of Enterprise AI 2025](https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
 - **[Practices for Governing Agentic AI Systems](https://cdn.openai.com/papers/practices-for-governing-agentic-ai-systems.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2023
 - **[Gemini 3 Pro Frontier Safety Framework Report](https://storage.googleapis.com/deepmind-media/gemini/gemini_3_pro_fsf_report.pdf)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[The Economics of Transformative AI](https://www.nber.org/books-and-chapters/economics-transformative-ai)** · [NBER](https://www.nber.org) · 🌐 web · 2025
-- **[MS&E435: Economics of the AI Supercycle](https://www.youtube.com/@MSE435EconomicsofAI)** · [Stanford](https://online.stanford.edu) · 🎥 video · 2026
+- **[MS&E435: Economics of the AI Supercycle](https://www.youtube.com/watch?v=LNSvp-9b-J0)** · [Stanford](https://online.stanford.edu) · 🎥 video · 2026
 - **[AI Eats the World](https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/68348f5da204754d5222cf67/1748275041033/AI+eats+the+world.pdf)** · [Benedict Evans](https://www.ben-evans.com) · 📄 pdf · 2025
 
 ### 🔭 Perspectives & Futures

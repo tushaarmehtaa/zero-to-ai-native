@@ -11,7 +11,7 @@ export function GuideCard({ guide, compact = false }: { guide: Guide; compact?: 
       href={guide.url}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex flex-col gap-2 rounded-lg border border-border p-4 transition-[border-color,background-color,transform] hover:-translate-y-0.5 hover:border-white/20 hover:bg-white/[0.02]"
+      className="group flex flex-col gap-2 rounded-lg border border-border p-4 transition-[border-color,background-color,transform] hover:-translate-y-0.5 hover:border-foreground/20 hover:bg-foreground/[0.03]"
     >
       <div className="flex items-center justify-between gap-2 text-faint">
         <span

@@ -2,14 +2,14 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "zero to ai-native",
-    short_name: "z→ai",
+    name: "Zero to AI-Native",
+    short_name: "Z→AI",
     description:
-      "the best papers, guides, blogs and lectures on ai. straight from the people building it.",
+      "The best papers, guides, blogs and lectures on AI. Straight from the people building it.",
     start_url: "/",
     display: "standalone",
-    background_color: "#09090b",
-    theme_color: "#09090b",
+    background_color: "#fefefe",
+    theme_color: "#fefefe",
     icons: [
       {
         src: "/icon",

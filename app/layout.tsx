@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Shantell_Sans } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,14 +12,20 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
 });
 
+const shantellSans = Shantell_Sans({
+  subsets: ["latin"],
+  weight: "600",
+  variable: "--font-shantell",
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.zerotoainative.xyz"),
   title: {
-    default: "zero to ai-native",
-    template: "%s | zero to ai-native",
+    default: "Zero to AI-Native",
+    template: "%s | Zero to AI-Native",
   },
   description:
-    "an open-source curriculum of primary-source AI material, from fundamentals to production systems.",
+    "An open-source curriculum of primary-source AI material, from fundamentals to production systems.",
   alternates: {
     canonical: "/",
   },
@@ -28,19 +34,19 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "zero to ai-native",
+    title: "Zero to AI-Native",
     description:
-      "an open-source curriculum of primary-source AI material, from fundamentals to production systems.",
+      "An open-source curriculum of primary-source AI material, from fundamentals to production systems.",
     url: "https://www.zerotoainative.xyz",
-    siteName: "zero to ai-native",
+    siteName: "Zero to AI-Native",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "zero to ai-native",
+    title: "Zero to AI-Native",
     description:
-      "an open-source curriculum of primary-source AI material, from fundamentals to production systems.",
+      "An open-source curriculum of primary-source AI material, from fundamentals to production systems.",
     creator: "@tushaarmehtaa",
     site: "@tushaarmehtaa",
   },
@@ -54,7 +60,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${shantellSans.variable} h-full antialiased`}
     >
       <body className="min-h-full">{children}</body>
     </html>

@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
-/* dark-first, single orange accent. matches the house system. */
+/* light-first, single orange accent. matches the house system. */
 :root {
-  --background: #0a0a0a;
-  --foreground: #fafafa;
-  --muted: #a3a3a3;
-  --faint: #6b6b6b;
-  --border: #262626;
-  --orange: #ff5e33;
+  --background: #fefefe;
+  --foreground: #14100e;
+  --muted: #57534e;
+  --faint: #6b6560;
+  --border: #e4e0da;
+  --orange: #c23c12;
 }
 
 @theme inline {
@@ -19,6 +19,7 @@
   --color-orange: var(--orange);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-handwritten: var(--font-shantell);
 }
 
 body {

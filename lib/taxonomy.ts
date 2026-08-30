@@ -67,19 +67,19 @@ export type Length = (typeof LENGTHS)[number];
 export type GroupKey = "topic" | "lab" | "format" | "level" | "length" | "audience";
 
 export const GROUP_LABELS: Record<GroupKey, string> = {
-  topic: "topic",
-  lab: "source",
-  format: "format",
-  level: "level",
-  length: "length",
-  audience: "audience",
+  topic: "Topic",
+  lab: "Source",
+  format: "Format",
+  level: "Level",
+  length: "Length",
+  audience: "Audience",
 };
 
 export type ViewKey = "list" | "table" | "board" | "cards";
 
 export const VIEW_LABELS: Record<ViewKey, string> = {
-  list: "list",
-  table: "table",
-  board: "board",
-  cards: "cards",
+  list: "List",
+  table: "Table",
+  board: "Board",
+  cards: "Cards",
 };

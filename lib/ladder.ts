@@ -32,10 +32,10 @@ export type LadderRung = {
 };
 
 export const MODULE_DEPTH_LABELS: Record<ModuleDepth, string> = {
-  apply: "apply now",
-  orient: "orient",
-  save: "save for later",
-  conditional: "apply if relevant",
+  apply: "Apply now",
+  orient: "Orient",
+  save: "Save for later",
+  conditional: "Apply if relevant",
 };
 
 export const LADDER: LadderRung[] = [
@@ -139,9 +139,9 @@ export const LADDER: LadderRung[] = [
       "safety-governance": "apply",
     },
     requiredReading: [
-      { module: "context-engineering", url: guideUrl("Effective Context Engineering for AI Agents"), assignment: "Read the context structure and just-in-time retrieval sections." },
+      { module: "context-engineering", url: guideUrl("Prompt Injection Explained"), assignment: "Read the full argument and turn the boundary between instruction and untrusted input into a check the repository can run." },
       { module: "agents", url: guideUrl("Writing Effective Tools for Agents"), assignment: "Read the sections on narrow tools and inspectable outputs." },
-      { module: "evals", url: guideUrl("Evaluation Best Practices"), assignment: "Read the sections on executable, task-specific checks." },
+      { module: "evals", url: guideUrl("Demystifying Evals for AI Agents"), assignment: "Read task, trial, grader, transcript, and outcome definitions." },
       { module: "safety-governance", url: guideUrl("Running Codex Safely at OpenAI"), assignment: "Read the least-privilege and audit sections." },
     ],
     saveForLater: ["custom retrieval", "multi-agent fan-out", "unattended loops", "frontier training"],
@@ -165,9 +165,9 @@ export const LADDER: LadderRung[] = [
       "safety-governance": "apply",
     },
     requiredReading: [
-      { module: "agents", url: guideUrl("Building Effective Agents (essay)"), assignment: "Read workflow versus agent and orchestrator-worker sections." },
-      { module: "evals", url: guideUrl("Demystifying Evals for AI Agents"), assignment: "Read task, trial, grader, transcript, and outcome definitions." },
-      { module: "safety-governance", url: guideUrl("Running Codex Safely at OpenAI"), assignment: "Read isolation, identity, and approval sections." },
+      { module: "agents", url: guideUrl("A Practical Guide to Building Agents"), assignment: "Read the multi-agent orchestration and guardrail sections." },
+      { module: "evals", url: guideUrl("Your AI Product Needs Evals"), assignment: "Read the product-specific eval and error-analysis sections." },
+      { module: "safety-governance", url: guideUrl("Practices for Governing Agentic AI Systems"), assignment: "Read the operator, oversight, and accountability sections and apply them to how isolated work streams get approved and reunited." },
     ],
     saveForLater: ["fan-out before one-agent reliability", "product-irrelevant RAG", "unbounded parallel work"],
     canDo: ["choose sequential versus parallel work", "isolate changes", "separate maker and checker roles"],
@@ -191,7 +191,7 @@ export const LADDER: LadderRung[] = [
     },
     requiredReading: [
       { module: "agents", url: guideUrl("Building Effective Agents (essay)"), assignment: "Read the workflow patterns and stopping considerations." },
-      { module: "evals", url: guideUrl("Your AI Product Needs Evals"), assignment: "Read the product-specific eval and error-analysis sections." },
+      { module: "evals", url: guideUrl("Evaluation Best Practices"), assignment: "Read the sections on tracking a measured behavior over time and knowing when it has stopped improving." },
       { module: "production-ai", url: guideUrl("What We Learned from a Year of Building with LLMs"), assignment: "Read feedback, operations, and iteration sections." },
       { module: "safety-governance", url: guideUrl("Practices for Governing Agentic AI Systems"), assignment: "Read the operator, oversight, and accountability sections." },
     ],

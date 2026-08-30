@@ -39,7 +39,7 @@ export function Dropdown<T extends string>({
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen((o) => !o)}
-        className="flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 font-mono text-[12px] lowercase transition-colors hover:border-faint"
+        className="flex items-center gap-1.5 rounded-md border border-border px-2.5 py-1.5 font-mono text-[12px] transition-colors hover:border-faint"
       >
         <span className="text-[10px] uppercase tracking-widest text-faint/60">{label}</span>
         <span className="text-foreground">{labelOf(value)}</span>
@@ -50,7 +50,7 @@ export function Dropdown<T extends string>({
 
       {open && (
         <div
-          className={`absolute top-full z-20 mt-1.5 min-w-[140px] overflow-hidden rounded-lg border border-border bg-[#141414] py-1 shadow-xl ${
+          className={`absolute top-full z-20 mt-1.5 min-w-[140px] overflow-hidden rounded-lg border border-border bg-background py-1 shadow-xl ${
             align === "right" ? "right-0" : "left-0"
           }`}
         >
@@ -63,7 +63,7 @@ export function Dropdown<T extends string>({
                   onChange(opt);
                   setOpen(false);
                 }}
-                className="flex w-full items-center justify-between px-3 py-1.5 text-left font-mono text-[12px] lowercase transition-colors hover:bg-[#ffffff0d]"
+                className="flex w-full items-center justify-between px-3 py-1.5 text-left font-mono text-[12px] transition-colors hover:bg-foreground/[0.05]"
                 style={{ color: active ? "var(--orange)" : "var(--muted)" }}
               >
                 {labelOf(opt)}

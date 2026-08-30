@@ -65,8 +65,8 @@ export function BoardView({ groups, groupKey }: { groups: Group[]; groupKey?: Gr
     <div className="relative mx-auto max-w-5xl">
       {scrolls && (
         <div className="mb-2 flex justify-end">
-          <span className="font-mono text-[10px] lowercase tracking-wide text-faint">
-            scroll for more &rarr;
+          <span className="font-mono text-[10px] tracking-wide text-faint">
+            Scroll for more &rarr;
           </span>
         </div>
       )}
@@ -120,7 +120,7 @@ function SortHeader({
   className?: string;
 }) {
   return (
-    <th className={`pb-2 text-left font-mono text-[11px] font-normal lowercase tracking-wide ${className}`}>
+    <th className={`pb-2 text-left font-mono text-[11px] font-normal tracking-wide ${className}`}>
       <button
         onClick={() => onToggle(k)}
         className="inline-flex items-center gap-1 text-faint transition-colors hover:text-foreground"
@@ -164,11 +164,11 @@ export function TableView({ guides }: { guides: Guide[] }) {
       <table className="w-full min-w-[640px] border-collapse text-[13px]">
         <thead>
           <tr className="border-b border-border">
-            <SortHeader k="title" label="guide" sort={sort} dir={dir} onToggle={toggle} />
-            <SortHeader k="company" label="source" sort={sort} dir={dir} onToggle={toggle} />
-            <SortHeader k="topic" label="topic" sort={sort} dir={dir} onToggle={toggle} />
-            <SortHeader k="format" label="type" sort={sort} dir={dir} onToggle={toggle} />
-            <SortHeader k="year" label="yr" sort={sort} dir={dir} onToggle={toggle} className="text-right" />
+            <SortHeader k="title" label="Guide" sort={sort} dir={dir} onToggle={toggle} />
+            <SortHeader k="company" label="Source" sort={sort} dir={dir} onToggle={toggle} />
+            <SortHeader k="topic" label="Topic" sort={sort} dir={dir} onToggle={toggle} />
+            <SortHeader k="format" label="Type" sort={sort} dir={dir} onToggle={toggle} />
+            <SortHeader k="year" label="Yr" sort={sort} dir={dir} onToggle={toggle} className="text-right" />
           </tr>
         </thead>
         <tbody>
@@ -188,7 +188,7 @@ export function TableView({ guides }: { guides: Guide[] }) {
               <td className="py-2.5 pr-4 text-muted">
                 <span className="flex items-center gap-1.5" title={g.company}>
                   <LabLogo company={g.company} className="h-3.5 w-3.5" />
-                  <span className="font-mono text-[11px] lowercase">{g.company.toLowerCase()}</span>
+                  <span className="font-mono text-[11px]">{g.company}</span>
                 </span>
               </td>
               <td className="py-2.5 pr-4 text-muted">{g.topic}</td>

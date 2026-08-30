@@ -234,7 +234,7 @@ export const GUIDES: Guide[] = [
   {
     title: "The State of Enterprise AI 2025",
     company: "OpenAI",
-    topic: "Research & Economics",
+    topic: "Enterprise & Adoption",
     url: "https://cdn.openai.com/pdf/7ef17d82-96bf-4dd1-9df2-228f7f377a29/the-state-of-enterprise-ai_2025-report.pdf",
     format: "PDF",
     year: 2025,
@@ -288,18 +288,6 @@ export const GUIDES: Guide[] = [
     audience: "researcher",
     description:
       "the paper that defined the operator/user model and proposed baseline safety practices for agentic systems. foundational framing for anyone building on the api.",
-  },
-  {
-    title: "Model Disproves the Erdős Unit Distance Conjecture",
-    company: "OpenAI",
-    topic: "Papers",
-    url: "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
-    format: "Web",
-    year: 2026,
-    level: "deep",
-    audience: "researcher",
-    description:
-      "an openai reasoning model independently disproved an 80-year-old conjecture in discrete geometry. fully automated, proof verified by external mathematicians.",
   },
 
   // ── Google ─────────────────────────────────────────────────
@@ -359,28 +347,6 @@ export const GUIDES: Guide[] = [
     level: "deep",
     audience: "builder",
     description: "the 102. agent evaluation methods and advanced patterns, for people who read the first one.",
-  },
-  {
-    title: "Gemini for Workspace Prompting Guide 101",
-    company: "Google",
-    topic: "Prompt Engineering",
-    url: "https://services.google.com/fh/files/misc/gemini_for_workspace_prompt_guide_october_2024_digital_final.pdf",
-    format: "PDF",
-    year: 2024,
-    level: "intro",
-    audience: "founder",
-    description: "prompts by persona and use case, for getting real work done in docs, sheets and gmail.",
-  },
-  {
-    title: "Gemini Enterprise Prompt Guide",
-    company: "Google",
-    topic: "Prompt Engineering",
-    url: "https://cloud.google.com/gemini-enterprise/resources/prompt-guide",
-    format: "Web",
-    year: 2025,
-    level: "build",
-    audience: "founder",
-    description: "prompting patterns for gemini across industries, from the cloud side.",
   },
 
   // ── Microsoft ──────────────────────────────────────────────
@@ -643,18 +609,6 @@ export const GUIDES: Guide[] = [
     level: "deep",
     audience: "researcher",
     description: "deepmind's frontier safety evaluation for gemini 3 pro. how a frontier lab tests its own model.",
-  },
-  {
-    title: "Gemini Achieves IMO Gold Medal",
-    company: "Google",
-    topic: "Papers",
-    url: "https://deepmind.google/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/",
-    format: "Web",
-    year: 2025,
-    level: "deep",
-    audience: "researcher",
-    description:
-      "gemini deep think scores 35/42 at imo 2025, the first ai to officially reach gold-medal standard at the world's most prestigious math competition.",
   },
   {
     title: "AlphaGeometry2",
@@ -1323,7 +1277,7 @@ export const GUIDES: Guide[] = [
     title: "MS&E435: Economics of the AI Supercycle",
     company: "Stanford",
     topic: "Research & Economics",
-    url: "https://www.youtube.com/@MSE435EconomicsofAI",
+    url: "https://www.youtube.com/watch?v=LNSvp-9b-J0",
     format: "Video",
     year: 2026,
     level: "deep",

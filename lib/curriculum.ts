@@ -19,6 +19,7 @@ export type CurriculumModule = {
   };
   readFirst: string[];
   goDeeper: string[];
+  perspectives?: string[];
   skipForNow: string[];
   checkpoints: string[];
   agentPractice: ProjectMilestone;
@@ -163,7 +164,7 @@ export const CURRICULUM: CurriculumModule[] = [
     why: "Context is the working memory of an AI system. Good context design is often the difference between a demo and a useful product.",
     prerequisites: {
       reading: ["prompting"],
-      deeperPractice: ["retrieval & rag", "basic TypeScript or Python"],
+      deeperPractice: ["retrieval-rag", "basic TypeScript or Python"],
     },
     readFirst: [
       guideUrl("Effective Context Engineering for AI Agents"),
@@ -202,7 +203,7 @@ export const CURRICULUM: CurriculumModule[] = [
     summary: "Move from single model calls to systems that use tools, plan work, and handle failure.",
     why: "Agents are useful when work requires decisions, tools, feedback, and multiple steps. They also fail in new ways.",
     prerequisites: {
-      reading: ["prompting", "context engineering"],
+      reading: ["prompting", "context-engineering"],
       deeperPractice: ["basic API work", "structured data"],
     },
     readFirst: [
@@ -340,6 +341,8 @@ export const CURRICULUM: CurriculumModule[] = [
       guideUrl("Alignment Faking in Large Language Models"),
       guideUrl("Claude's Constitution"),
       guideUrl("Llama Responsible Use Guide"),
+    ],
+    perspectives: [
       guideUrl("AI Eats the World"),
       guideUrl("MS&E435: Economics of the AI Supercycle"),
       guideUrl("Machines of Loving Grace"),
