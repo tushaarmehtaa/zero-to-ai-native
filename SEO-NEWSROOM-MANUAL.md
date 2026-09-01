@@ -206,6 +206,18 @@ The report must contain:
    9. Confidence and unknowns;
    10. Exact next manual trigger.
 
+DISTRIBUTION DRAFTS
+
+When a queue item resolves to a completed catalog addition (state moves to
+resolved/verified/added in queue.json), draft a short X post about that
+specific addition: the primary source, and why it earned a place, in the
+language of CURATION.md's own inclusion criteria. Save the draft as plain
+text under workspace/seo-newsroom/distribution/, named for the queue item id.
+
+This is drafting only. Never post it, schedule it, or treat it as sent. Tushar
+reviews and posts manually, same boundary as the rest of a scout run: no
+publishing, no social action, no outreach during a scout.
+
 KILL CRITERIA
 
 Recommend reducing or stopping new-page investment when:

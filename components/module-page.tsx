@@ -12,6 +12,26 @@ import { LADDER, MODULE_DEPTH_LABELS } from "@/lib/ladder";
 import { FormatIcon } from "./format-icon";
 import { LabLogo } from "./lab-logo";
 
+// Some prerequisite entries are literal module slugs ("foundations",
+// "context-engineering"); the rest is plain prose ("basic programming").
+// Link the ones that resolve to a real module instead of leaving every
+// entry as flat text.
+function PrerequisiteItem({ item }: { item: string }) {
+  const target = CURRICULUM.find((m) => m.slug === item);
+  return (
+    <li className="flex gap-2 text-[13px] leading-relaxed text-muted">
+      <Circle className="mt-1.5 h-1.5 w-1.5 shrink-0 fill-orange text-orange" aria-hidden="true" />
+      {target ? (
+        <Link href={`/curriculum/${target.slug}`} className="link">
+          {target.title}
+        </Link>
+      ) : (
+        item
+      )}
+    </li>
+  );
+}
+
 function ReadingList({ label, urls }: { label: string; urls: string[] }) {
   const guides = guidesForUrls(urls);
 
@@ -115,10 +135,7 @@ export function ModulePage({ module }: { module: CurriculumModule }) {
             <h2 className="font-mono text-[11px] tracking-wide text-faint">Before you start</h2>
             <ul className="mt-3 space-y-2">
               {module.prerequisites.reading.map((item) => (
-                <li key={item} className="flex gap-2 text-[13px] leading-relaxed text-muted">
-                  <Circle className="mt-1.5 h-1.5 w-1.5 shrink-0 fill-orange text-orange" aria-hidden="true" />
-                  {item}
-                </li>
+                <PrerequisiteItem key={item} item={item} />
               ))}
             </ul>
           </div>
@@ -126,10 +143,7 @@ export function ModulePage({ module }: { module: CurriculumModule }) {
             <h2 className="font-mono text-[11px] tracking-wide text-faint">Before deeper practice</h2>
             <ul className="mt-3 space-y-2">
               {module.prerequisites.deeperPractice.map((item) => (
-                <li key={item} className="flex gap-2 text-[13px] leading-relaxed text-muted">
-                  <Circle className="mt-1.5 h-1.5 w-1.5 shrink-0 fill-orange text-orange" aria-hidden="true" />
-                  {item}
-                </li>
+                <PrerequisiteItem key={item} item={item} />
               ))}
             </ul>
           </div>

@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-09-01 (SEO foundation)
+
+- added Vercel Analytics + Speed Insights (previously zero traffic measurement existed)
+- added `public/llms.txt` so AI answer engines can find and cite the curriculum directly
+- fixed the curriculum index's share card: it now has its own OG image and metadata instead of inheriting the homepage's
+- added a dedicated OG image per curriculum module
+- added `WebSite`/`Person` structured data site-wide and an `ItemList` of the curriculum on the homepage and curriculum index
+- linked prerequisite entries that name another module (e.g. "foundations", "context-engineering") to that module's page instead of rendering them as plain text
+- added a short paragraph to the README covering real search phrasing ("best resources to learn AI," "AI curriculum for developers")
+- added a distribution-draft step to the SEO newsroom: catalog additions now get a short X post drafted (never auto-posted) alongside the queue entry
+
 ## 2026-09-01
 
 - fixed the sitemap: `lastModified` now derives from the actual git history of the files behind each route instead of a hardcoded, stale constant

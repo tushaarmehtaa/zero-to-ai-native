@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Shantell_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -52,6 +54,28 @@ export const metadata: Metadata = {
   },
 };
 
+const siteStructuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      name: "Zero to AI-Native",
+      url: "https://www.zerotoainative.xyz",
+      description:
+        "An open-source curriculum of primary-source AI material, from fundamentals to production systems.",
+    },
+    {
+      "@type": "Person",
+      name: "Tushar Mehta",
+      url: "https://x.com/tushaarmehtaa",
+      sameAs: [
+        "https://x.com/tushaarmehtaa",
+        "https://github.com/tushaarmehtaa",
+      ],
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -62,7 +86,15 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${shantellSans.variable} h-full antialiased`}
     >
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteStructuredData).replaceAll("<", "\\u003c") }}
+        />
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }

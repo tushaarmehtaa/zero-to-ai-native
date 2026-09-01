@@ -31,6 +31,8 @@ this repo keeps the original sources in a path builders can actually follow: fun
 
 the work is curation: read the source, reject weak links, keep the sequence useful, and make good additions easy to review.
 
+if you're looking for the best resources to learn ai, an ai curriculum for developers, or a reading list that doesn't rot when a model gets replaced, this is built to be that. no rankings, no sponsored placement, just the sequence a builder would actually want.
+
 ## used for
 
 - self-directed learning

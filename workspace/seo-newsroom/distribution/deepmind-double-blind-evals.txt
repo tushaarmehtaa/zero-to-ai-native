@@ -1,0 +1,7 @@
+new in the catalog: DeepMind's writeup on piloting double-blind AI evaluations.
+
+the eval-integrity problem, and one lab's cryptographic answer: a confidential-compute barrier so the evaluator never sees model weights, and the model owner never sees test prompts. no benchmark contamination possible by design, not just by policy.
+
+https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/
+
+full catalog: https://www.zerotoainative.xyz

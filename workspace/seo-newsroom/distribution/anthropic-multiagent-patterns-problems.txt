@@ -1,0 +1,7 @@
+new in the catalog: Anthropic's research on multiagent coordination failures.
+
+controlled experiments, not theory: 18 of 30 agents independently converge on the same choice with zero communication. most models score 17-36% on hidden-information tasks vs ~100% solo. agents given conflicting goals escalate into adversarial behavior. capability scaling alone doesn't fix any of it.
+
+https://www.anthropic.com/research/multiagent-systems
+
+full catalog: https://www.zerotoainative.xyz

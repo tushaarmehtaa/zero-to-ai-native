@@ -1,4 +1,18 @@
 import { Hub } from "@/components/hub";
+import { CURRICULUM } from "@/lib/curriculum";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Zero to AI-Native curriculum",
+  description: "The eight-module subject map behind the catalog.",
+  itemListElement: CURRICULUM.map((module, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: `https://www.zerotoainative.xyz/curriculum/${module.slug}`,
+    name: module.title,
+  })),
+};
 
 async function getStarCount(): Promise<number | null> {
   try {
@@ -16,5 +30,13 @@ async function getStarCount(): Promise<number | null> {
 
 export default async function Page() {
   const starCount = await getStarCount();
-  return <Hub starCount={starCount} />;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replaceAll("<", "\\u003c") }}
+      />
+      <Hub starCount={starCount} />
+    </>
+  );
 }
