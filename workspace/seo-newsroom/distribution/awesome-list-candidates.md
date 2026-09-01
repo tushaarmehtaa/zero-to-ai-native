@@ -1,8 +1,28 @@
-# Awesome-list submission candidates
+# Awesome-list submissions
 
-Verified alive and researched 2026-09-01. Nothing submitted — these are drafts
-for review. Each entry is written to match that list's own format and the
-"short, plain, useful, no promotional language" rule from CURATION.md.
+Researched and submitted 2026-09-01. Each entry matches that list's own
+format and the "short, plain, useful, no promotional language" rule from
+CURATION.md.
+
+## Submitted
+
+1. owainlewis/awesome-artificial-intelligence — https://github.com/owainlewis/awesome-artificial-intelligence/pull/291
+2. brandonhimpfen/awesome-prompt-engineering — https://github.com/brandonhimpfen/awesome-prompt-engineering/pull/62
+3. steven2358/awesome-generative-ai (Discoveries list, Learning resources — the repo doesn't yet meet the 1,000-follower Main List bar) — https://github.com/steven2358/awesome-generative-ai/pull/1303
+
+## Held / skipped
+
+- **aloth/awesome-ai-agents** — held. Their CONTRIBUTING.md requires >100 GitHub
+  stars or a major-org affiliation; this repo has 5 stars. Revisit once past
+  that bar rather than submit something that fails their own stated rule.
+- **Danielskry/Awesome-RAG** — skipped. The only plausible section is "Python
+  Tutorials & Examples," which is code-tutorial specific; a curated reading
+  list is a stretch fit there, not an honest one. No other general-resources
+  section exists in that repo.
+- **EthicalML/awesome-production-machine-learning** — skipped. Requires 500+
+  GitHub stars per CONTRIBUTING.md, and the list is scoped to tools/libraries
+  to deploy and monitor ML, not learning resources — wrong category even
+  ignoring the star bar.
 
 ## 1. owainlewis/awesome-artificial-intelligence
 
