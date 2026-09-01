@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-01
+
+- fixed the sitemap: `lastModified` now derives from the actual git history of the files behind each route instead of a hardcoded, stale constant
+- added two catalog sources found via the SEO scout: DeepMind's double-blind AI evaluations writeup (eval integrity via confidential compute) and Anthropic's research on multiagent coordination failures
+
 ## 2026-08-30
 
 - switched the site from dark-first to a light theme, with contrast-checked tokens for body, muted, and accent text

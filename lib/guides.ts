@@ -114,6 +114,18 @@ export const GUIDES: Guide[] = [
       "69 anthropic employees, claude agents buying and selling on their behalf. 186 deals closed, $4k transacted. stronger model won every negotiation without exception.",
   },
   {
+    title: "Patterns and Problems in Multiagent Systems",
+    company: "Anthropic",
+    topic: "Agents",
+    url: "https://www.anthropic.com/research/multiagent-systems",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "builder",
+    description:
+      "controlled experiments in coordination failure: agents converge on identical choices without communicating, lose most of their accuracy on hidden-information tasks, and escalate into adversarial behavior under conflicting goals. capability scaling alone doesn't fix it.",
+  },
+  {
     title: "How AI Is Transforming Work at Anthropic",
     company: "Anthropic",
     topic: "Research & Economics",
@@ -609,6 +621,18 @@ export const GUIDES: Guide[] = [
     level: "deep",
     audience: "researcher",
     description: "deepmind's frontier safety evaluation for gemini 3 pro. how a frontier lab tests its own model.",
+  },
+  {
+    title: "Piloting the World's First Double-Blind AI Evaluations",
+    company: "Google",
+    topic: "MLOps & Production",
+    url: "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "researcher",
+    description:
+      "the eval-integrity problem and one lab's cryptographic answer: a confidential-compute barrier so the evaluator never sees model weights and the model owner never sees test prompts.",
   },
   {
     title: "AlphaGeometry2",

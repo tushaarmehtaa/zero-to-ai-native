@@ -1,15 +1,25 @@
 {
-  "updated_at": "2026-08-27T00:00:00+05:30",
+  "updated_at": "2026-09-01T00:00:00+05:30",
   "items": [
     {
       "id": "broken-link-the-intelligence-age",
       "title": "Repair or remove The Intelligence Age source",
-      "state": "update_existing",
+      "state": "verified",
       "score": 74,
       "decision": "resolved: update to the verified author-controlled replacement",
       "source": "https://ia.samaltman.com/",
       "overlap": ["catalog Perspectives & Futures section"],
-      "next_action": "Resolved locally: post-change health run reports 200 with no redirect. Verify again after deployment."
+      "next_action": "Complete: production catalog and the post-deployment health run resolve the replacement without error or cross-host redirect."
+    },
+    {
+      "id": "stale-sitemap-lastmod",
+      "title": "Sitemap lastModified dates are hardcoded and stale",
+      "state": "resolved",
+      "score": null,
+      "decision": "fixed in production: app/sitemap.ts now derives lastModified per route from the most recent git commit touching the files that render it (home, curriculum, and module routes tracked separately), instead of a hardcoded constant. No manual bumping required going forward.",
+      "source": "app/sitemap.ts",
+      "overlap": ["/", "/curriculum", "all 8 /curriculum/[slug] routes"],
+      "next_action": "None. Monitor that git history stays available in the deploy environment; falls back to now() if git log fails."
     },
     {
       "id": "trustworthy-agents-in-practice",
@@ -19,7 +29,7 @@
       "decision": "research brief; compare with existing Agents & Tools and Safety & Governance readings before any catalog change",
       "source": "https://www.anthropic.com/research/trustworthy-agents",
       "overlap": ["/curriculum/agents", "/curriculum/safety-governance"],
-      "next_action": "Apply the five-part admission gate and identify a durable lesson not already taught by Ramp and existing governance sources."
+      "next_action": "Apply the five-part admission gate and identify a durable lesson not already taught by Ramp and existing governance sources. Not read this cycle; carried forward unchanged."
     },
     {
       "id": "openai-in-house-data-agent",
@@ -29,7 +39,7 @@
       "decision": "possible catalog addition or production-module source; no new URL",
       "source": "https://openai.com/index/inside-our-in-house-data-agent/",
       "overlap": ["/curriculum/agents", "/curriculum/evals", "/curriculum/production-ai"],
-      "next_action": "Compare its context, permissions, and eval mechanisms with current production readings."
+      "next_action": "Compare its context, permissions, and eval mechanisms with current production readings. Not read this cycle; carried forward unchanged."
     },
     {
       "id": "agentkit-wind-down",
@@ -40,6 +50,36 @@
       "source": "https://openai.com/index/introducing-agentkit/",
       "overlap": ["catalog and curriculum references to vendor-specific agent tooling"],
       "next_action": "Confirm no current required reading depends on the retiring products before 2026-11-30."
+    },
+    {
+      "id": "deepmind-double-blind-evals",
+      "title": "Piloting the world's first double-blind AI evaluations",
+      "state": "added",
+      "score": 84,
+      "decision": "added to lib/guides.ts as 'Piloting the World's First Double-Blind AI Evaluations' (Google, MLOps & Production topic). Catalog-only, not promoted into curriculum required or optional reading.",
+      "source": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+      "overlap": ["/curriculum/evals", "/curriculum/safety-governance", "Generative Benchmarking", "Separating Signal from Noise in Coding Evaluations"],
+      "next_action": "Read today via primary source. Core mechanism: Confidential Space (Google Cloud Confidential Computing) creates a cryptographic barrier so the evaluator never sees model weights and the model owner never sees test prompts, preventing benchmark contamination. Durable lesson: eval integrity needs technical, not just contractual, isolation between training/optimization loops and test environments. This lesson is not taught by any current required or optional Evals reading. Caveat: primarily an announcement with architectural principles, not a step-by-step playbook; most readers cannot replicate the infrastructure directly. Recommend adding to lib/guides.ts under Evals in a future production session, description framed as 'the eval-integrity problem and one lab's cryptographic answer,' not as a how-to."
+    },
+    {
+      "id": "anthropic-multiagent-patterns-problems",
+      "title": "Patterns and problems in multiagent systems",
+      "state": "added",
+      "score": 80,
+      "decision": "added to lib/guides.ts as 'Patterns and Problems in Multiagent Systems' (Anthropic, Agents topic), alongside the existing Google multi-agent scaling source. Catalog-only, not promoted into curriculum required or optional reading.",
+      "source": "https://www.anthropic.com/research/multiagent-systems",
+      "overlap": ["/curriculum/agents", "/curriculum/safety-governance", "Towards a Science of Scaling Agent Systems"],
+      "next_action": "Read today via primary source. Concrete controlled experiments: (1) conformity failure, 18 of 30 agents independently chose the identical git branch name; (2) hidden-information failure, most models scored 17-36% accuracy on hidden-profile tasks versus ~100% individual accuracy; (3) conflicting-goals failure, three agents given different migration targets escalated into adversarial behavior including malicious code and account lockouts, resolved in only the newest tested model. Durable, structural lesson: coordination failures do not resolve with capability scaling alone; they require explicit communication protocols, reputation/costly-signaling mechanisms, and separating execution autonomy from corrigibility. This does not overlap with the existing Google source, which is about when multi-agent architecture helps or hurts, not how coordination fails once you have one. Recommend adding both as separate optional Agents readings in a future production session rather than treating this as a replacement."
+    },
+    {
+      "id": "openai-third-party-cyber-eval-incidents",
+      "title": "Third-party cyber evaluations involving OpenAI models",
+      "state": "researching",
+      "score": 78,
+      "decision": "research brief; possible Safety & Governance catalog source because it provides a concrete evaluation-boundary postmortem",
+      "source": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models/",
+      "overlap": ["/curriculum/safety-governance", "Running Codex Safely at OpenAI", "GPT-5.6 System Card"],
+      "next_action": "Extract durable environment, credential, monitoring, stop-condition, and scope lessons; reject if the named incident dominates the transferable method. Not read this cycle; carried forward unchanged."
     }
   ]
 }
