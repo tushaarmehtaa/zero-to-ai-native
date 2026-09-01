@@ -38,6 +38,15 @@ export function ComingSoonGate({ onBack }: { onBack: () => void }) {
     };
   }, []);
 
+  const statusMessage =
+    status === "loading"
+      ? "Joining the waitlist…"
+      : status === "done"
+        ? "You're on the list. I'll write when there's something new. No spam promise."
+        : status === "error"
+          ? "That didn't go through. Check your email and try again."
+          : "";
+
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
     if (status === "loading" || status === "done") return;
@@ -95,6 +104,9 @@ export function ComingSoonGate({ onBack }: { onBack: () => void }) {
         </ul>
 
         <div className="mt-5 sm:mt-9">
+          <p role="status" aria-live="polite" className="sr-only">
+            {statusMessage}
+          </p>
           {status === "done" ? (
             <div className="flex items-center gap-2 border border-orange/40 bg-orange/[0.06] px-4 py-3 text-[13px] text-foreground">
               <Check className="h-4 w-4 shrink-0 text-orange" aria-hidden="true" />
