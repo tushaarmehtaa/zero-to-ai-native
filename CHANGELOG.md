@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-02
+
+- added Anthropic's "Trustworthy Agents in Practice" to the catalog (four-layer agent trust: model, harness, tools, environment)
+
 ## 2026-09-01 (SEO foundation)
 
 - added Vercel Analytics + Speed Insights (previously zero traffic measurement existed)

@@ -17,7 +17,7 @@
 
 the useful explanations of ai are usually written by the people **building** it, then scattered across cdns, arxiv, lab blogs, docs, and lectures.
 
-this is a maintained path through **124 hand-picked reads** from **32 sources**. no listicles, no reuploads, no seo. just primary sources, ordered the way you'd actually learn them.
+this is a maintained path through **125 hand-picked reads** from **32 sources**. no listicles, no reuploads, no seo. just primary sources, ordered the way you'd actually learn them.
 
 maintained by [Tushar Mehta](https://x.com/tushaarmehtaa), who builds AI products and co-runs AI & Weekends, an AI builder community with 30+ hands-on events across India and 2,000+ builders.
 
@@ -63,6 +63,7 @@ then pick a topic below and go deep.
 - **[Project Vend: Phase Two](https://www.anthropic.com/research/project-vend-2)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2025
 - **[Project Deal](https://www.anthropic.com/features/project-deal)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
 - **[Patterns and Problems in Multiagent Systems](https://www.anthropic.com/research/multiagent-systems)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
+- **[Trustworthy Agents in Practice](https://www.anthropic.com/research/trustworthy-agents)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
 - **[A Practical Guide to Building Agents](https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf)** · [OpenAI](https://openai.com) · 📄 pdf · 2025
 - **[Agents](https://www.kaggle.com/whitepaper-agents)** · [Google](https://deepmind.google) · 📄 pdf · 2025
 - **[Agents Companion](https://www.kaggle.com/whitepaper-agent-companion)** · [Google](https://deepmind.google) · 📄 pdf · 2025

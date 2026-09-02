@@ -1,0 +1,7 @@
+new in the catalog: Anthropic's "Trustworthy Agents in Practice."
+
+the argument: agent trust is a four-layer property, not a model-training one. model, harness, tools, environment. a well-trained model can still get exploited through a poorly configured harness, so oversight has to span all four layers, not stop at the model.
+
+https://www.anthropic.com/research/trustworthy-agents
+
+full catalog: https://www.zerotoainative.xyz

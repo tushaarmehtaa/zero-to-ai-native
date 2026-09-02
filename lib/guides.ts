@@ -126,6 +126,18 @@ export const GUIDES: Guide[] = [
       "controlled experiments in coordination failure: agents converge on identical choices without communicating, lose most of their accuracy on hidden-information tasks, and escalate into adversarial behavior under conflicting goals. capability scaling alone doesn't fix it.",
   },
   {
+    title: "Trustworthy Agents in Practice",
+    company: "Anthropic",
+    topic: "Agents",
+    url: "https://www.anthropic.com/research/trustworthy-agents",
+    format: "Web",
+    year: 2026,
+    level: "deep",
+    audience: "builder",
+    description:
+      "a four-layer trust frame: model, harness, tools, environment. a well-trained model can still be exploited through a poorly configured harness, so oversight has to span all four, not just training.",
+  },
+  {
     title: "How AI Is Transforming Work at Anthropic",
     company: "Anthropic",
     topic: "Research & Economics",
