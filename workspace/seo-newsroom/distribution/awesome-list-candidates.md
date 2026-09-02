@@ -6,9 +6,17 @@ CURATION.md.
 
 ## Submitted
 
-1. owainlewis/awesome-artificial-intelligence — https://github.com/owainlewis/awesome-artificial-intelligence/pull/291
-2. brandonhimpfen/awesome-prompt-engineering — https://github.com/brandonhimpfen/awesome-prompt-engineering/pull/62
-3. steven2358/awesome-generative-ai (Discoveries list, Learning resources — the repo doesn't yet meet the 1,000-follower Main List bar) — https://github.com/steven2358/awesome-generative-ai/pull/1303
+1. owainlewis/awesome-artificial-intelligence — https://github.com/owainlewis/awesome-artificial-intelligence/pull/291 — open
+2. brandonhimpfen/awesome-prompt-engineering — https://github.com/brandonhimpfen/awesome-prompt-engineering/pull/62 — **declined by maintainer**: too broad for a prompt-engineering-only list, and not enough independent adoption yet to warrant an exception. Fair, polite, no action needed.
+3. steven2358/awesome-generative-ai (Discoveries list, Learning resources — the repo doesn't yet meet the 1,000-follower Main List bar) — https://github.com/steven2358/awesome-generative-ai/pull/1303 — open
+4. hades217/awesome-ai (Courses & Learning Paths > Free Aggregators, alongside Made With ML and the AI Engineer Roadmap) — https://github.com/hades217/awesome-ai/pull/140 — open, 548 stars, actively maintained, aims to review within 7 days
+
+## Checked and skipped (round 2, different angle)
+
+- **wikit-ai/awesome-llm-courses**, **eugenesiow/awesome-courses**, **luspr/awesome-ml-courses**, **Jasonlee1995/awesome-ai-courses** — all stale (last push 2024 or early 2025) or wrong format (single free video course, not an aggregator)
+- **buildonlabs-org/awesome-ai-learning** — only 1 star, too low authority to be worth a submission
+- **EbookFoundation/free-programming-books** — scoped strictly to free e-books/PDFs, not curated meta-lists; wrong category
+- **kamranahmedse/developer-roadmap** — interactive roadmap-diagram tool, entirely different contribution format, not a README link list
 
 ## Held / skipped
 
