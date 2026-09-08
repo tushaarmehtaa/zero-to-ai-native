@@ -16,7 +16,7 @@
     {
       "id": "stale-sitemap-lastmod",
       "title": "Repair sitemap dependency tracking and stale catalog count",
-      "state": "qa",
+      "state": "verified",
       "score": 70,
       "decision": "Reopened: live homepage lastmod is September 1 although catalog changed September 2; lib/guides.ts is absent from tracked dependencies. Live llms.txt still reports 124 instead of 125.",
       "source": "app/sitemap.ts",
@@ -25,7 +25,7 @@
         "/curriculum",
         "all 8 /curriculum/[slug] routes"
       ],
-      "next_action": "Implemented shared content history tracking, omitted unknown dates, and generated llms.txt. Lint, build, catalog and metadata checks pass; awaiting live verification."
+      "next_action": "Verified live: derived llms.txt reports 127 reads and 32 sources; sitemap has ten URLs. Unknown dates are omitted when git history is unavailable."
     },
     {
       "id": "trustworthy-agents-in-practice",
@@ -44,7 +44,7 @@
     {
       "id": "openai-in-house-data-agent",
       "title": "Inside OpenAI's in-house data agent",
-      "state": "added",
+      "state": "verified",
       "score": 72,
       "decision": "Catalog-only candidate: code-derived data semantics, permission inheritance, and result-based SQL evaluation. No new URL or required-reading expansion.",
       "source": "https://openai.com/index/inside-our-in-house-data-agent/",
@@ -53,7 +53,7 @@
         "/curriculum/evals",
         "/curriculum/production-ai"
       ],
-      "next_action": "Added to MLOps & Production, build level, builder audience. No curriculum expansion. Awaiting live verification; X draft saved only.",
+      "next_action": "Verified live after ea74407 on 2026-09-09. No further production action. Catalog addition drafts remain unsent.",
       "distribution_draft": true
     },
     {
@@ -116,7 +116,7 @@
     {
       "id": "anthropic-containment-engineering",
       "title": "How we contain Claude across products",
-      "state": "added",
+      "state": "verified",
       "score": 74,
       "decision": "Catalog-only candidate; compare isolation architectures and actual containment failures. Do not expand required readings.",
       "source": "https://www.anthropic.com/engineering/how-we-contain-claude",
@@ -126,7 +126,7 @@
         "Running Codex Safely at OpenAI",
         "Trustworthy Agents in Practice"
       ],
-      "next_action": "Added to MLOps & Production, build level, builder audience. No curriculum expansion. Awaiting live verification; X draft saved only.",
+      "next_action": "Verified live after ea74407 on 2026-09-09. No further production action. Catalog addition drafts remain unsent.",
       "distribution_draft": true
     },
     {
