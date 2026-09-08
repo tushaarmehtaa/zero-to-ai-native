@@ -17,7 +17,7 @@
 
 the useful explanations of ai are usually written by the people **building** it, then scattered across cdns, arxiv, lab blogs, docs, and lectures.
 
-this is a maintained path through **125 hand-picked reads** from **32 sources**. no listicles, no reuploads, no seo. just primary sources, ordered the way you'd actually learn them.
+this is a maintained path through **127 hand-picked reads** from **32 sources**. no listicles, no reuploads, no seo. just primary sources, ordered the way you'd actually learn them.
 
 maintained by [Tushar Mehta](https://x.com/tushaarmehtaa), who builds AI products and co-runs AI & Weekends, an AI builder community with 30+ hands-on events across India and 2,000+ builders.
 
@@ -169,6 +169,8 @@ then pick a topic below and go deep.
 - **[Separating Signal from Noise in Coding Evaluations](https://openai.com/index/separating-signal-from-noise-coding-evaluations/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
 - **[Building Self-Improving Tax Agents with Codex](https://openai.com/index/building-self-improving-tax-agents-with-codex/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
 - **[Running Codex Safely at OpenAI](https://openai.com/index/running-codex-safely/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
+- **[How We Contain Claude Across Products](https://www.anthropic.com/engineering/how-we-contain-claude)** · [Anthropic](https://www.anthropic.com) · 🌐 web · 2026
+- **[Inside OpenAI's In-House Data Agent](https://openai.com/index/inside-our-in-house-data-agent/)** · [OpenAI](https://openai.com) · 🌐 web · 2026
 - **[Piloting the World's First Double-Blind AI Evaluations](https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/)** · [Google](https://deepmind.google) · 🌐 web · 2026
 - **[Smol Course](https://huggingface.co/learn/smol-course)** · [Hugging Face](https://huggingface.co) · 🎓 course · 2025
 - **[Evaluating Chunking Strategies for Retrieval](https://www.trychroma.com/research/evaluating-chunking)** · [Chroma](https://www.trychroma.com) · 🌐 web · 2024

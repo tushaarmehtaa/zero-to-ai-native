@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-09-09
+
+- added two production engineering sources: Anthropic containment architecture and OpenAI’s in-house data agent; catalog now has 127 reads
+- derive llms.txt counts and module links from the catalog and curriculum
+- include shared content in sitemap date tracking and omit dates when git history is unavailable
+
 ## 2026-09-02
 
 - added Anthropic's "Trustworthy Agents in Practice" to the catalog (four-layer agent trust: model, harness, tools, environment)

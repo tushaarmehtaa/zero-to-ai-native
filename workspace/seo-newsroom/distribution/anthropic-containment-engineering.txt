@@ -1,0 +1,5 @@
+New in Zero to AI-Native: Anthropic’s containment engineering writeup.
+
+It earns its place by showing where agent boundaries failed—and how containers, sandboxes and VMs limit access. A useful follow-up to the safety readings.
+
+https://www.anthropic.com/engineering/how-we-contain-claude

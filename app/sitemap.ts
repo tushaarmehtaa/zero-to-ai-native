@@ -4,34 +4,40 @@ import { CURRICULUM } from "@/lib/curriculum";
 
 const SITE_URL = "https://www.zerotoainative.xyz";
 
-// Truthful last-modified per route: the most recent commit touching the files
-// that actually render it. Falls back to now() only if git history is
-// unavailable (e.g. a shallow clone in some CI environments).
-function lastModifiedFor(paths: string[]): Date {
+// Use committed content history when available. Omit unknown dates rather than
+// claiming a rebuild changed the content. Track shared data and rendering files.
+function lastModifiedFor(paths: string[]): Date | undefined {
   try {
     const output = execFileSync(
       "git",
       ["log", "-1", "--format=%cI", "--", ...paths],
       { cwd: process.cwd(), encoding: "utf8" }
     ).trim();
-    return output ? new Date(output) : new Date();
+    const date = output ? new Date(output) : undefined;
+    return date && Number.isFinite(date.getTime()) ? date : undefined;
   } catch {
-    return new Date();
+    return undefined;
   }
 }
 
-const HOME_LAST_MODIFIED = lastModifiedFor(["app/page.tsx", "components/hub.tsx", "components/creator-section.tsx"]);
+const SHARED_CONTENT = ["lib", "app/layout.tsx", "app/globals.css"];
+const HOME_LAST_MODIFIED = lastModifiedFor([
+  ...SHARED_CONTENT,
+  "app/page.tsx",
+  "components",
+]);
 const CURRICULUM_LAST_MODIFIED = lastModifiedFor([
+  ...SHARED_CONTENT,
   "app/curriculum/page.tsx",
   "components/curriculum-view.tsx",
   "components/ladder-view.tsx",
-  "lib/curriculum.ts",
-  "lib/ladder.ts",
 ]);
 const MODULE_LAST_MODIFIED = lastModifiedFor([
+  ...SHARED_CONTENT,
   "app/curriculum/[slug]/page.tsx",
   "components/module-page.tsx",
-  "lib/curriculum.ts",
+  "components/format-icon.tsx",
+  "components/lab-logo.tsx",
 ]);
 
 export default function sitemap(): MetadataRoute.Sitemap {

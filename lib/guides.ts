@@ -611,6 +611,31 @@ export const GUIDES: Guide[] = [
       "a practical control model for deployed coding agents: sandboxes, approvals, network policy, scoped identity, managed configuration and audit logs.",
   },
 
+  {
+    title: "How We Contain Claude Across Products",
+    company: "Anthropic",
+    topic: "MLOps & Production",
+    url: "https://www.anthropic.com/engineering/how-we-contain-claude",
+    format: "Web",
+    year: 2026,
+    level: "build",
+    audience: "builder",
+    description:
+      "how containers, sandboxes and virtual machines bound agent access, and what real containment failures reveal about trust and network controls.",
+  },
+  {
+    title: "Inside OpenAI's In-House Data Agent",
+    company: "OpenAI",
+    topic: "MLOps & Production",
+    url: "https://openai.com/index/inside-our-in-house-data-agent/",
+    format: "Web",
+    year: 2026,
+    level: "build",
+    audience: "builder",
+    description:
+      "grounding a data agent in pipeline code and business context, inheriting user permissions, and evaluating generated SQL against expected results.",
+  },
+
   // ── Google (more) ──────────────────────────────────────────
   {
     title: "Gemini (whitepaper)",
