@@ -1,0 +1,5 @@
+New in Zero to AI-Native: Automation's Early Footprint, from Cohere Labs.
+
+It earns its place by measuring the agent ecosystem instead of forecasting it. 696k tools across 123k public MCP servers, matched against O*NET job tasks. 2.6% do a complete work task. 419 of 923 occupations have no agentic tooling at all. The dataset is public.
+
+https://cohere.com/blog/automations-early-footprint

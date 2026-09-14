@@ -58,6 +58,7 @@ const AVATAR: Partial<Record<Company, { url: string; round?: boolean }>> = {
   NBER: { url: fav("nber.org") },
   Stanford: { url: fav("stanford.edu") },
   MIT: { url: fav("mit.edu") },
+  Princeton: { url: fav("princeton.edu") },
 };
 
 // simple-icons ships Anthropic and Google. OpenAI, Microsoft and AWS

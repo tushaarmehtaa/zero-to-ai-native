@@ -1,0 +1,5 @@
+New in Zero to AI-Native: HELMET, from the Princeton NLP group.
+
+It earns its place by testing long-context models on work they actually do — rag, citations, summarization, in-context learning, 8k to 128k — instead of another needle in a haystack. 59 models, and the rankings don't match the synthetic ones.
+
+https://huggingface.co/blog/helmet

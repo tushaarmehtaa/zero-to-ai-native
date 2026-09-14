@@ -31,6 +31,7 @@ export const COMPANIES = [
   "3Blue1Brown",
   "Stanford",
   "MIT",
+  "Princeton",
   "NBER",
 ] as const;
 export type Company = (typeof COMPANIES)[number];

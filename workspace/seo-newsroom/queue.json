@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-09T05:00:00+05:30",
+  "updated_at": "2026-09-15",
   "items": [
     {
       "id": "broken-link-the-intelligence-age",
@@ -18,7 +18,7 @@
       "title": "Repair sitemap dependency tracking and stale catalog count",
       "state": "verified",
       "score": 70,
-      "decision": "Reopened: live homepage lastmod is September 1 although catalog changed September 2; lib/guides.ts is absent from tracked dependencies. Live llms.txt still reports 124 instead of 125.",
+      "decision": "Resolved in ea74407: shared content dependencies tracked, unknown dates omitted, llms.txt counts derived. Rechecked live September 9 evening: 127 reads, 32 sources, ten sitemap URLs.",
       "source": "app/sitemap.ts",
       "overlap": [
         "/",
@@ -140,6 +140,440 @@
         "all /curriculum/[slug] routes"
       ],
       "next_action": "No layout change needed. Corrected screenshots and production notes supersede the scout capture."
+    },
+    {
+      "id": "helmet-long-context-evaluation",
+      "title": "HELMET: evaluating long-context language models",
+      "score": 74,
+      "state": "added",
+      "source": "https://huggingface.co/blog/helmet",
+      "decision": "Admitted to the catalog September 15. Authorship verified firsthand: the Hugging Face blog post is written by the HELMET authors themselves (Howard Yen, Tianyu Gao, Danqi Chen and colleagues at Princeton NLP and Intel), not by HF staff, so it satisfies the source rule. Paper arxiv.org/abs/2410.02694 and repo princeton-nlp/HELMET both resolve. Filed as Princeton / Context & Harness / deep / builder. No curriculum promotion.",
+      "overlap": [
+        "/curriculum/evals",
+        "/curriculum/retrieval-rag",
+        "Context Rot"
+      ],
+      "next_action": "Verify on production after deploy. Distribution draft written at distribution/helmet-long-context-evaluation.txt, unsent.",
+      "last_reviewed": "2026-09-15"
+    },
+    {
+      "id": "rteb-retrieval-generalization",
+      "title": "RTEB: retrieval evaluation and generalization",
+      "score": 58,
+      "state": "watchlist",
+      "source": "https://huggingface.co/blog/rteb",
+      "decision": "Useful open/private evaluation design, but substantial overlap with current benchmark-integrity readings and private-data reproducibility limits.",
+      "overlap": [
+        "/curriculum/retrieval-rag",
+        "/curriculum/evals",
+        "Generative Benchmarking"
+      ],
+      "next_action": "Revisit with a concrete learner exercise and comparison against current retrieval readings; no addition now."
+    },
+    {
+      "id": "icml-open-reproductions",
+      "title": "ICML open reproductions: auditing agent evidence",
+      "score": 57,
+      "state": "watchlist",
+      "source": "https://huggingface.co/blog/icml-2026-open-reproductions",
+      "decision": "Organizer report offers claim-level audit workflow and false-falsification examples. Linked individual logbooks and disputed results not independently checked.",
+      "overlap": [
+        "/curriculum/evals",
+        "/curriculum/agents"
+      ],
+      "next_action": "Inspect one original logbook and underlying paper before admission; distinguish attempted from successful reproduction."
+    },
+    {
+      "id": "editorial-what-being-ai-native-means",
+      "title": "What does being AI-native mean now?",
+      "kind": "editorial_page",
+      "state": "discovered",
+      "priority": 1,
+      "score": null,
+      "proposed_path": "/guides/what-being-ai-native-means",
+      "editorial_format": "Opinion / explainer",
+      "intent": [
+        "ai native meaning",
+        "how to become AI native"
+      ],
+      "angle": "Define the difference between frequent tool use and changing a workflow.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "Tushar’s definition and one real before/after workflow.",
+      "visual_brief": "A paired illustration of the same task: scattered chat outputs versus a connected workflow.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": false
+    },
+    {
+      "id": "editorial-what-to-learn-as-ai-improves",
+      "title": "When models get this capable, what should you learn?",
+      "kind": "editorial_page",
+      "state": "discovered",
+      "priority": 1,
+      "score": null,
+      "proposed_path": "/guides/what-to-learn-as-ai-improves",
+      "editorial_format": "Opinion / readiness",
+      "intent": [
+        "what to learn in the age of AI",
+        "skills for AI readiness"
+      ],
+      "angle": "Separate skills that help you direct and judge work from transient interface habits.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "Tushar’s priorities, counterexamples, and evidence for factual claims; distinguish forecasts.",
+      "visual_brief": "An annotated learning map: specification, context, judgment and iteration, with concrete task examples.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": false
+    },
+    {
+      "id": "editorial-astra-ai-native-work",
+      "title": "What Astra changes about AI-native work",
+      "kind": "editorial_page",
+      "state": "discovered",
+      "priority": 2,
+      "score": null,
+      "proposed_path": "/guides/astra-ai-native-work",
+      "editorial_format": "Capability analysis",
+      "intent": [
+        "Astra AI use cases",
+        "Astra AI workflow"
+      ],
+      "angle": "Explain what contextual, multimodal assistance could change in a real task.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "Disambiguate which Astra the owner means; verify current official capabilities and availability; test or label scenarios.",
+      "visual_brief": "A three-scene task sequence showing what context is available at each step; no invented product UI.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": false
+    },
+    {
+      "id": "editorial-prepare-for-more-capable-ai",
+      "title": "How to prepare for AI that’s better than you at parts of your job",
+      "kind": "editorial_page",
+      "state": "discovered",
+      "priority": 2,
+      "score": null,
+      "proposed_path": "/guides/prepare-for-more-capable-ai",
+      "editorial_format": "Opinion / task audit",
+      "intent": [
+        "how to prepare for AI at work",
+        "AI readiness"
+      ],
+      "angle": "Audit tasks and review ability rather than speculate about entire job titles.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "Tushar’s stance and a worked job/task audit; label predictions.",
+      "visual_brief": "An illustrated task map grouped by ability to specify and verify, without fake numeric scores.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": false
+    },
+    {
+      "id": "editorial-what-to-delegate-to-ai",
+      "title": "What should you delegate to an AI agent?",
+      "kind": "editorial_page",
+      "state": "needs_owner",
+      "priority": 1,
+      "score": null,
+      "proposed_path": "/guides/what-to-delegate-to-ai",
+      "editorial_format": "Practical / opinion",
+      "intent": [
+        "what tasks to delegate to AI agents"
+      ],
+      "angle": "Choose a bounded task, provide evidence and inspect the result.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "Existing local draft needs owner review; fictional table is authored, not an agent test.",
+      "visual_brief": "Brief → execution → inspection editorial illustration, alongside the existing interactive checklist.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": true
+    },
+    {
+      "id": "editorial-ai-images-beyond-prompts",
+      "title": "AI image generation beyond “write a better prompt”",
+      "kind": "editorial_page",
+      "state": "discovered",
+      "priority": 2,
+      "score": null,
+      "proposed_path": "/guides/ai-images-beyond-prompts",
+      "editorial_format": "Explainer",
+      "intent": [
+        "how to use AI image generation",
+        "AI image references and editing"
+      ],
+      "angle": "Teach references, composition, editing and iteration as a connected creative process.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "Original generated examples with exact prompts; distinguish general workflow from model internals.",
+      "visual_brief": "One brief developed across four saved stages, with explanatory captions about each decision.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": false
+    },
+    {
+      "id": "editorial-images-2-5-creative-work",
+      "title": "What Images 2.5 changes for everyday creative work",
+      "kind": "editorial_page",
+      "state": "discovered",
+      "priority": 2,
+      "score": null,
+      "proposed_path": "/guides/images-2-5-creative-work",
+      "editorial_format": "Test / capability analysis",
+      "intent": [
+        "Images 2.5 use cases",
+        "Images 2.5 editing"
+      ],
+      "angle": "Evaluate one creative brief and identify who benefits and where review is still needed.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "Fresh official verification and actual access to the named version; do not label generic imagegen outputs as that model.",
+      "visual_brief": "Matched before/after test assets from the verified tool, with clearly marked successes and drift.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": false
+    },
+    {
+      "id": "editorial-create-consistent-ai-images",
+      "title": "How to create consistent AI images",
+      "kind": "editorial_page",
+      "state": "needs_owner",
+      "priority": 1,
+      "score": null,
+      "proposed_path": "/guides/create-consistent-ai-images",
+      "editorial_format": "Practical",
+      "intent": [
+        "how to create consistent AI images",
+        "consistent image editing"
+      ],
+      "angle": "Use a reference and a fixed brief, then inspect visual drift.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "Existing local draft and two generated assets; owner review and search-intent validation remain.",
+      "visual_brief": "Existing reference/edit pair plus annotated crops only when they make drift clearer.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": true
+    },
+    {
+      "id": "editorial-make-ai-video-from-an-idea",
+      "title": "How to make an AI video from one idea",
+      "kind": "editorial_page",
+      "state": "discovered",
+      "priority": 3,
+      "score": null,
+      "proposed_path": "/guides/make-ai-video-from-an-idea",
+      "editorial_format": "Practical",
+      "intent": [
+        "how to make an AI video",
+        "AI storyboard to video"
+      ],
+      "angle": "Follow one brief through storyboard, clips, edit and sound to a finished artifact.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "Verify video tool access; produce the actual video and record continuity failures before claiming a tested workflow.",
+      "visual_brief": "Generate storyboard frames with imagegen; actual video outputs must come from a video tool and be labeled separately.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": false
+    },
+    {
+      "id": "editorial-why-ai-output-looks-generic",
+      "title": "Why your AI outputs still look generic",
+      "kind": "editorial_page",
+      "state": "discovered",
+      "priority": 2,
+      "score": null,
+      "proposed_path": "/guides/why-ai-output-looks-generic",
+      "editorial_format": "Opinion / creative critique",
+      "intent": [
+        "why AI images look generic",
+        "improve AI design"
+      ],
+      "angle": "Explain taste through specific reference, composition and editing choices.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "Tushar’s critique and original paired examples; no invented personal experience.",
+      "visual_brief": "Same fictional brief, generic first attempt and deliberately directed revision, annotated with the decisions.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": false
+    },
+    {
+      "id": "editorial-one-useful-ai-workflow",
+      "title": "Stop collecting AI tools. Build one useful workflow.",
+      "kind": "editorial_page",
+      "state": "discovered",
+      "priority": 2,
+      "score": null,
+      "proposed_path": "/guides/one-useful-ai-workflow",
+      "editorial_format": "Opinion / practical",
+      "intent": [
+        "how to build an AI workflow",
+        "AI workflow examples"
+      ],
+      "angle": "Complete one recurring job and account for preparation and review.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "One real reproducible workflow; Tushar’s position on tool collecting.",
+      "visual_brief": "A visual trail from messy inputs to final artifact, including the human decision points.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": false
+    },
+    {
+      "id": "editorial-does-an-ai-release-matter",
+      "title": "How I decide whether an AI release matters",
+      "kind": "editorial_page",
+      "state": "discovered",
+      "priority": 3,
+      "score": null,
+      "proposed_path": "/guides/does-an-ai-release-matter",
+      "editorial_format": "Personal opinion / framework",
+      "intent": [
+        "how to evaluate AI releases",
+        "which AI updates matter"
+      ],
+      "angle": "Give readers a reusable filter for capability changes, access and practical value.",
+      "demand_evidence": "Untested query hypotheses; no volume or ranking claim.",
+      "owner_contribution": "Tushar’s actual decision filter and a specific release example; first-person title remains provisional until supplied.",
+      "visual_brief": "An editorial filter illustration: announcement → usable capability → changed task → evidence.",
+      "visual_tool": "built-in image_gen for generated illustrations/examples; preserve prompts and inspect outputs",
+      "decision": "User approved adding this idea to the editorial slate; not published.",
+      "next_action": "Research search intent and primary evidence, resolve overlap, obtain actual owner stance, then write/review.",
+      "brief": "briefs/2026-09-09-editorial-slate.md",
+      "local_draft_exists": false
+    },
+    {
+      "id": "benchmirt-benchmark-construct-validity",
+      "title": "BenchMIRT: what benchmark questions actually measure",
+      "state": "watchlist",
+      "score": 58,
+      "source": "https://huggingface.co/blog/allenai/benchmirt",
+      "last_reviewed": "2026-09-13",
+      "decision": "Watchlist: question-level capability disentangling is useful; official article and short repository README inspected, but paper and a worked code example remain unreviewed. No claim of current-model generalization.",
+      "overlap": [
+        "/curriculum/evals",
+        "/curriculum/safety-governance",
+        "Generative Benchmarking"
+      ],
+      "next_action": "Read the original technical report and inspect one item-level example before catalog admission. Do not recommend benchmark trimming from headline results alone."
+    },
+    {
+      "id": "google-harness-behavioral-evals",
+      "title": "The anatomy of harness engineering: behavioral evals for coding agents",
+      "state": "ready",
+      "score": 66,
+      "source": "https://developers.googleblog.com/the-anatomy-of-harness-engineering-how-to-evaluate-iterate-and-guard-ai-coding-agents/",
+      "last_reviewed": "2026-09-13",
+      "decision": "Catalog-only candidate. Official Google engineering authors describe behavioral evals that assert on intermediate tool calls and file edits, a three-step failure-mode iteration loop, and batch runs over single trials. Distinct from the existing harness entries, which cover harness structure rather than how to test harness changes.",
+      "overlap": [
+        "Harness Design for Long-Running Application Development",
+        "Harness Engineering: Leveraging Codex in an Agent-First World",
+        "Demystifying Evals for AI Agents",
+        "/curriculum/evals",
+        "/curriculum/agents"
+      ],
+      "evidence_gaps": [
+        "Article's Python sample references the Antigravity SDK repository; the repository README shows hooks and policies, not an inspected behavioral-eval module.",
+        "No reported experiment or measured result, only a described method.",
+        "Page-stated date September 9, 2026; a search result claimed September 11. Page date used."
+      ],
+      "next_action": "Before catalog admission, locate the eval code path in google-antigravity/antigravity-sdk-python or confirm the sample is illustrative only, then set topic (Context & Harness vs MLOps & Production), level and audience. No new URL and no required-reading promotion."
+    },
+    {
+      "id": "cohere-automation-early-footprint",
+      "title": "Automation's Early Footprint: where agentic tools actually exist",
+      "state": "added",
+      "score": 73,
+      "source": "https://cohere.com/blog/automations-early-footprint",
+      "last_reviewed": "2026-09-15",
+      "decision": "Admitted to the catalog September 15. Dataset verified firsthand: CohereLabs/ate resolves on Hugging Face with a 694k-row onet_matches subset carrying per-pair cosine similarity and good/partial/bad match ratings. The dataset card itself is thin on collection methodology; the article carries it. Filed as Cohere / Research & Economics / deep / founder, the first Cohere entry in the catalog. No curriculum promotion.",
+      "overlap": [
+        "Situational Awareness",
+        "NBER entry",
+        "Dario Amodei essays",
+        "/curriculum/foundations",
+        "/curriculum/safety-governance"
+      ],
+      "evidence_gaps": [
+        "May 2026 snapshot; counts age even though the method does not.",
+        "O*NET matching is LLM-based and carries its own error; nobody here has audited it.",
+        "Published by a lab with a commercial position in the agent ecosystem."
+      ],
+      "next_action": "Verify on production after deploy. Distribution draft written at distribution/cohere-automation-early-footprint.txt, unsent."
+    },
+    {
+      "id": "microsoft-orchard-agentic-framework",
+      "title": "Orchard: training and evaluating agents inside real harnesses",
+      "state": "ready",
+      "score": 67,
+      "source": "https://www.microsoft.com/en-us/research/blog/orchard-an-open-framework-for-scalable-agentic-ai/",
+      "last_reviewed": "2026-09-15",
+      "decision": "Catalog-only candidate. Microsoft Research describes a Kubernetes-native sandbox for training and evaluating agents inside deployed harnesses rather than simplified stand-ins, with three recipes and reported numbers: Orchard-SWE 69.7% on SWE-bench Verified at ~3B active parameters, Orchard-GUI 68.4% average, Orchard-Claw 59.6%. The repository github.com/microsoft/Orchard resolves and contains trainer and eval code plus published trajectory datasets, so the claimed artifacts verify.",
+      "overlap": [
+        "Harness Design for Long-Running Application Development",
+        "Harness Engineering: Leveraging Codex in an Agent-First World",
+        "Towards a Science of Scaling Agent Systems",
+        "/curriculum/agents",
+        "/curriculum/evals"
+      ],
+      "evidence_gaps": [
+        "Benchmark numbers are self-reported; no third-party reproduction located.",
+        "Framework-tied, so shelf life is the weakest of the five gate checks.",
+        "Narrower audience than the Agents module average — relevant to people training agents, not everyone building them."
+      ],
+      "next_action": "Before catalog admission, decide whether the entry points at the blog post or the repository, and set topic (Agents vs Evals), level (build) and audience. No new URL."
+    },
+    {
+      "id": "openai-testing-agent-skills-evals",
+      "title": "Testing agent skills systematically with evals",
+      "state": "watchlist",
+      "score": 44,
+      "source": "https://developers.openai.com/blog/eval-skills",
+      "last_reviewed": "2026-09-15",
+      "decision": "Watchlist, not admitted. Teaches an eight-step skill-eval loop with a SKILL.md sample, a Node eval runner and a rubric JSON Schema, but the page carries no publication date and no author byline, which fails the evidence check on its face. Every sample binds to codex exec. The queued Google behavioral-evals article teaches the same run-record-grade loop with a date and named authors.",
+      "overlap": [
+        "google-harness-behavioral-evals",
+        "Demystifying Evals for AI Agents",
+        "Evaluation Best Practices",
+        "/curriculum/evals"
+      ],
+      "evidence_gaps": [
+        "No page-stated date.",
+        "No author byline.",
+        "Codex CLI coupling throughout."
+      ],
+      "next_action": "Revisit only if the page gains a date and byline, or if the deterministic-grader pattern is not adequately covered once the Google candidate is resolved."
+    },
+    {
+      "id": "check-guides-requires-dev-server",
+      "title": "check:guides cannot run without a local dev server",
+      "state": "discovered",
+      "score": 38,
+      "source": "scripts/check-practical-guides.ts",
+      "last_reviewed": "2026-09-15",
+      "decision": "Diagnosed during the September 15 scout, not fixed. npm run check:guides fails with ECONNREFUSED 127.0.0.1:3019 unless a dev server is already running on that port. That is the script's design — it checks live routes — but it means the check cannot run in a clean checkout or in CI without first starting a server. Low priority; the Guides surface is still local-only.",
+      "overlap": [
+        "scripts/check-links.ts",
+        "scripts/validate-catalog.ts",
+        "app/guides/"
+      ],
+      "next_action": "Owner decision in a production session: either start a server inside the script, fail with a clear message naming the prerequisite, or leave it as a manual-only check. No scout change."
     }
   ]
 }

@@ -1519,4 +1519,31 @@ export const GUIDES: Guide[] = [
     description:
       "8,000 words on agent architecture: tools, planning, memory, and how agent capability is determined by what you give it. adapted from ai engineering.",
   },
+  // ── Princeton NLP ──────────────────────────────────────────
+  {
+    title: "HELMET: Evaluating Long-Context Language Models",
+    company: "Princeton",
+    topic: "Context & Harness",
+    url: "https://huggingface.co/blog/helmet",
+    format: "Blog",
+    year: 2025,
+    level: "deep",
+    audience: "builder",
+    description:
+      "synthetic needle-in-a-haystack tests don't predict real long-context performance. 59 models across rag, citations, summarization and in-context learning, 8k to 128k.",
+  },
+
+  // ── Cohere ─────────────────────────────────────────────────
+  {
+    title: "Automation's Early Footprint",
+    company: "Cohere",
+    topic: "Research & Economics",
+    url: "https://cohere.com/blog/automations-early-footprint",
+    format: "Blog",
+    year: 2026,
+    level: "deep",
+    audience: "founder",
+    description:
+      "696k tools across 123k public mcp servers, matched against o*net job tasks. 2.6% do a complete work task. 419 of 923 occupations have no agentic tooling at all.",
+  },
 ];
